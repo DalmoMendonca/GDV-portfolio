@@ -1,0 +1,16 @@
+{
+  "id": "GDV623-P02",
+  "courseCode": "GDV623",
+  "courseTitle": "Track Studio II: Advanced Authorship",
+  "projectNumber": "P02",
+  "title": "Adaptation Game",
+  "repoName": "GDV623-P02-adaptation-game",
+  "status": "placeholder",
+  "genericDescription": "Adapt a non-game form into play; decide what to preserve, cut, or transform; justify adaptation choices.",
+  "specificDescription": "Adapt a poem, essay, performance, dataset, model behavior, painting, oral history, myth, or public document into a playable game. Include an adaptation note identifying three major transformations.",
+  "gradingRubric": "30 pts adaptation quality; 20 pts transformation rationale; 20 pts playability; 15 pts respect for source context; 15 pts notes.",
+  "localPath": "projects/GDV623/P02/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

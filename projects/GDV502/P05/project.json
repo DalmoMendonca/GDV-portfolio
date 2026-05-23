@@ -1,0 +1,16 @@
+{
+  "id": "GDV502-P05",
+  "courseCode": "GDV502",
+  "courseTitle": "Gameplay Programming and Rapid Tools",
+  "projectNumber": "P05",
+  "title": "Tool-Assisted Level Builder",
+  "repoName": "GDV502-P05-tool-assisted-level-builder",
+  "status": "placeholder",
+  "genericDescription": "Build internal tools; represent levels as editable data; separate authoring from runtime play.",
+  "specificDescription": "Build a small game plus a level editing tool, in-engine editor workflow, or external data workflow. Submit three levels made with the tool and a one-page tool guide for another designer.",
+  "gradingRubric": "30 pts tool usefulness; 20 pts runtime integration; 20 pts quality of authored levels; 15 pts usability of guide; 15 pts maintainability.",
+  "localPath": "projects/GDV502/P05/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

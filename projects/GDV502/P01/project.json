@@ -1,0 +1,16 @@
+{
+  "id": "GDV502-P01",
+  "courseCode": "GDV502",
+  "courseTitle": "Gameplay Programming and Rapid Tools",
+  "projectNumber": "P01",
+  "title": "State Machine Arcade Game",
+  "repoName": "GDV502-P01-state-machine-arcade-game",
+  "status": "placeholder",
+  "genericDescription": "Implement explicit game states; separate input, update, and rendering concerns; handle transitions reliably.",
+  "specificDescription": "Build an arcade game with menu, countdown, play, pause, game over, and results states. State transitions must be visible in code and testable through a debug key or menu.",
+  "gradingRubric": "30 pts state architecture; 20 pts gameplay completeness; 20 pts transition reliability; 15 pts code readability; 15 pts debug/test documentation.",
+  "localPath": "projects/GDV502/P01/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

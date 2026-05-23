@@ -1,0 +1,16 @@
+{
+  "id": "GDV511-P09",
+  "courseCode": "GDV511",
+  "courseTitle": "Level Design, Spaces, and Encounter Craft",
+  "projectNumber": "P09",
+  "title": "Nonlinear Mission Game",
+  "repoName": "GDV511-P09-nonlinear-mission-game",
+  "status": "placeholder",
+  "genericDescription": "Design objectives that can be completed in multiple orders; manage dependency and player planning; support meaningful route choice.",
+  "specificDescription": "Build a mission with at least three objectives available in nonlinear order. At least one objective must change the state or difficulty of another.",
+  "gradingRubric": "30 pts nonlinear structure; 20 pts dependency design; 20 pts route choice; 15 pts state communication; 15 pts documentation.",
+  "localPath": "projects/GDV511/P09/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

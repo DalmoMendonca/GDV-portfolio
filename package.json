@@ -1,0 +1,18 @@
+{
+  "name": "GDV-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Master of Game Design and Development portfolio catalog for 120 playable games.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node ./tools/copy-project-builds.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "scaffold": "node ./tools/scaffold-projects.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-legacy": "^7.2.1",
+    "vite": "^7.2.4"
+  },
+  "devDependencies": {}
+}

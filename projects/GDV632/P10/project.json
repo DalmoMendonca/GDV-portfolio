@@ -1,0 +1,16 @@
+{
+  "id": "GDV632-P10",
+  "courseCode": "GDV632",
+  "courseTitle": "Portfolio Capstone: Experimental Production Arcade",
+  "projectNumber": "P10",
+  "title": "Public Arcade Collection",
+  "repoName": "GDV632-P10-public-arcade-collection",
+  "status": "placeholder",
+  "genericDescription": "Curate a professional portfolio; package multiple works; present design identity to an audience.",
+  "specificDescription": "Package at least three games from this course into a public arcade page or launcher. Include short descriptions, controls, accessibility notes, credits, process images, press-kit assets, a 60-second reel or trailer, and clear links to source or technical breakdowns when appropriate.",
+  "gradingRubric": "30 pts curation quality; 20 pts public usability; 20 pts quality of included games; 15 pts portfolio writing and media assets; 15 pts presentation.",
+  "localPath": "projects/GDV632/P10/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

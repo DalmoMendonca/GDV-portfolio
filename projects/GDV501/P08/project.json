@@ -1,0 +1,16 @@
+{
+  "id": "GDV501-P08",
+  "courseCode": "GDV501",
+  "courseTitle": "Game Systems, Loops, and Player Experience",
+  "projectNumber": "P08",
+  "title": "Dynamic Difficulty Game",
+  "repoName": "GDV501-P08-dynamic-difficulty-game",
+  "status": "placeholder",
+  "genericDescription": "Adapt challenge to player performance; measure player state without being intrusive; preserve dignity and agency when assistance is provided.",
+  "specificDescription": "Build a game that tracks at least two performance signals and modifies challenge during play. Include a debug overlay or post-game report showing what adapted and why.",
+  "gradingRubric": "30 pts adaptive design logic; 20 pts fairness and transparency; 20 pts implementation reliability; 15 pts player report/debug explanation; 15 pts reflection.",
+  "localPath": "projects/GDV501/P08/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

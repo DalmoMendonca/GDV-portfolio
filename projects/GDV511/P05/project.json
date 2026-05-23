@@ -1,0 +1,16 @@
+{
+  "id": "GDV511-P05",
+  "courseCode": "GDV511",
+  "courseTitle": "Level Design, Spaces, and Encounter Craft",
+  "projectNumber": "P05",
+  "title": "Combat Arena with Phases",
+  "repoName": "GDV511-P05-combat-arena-with-phases",
+  "status": "placeholder",
+  "genericDescription": "Shape combat through space; use enemy composition and arena changes; pace intensity across phases.",
+  "specificDescription": "Build an arena encounter with at least three phases. Each phase must alter space, enemy behavior, objective pressure, or resource availability.",
+  "gradingRubric": "30 pts encounter pacing; 20 pts arena affordances; 20 pts phase differentiation; 15 pts fairness and telegraphing; 15 pts testing.",
+  "localPath": "projects/GDV511/P05/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

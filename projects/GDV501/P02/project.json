@@ -1,0 +1,16 @@
+{
+  "id": "GDV501-P02",
+  "courseCode": "GDV501",
+  "courseTitle": "Game Systems, Loops, and Player Experience",
+  "projectNumber": "P02",
+  "title": "Risk-Reward Collection Game",
+  "repoName": "GDV501-P02-risk-reward-collection-game",
+  "status": "placeholder",
+  "genericDescription": "Model risk, reward, and opportunity cost; communicate danger without text dependency; balance short-term gain against long-term survival.",
+  "specificDescription": "Build a top-down or side-view collection game where every valuable pickup increases danger, changes movement, or alters the map. Include at least two viable strategies and a score summary at the end.",
+  "gradingRubric": "30 pts meaningful risk-reward structure; 20 pts balance across strategies; 20 pts responsive core loop; 15 pts end-state scoring and feedback; 15 pts documentation and playtest revision.",
+  "localPath": "projects/GDV501/P02/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "GDV621-P05",
+  "courseCode": "GDV621",
+  "courseTitle": "Advanced AI, Simulation, and Procedural Systems",
+  "projectNumber": "P05",
+  "title": "Adaptive NPC Memory and Relationship Game",
+  "repoName": "GDV621-P05-adaptive-npc-memory-and-relationship-game",
+  "status": "placeholder",
+  "genericDescription": "Track player behavior; update NPC disposition; model short-term and long-term memory; communicate relationship state through action.",
+  "specificDescription": "Build a game where at least two NPCs remember player actions and change available interactions, help, resistance, dialogue, or strategy. At least one memory must persist across scenes or sessions. Avoid purely cosmetic affinity meters.",
+  "gradingRubric": "30 pts relationship/memory model; 20 pts consequential NPC behavior; 20 pts clarity to player; 15 pts state persistence; 15 pts documentation.",
+  "localPath": "projects/GDV621/P05/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "GDV633-P03",
+  "courseCode": "GDV633",
+  "courseTitle": "Track Studio III: Thesis Microgames",
+  "projectNumber": "P03",
+  "title": "Audience Challenge Game",
+  "repoName": "GDV633-P03-audience-challenge-game",
+  "status": "placeholder",
+  "genericDescription": "Confront audience assumptions; design respectful friction; measure interpretation.",
+  "specificDescription": "Build a game that asks the intended audience to reconsider a habit, belief, expectation, genre convention, or AI interaction pattern. Conduct at least three targeted playtests.",
+  "gradingRubric": "30 pts audience challenge design; 20 pts respectful friction; 20 pts playtest insight; 15 pts game completeness; 15 pts notes.",
+  "localPath": "projects/GDV633/P03/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

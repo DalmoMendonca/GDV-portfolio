@@ -1,0 +1,16 @@
+{
+  "id": "GDV512-P01",
+  "courseCode": "GDV512",
+  "courseTitle": "Applied Game Mathematics, Technical Art, and Production Pipelines",
+  "projectNumber": "P01",
+  "title": "48-Hour Scope Game",
+  "repoName": "GDV512-P01-48-hour-scope-game",
+  "status": "placeholder",
+  "genericDescription": "Scope aggressively; prioritize a playable core; separate must-have from nice-to-have.",
+  "specificDescription": "Build a complete game in 48 hours using a written feature lock after hour 8. Submit the feature lock, final build, and a list of cut features with reasons.",
+  "gradingRubric": "30 pts scope discipline; 20 pts playable completion; 20 pts feature prioritization; 15 pts build stability; 15 pts retrospective.",
+  "localPath": "projects/GDV512/P01/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

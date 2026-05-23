@@ -1,0 +1,16 @@
+{
+  "id": "GDV632-P02",
+  "courseCode": "GDV632",
+  "courseTitle": "Portfolio Capstone: Experimental Production Arcade",
+  "projectNumber": "P02",
+  "title": "Constraint Mastery Game",
+  "repoName": "GDV632-P02-constraint-mastery-game",
+  "status": "placeholder",
+  "genericDescription": "Turn constraint into style; prove control over scope; avoid filler.",
+  "specificDescription": "Build a game under a severe constraint chosen from one screen, one minute, one input, one color plus neutrals, one enemy, one room, or one resource. Explain why the constraint improves the work.",
+  "gradingRubric": "30 pts constraint use; 20 pts design elegance; 20 pts complete play; 15 pts polish; 15 pts statement.",
+  "localPath": "projects/GDV632/P02/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

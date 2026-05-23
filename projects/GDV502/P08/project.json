@@ -1,0 +1,16 @@
+{
+  "id": "GDV502-P08",
+  "courseCode": "GDV502",
+  "courseTitle": "Gameplay Programming and Rapid Tools",
+  "projectNumber": "P08",
+  "title": "Behavior Tree or Utility AI Game",
+  "repoName": "GDV502-P08-behavior-tree-or-utility-ai-game",
+  "status": "placeholder",
+  "genericDescription": "Implement structured non-player behavior; debug decision logic; create enemies or companions that signal intent.",
+  "specificDescription": "Build a game with at least two AI actors using a behavior tree, utility scoring, finite-state machine with clear hierarchy, or equivalent architecture. Include a debug display of current decisions.",
+  "gradingRubric": "30 pts AI architecture; 20 pts gameplay use of AI; 20 pts readable telegraphing; 15 pts debug display; 15 pts code commentary.",
+  "localPath": "projects/GDV502/P08/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

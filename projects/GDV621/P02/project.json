@@ -1,0 +1,16 @@
+{
+  "id": "GDV621-P02",
+  "courseCode": "GDV621",
+  "courseTitle": "Advanced AI, Simulation, and Procedural Systems",
+  "projectNumber": "P02",
+  "title": "GOAP or Planner Game",
+  "repoName": "GDV621-P02-goap-or-planner-game",
+  "status": "placeholder",
+  "genericDescription": "Model goals, actions, and world state; create agents that plan; debug plan selection.",
+  "specificDescription": "Build a game with at least one agent that chooses action sequences using GOAP, planning, or an equivalent planner. Include visible plan state for instructors.",
+  "gradingRubric": "30 pts planner correctness; 20 pts meaningful agent behavior; 20 pts world-state modeling; 15 pts debug visibility; 15 pts notes.",
+  "localPath": "projects/GDV621/P02/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

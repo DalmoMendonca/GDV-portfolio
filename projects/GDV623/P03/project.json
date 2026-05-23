@@ -1,0 +1,16 @@
+{
+  "id": "GDV623-P03",
+  "courseCode": "GDV623",
+  "courseTitle": "Track Studio II: Advanced Authorship",
+  "projectNumber": "P03",
+  "title": "Generative Meaning Game",
+  "repoName": "GDV623-P03-generative-meaning-game",
+  "status": "placeholder",
+  "genericDescription": "Use generation to produce meaning, not filler; curate output boundaries; make variation interpretable.",
+  "specificDescription": "Build a game where generated text, images, levels, music, rules, or events create different interpretations across playthroughs. Include controls for reviewing or constraining output.",
+  "gradingRubric": "30 pts generative design; 20 pts interpretive variation; 20 pts constraint/curation; 15 pts technical stability; 15 pts reflection.",
+  "localPath": "projects/GDV623/P03/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

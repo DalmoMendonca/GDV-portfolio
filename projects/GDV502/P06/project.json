@@ -1,0 +1,16 @@
+{
+  "id": "GDV502-P06",
+  "courseCode": "GDV502",
+  "courseTitle": "Gameplay Programming and Rapid Tools",
+  "projectNumber": "P06",
+  "title": "Procedural Spawner Game",
+  "repoName": "GDV502-P06-procedural-spawner-game",
+  "status": "placeholder",
+  "genericDescription": "Use randomization responsibly; constrain probability; support replayability without unfairness.",
+  "specificDescription": "Build a game that generates enemies, pickups, rooms, or challenges at runtime. Include seed support or a replay code so the same generated session can be reproduced.",
+  "gradingRubric": "30 pts procedural logic; 20 pts fairness constraints; 20 pts replayability; 15 pts seed/reproduction support; 15 pts notes.",
+  "localPath": "projects/GDV502/P06/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

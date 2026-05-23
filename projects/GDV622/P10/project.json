@@ -1,0 +1,16 @@
+{
+  "id": "GDV622-P10",
+  "courseCode": "GDV622",
+  "courseTitle": "Multiplayer, Networked Play, and Live Operations",
+  "projectNumber": "P10",
+  "title": "Live Ops Portfolio Game",
+  "repoName": "GDV622-P10-live-ops-portfolio-game",
+  "status": "placeholder",
+  "genericDescription": "Combine multiplayer/social design with operations thinking; present a deployable plan; test with a small audience; prepare for at least one platform constraint such as mobile, web, classroom, kiosk, or PC storefront.",
+  "specificDescription": "Build a polished game that includes social, networked, asynchronous, mobile/touch, leaderboard, or live-operations elements. Submit a one-month live plan with update cadence, community metrics, telemetry events, moderation needs, and risk mitigations.",
+  "gradingRubric": "30 pts final game quality; 20 pts operations plan; 20 pts social/system/platform design; 15 pts metrics and risk plan; 15 pts presentation.",
+  "localPath": "projects/GDV622/P10/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

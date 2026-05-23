@@ -1,0 +1,16 @@
+{
+  "id": "GDV502-P03",
+  "courseCode": "GDV502",
+  "courseTitle": "Gameplay Programming and Rapid Tools",
+  "projectNumber": "P03",
+  "title": "Data-Driven Wave Game",
+  "repoName": "GDV502-P03-data-driven-wave-game",
+  "status": "placeholder",
+  "genericDescription": "Store gameplay parameters outside core logic; build content from structured data; enable rapid balancing.",
+  "specificDescription": "Build a survival, rhythm, tower defense, or encounter game where waves, enemies, items, or events are loaded from JSON, CSV, scriptable objects, resources, or equivalent data assets. Include at least six authored waves.",
+  "gradingRubric": "30 pts data-driven architecture; 20 pts content variety; 20 pts balancing and pacing; 15 pts designer usability; 15 pts documentation.",
+  "localPath": "projects/GDV502/P03/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

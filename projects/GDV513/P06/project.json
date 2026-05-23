@@ -1,0 +1,16 @@
+{
+  "id": "GDV513-P06",
+  "courseCode": "GDV513",
+  "courseTitle": "Track Studio I: Methods and Media",
+  "projectNumber": "P06",
+  "title": "Ethical Choice Microgame",
+  "repoName": "GDV513-P06-ethical-choice-microgame",
+  "status": "placeholder",
+  "genericDescription": "Design ethical tension without a simple correct answer; connect values to mechanics; avoid false neutrality.",
+  "specificDescription": "Build a game around a dilemma involving cultural interpretation, authenticity, authorship, automation, care, surveillance, labor, or audience participation. Choices must alter systems, not only ending text.",
+  "gradingRubric": "30 pts ethical complexity; 20 pts mechanical consequence; 20 pts track framing; 15 pts clarity and respect; 15 pts playtest evidence.",
+  "localPath": "projects/GDV513/P06/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

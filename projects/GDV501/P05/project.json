@@ -1,0 +1,16 @@
+{
+  "id": "GDV501-P05",
+  "courseCode": "GDV501",
+  "courseTitle": "Game Systems, Loops, and Player Experience",
+  "projectNumber": "P05",
+  "title": "Movement Verb Game",
+  "repoName": "GDV501-P05-movement-verb-game",
+  "status": "placeholder",
+  "genericDescription": "Make movement itself the primary mechanic; shape challenge through spatial affordances; tune acceleration, friction, jump, dash, glide, or equivalent properties.",
+  "specificDescription": "Build a game with one distinctive movement verb and five short challenge rooms. The game must be completable without combat, inventory, or score as the main attraction.",
+  "gradingRubric": "35 pts movement feel and consistency; 20 pts level use of the verb; 15 pts readable hazards and goals; 15 pts completion polish; 15 pts iteration evidence.",
+  "localPath": "projects/GDV501/P05/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

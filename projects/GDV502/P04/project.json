@@ -1,0 +1,16 @@
+{
+  "id": "GDV502-P04",
+  "courseCode": "GDV502",
+  "courseTitle": "Gameplay Programming and Rapid Tools",
+  "projectNumber": "P04",
+  "title": "Save, Load, and Persistence Game",
+  "repoName": "GDV502-P04-save-load-and-persistence-game",
+  "status": "placeholder",
+  "genericDescription": "Implement persistence safely; decide what game state matters; communicate saved progress to players.",
+  "specificDescription": "Build a game with progress that survives restart. Save at least player position/progression, unlocked content, settings, and score/history. Include reset and corrupt-save fallback behavior.",
+  "gradingRubric": "30 pts persistence correctness; 20 pts player-facing save clarity; 20 pts reset/fallback handling; 15 pts testing evidence; 15 pts code organization.",
+  "localPath": "projects/GDV502/P04/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

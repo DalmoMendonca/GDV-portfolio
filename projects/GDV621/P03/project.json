@@ -1,0 +1,16 @@
+{
+  "id": "GDV621-P03",
+  "courseCode": "GDV621",
+  "courseTitle": "Advanced AI, Simulation, and Procedural Systems",
+  "projectNumber": "P03",
+  "title": "Ecosystem Simulation Game",
+  "repoName": "GDV621-P03-ecosystem-simulation-game",
+  "status": "placeholder",
+  "genericDescription": "Design interacting populations or resources; tune feedback loops; turn simulation into player decision.",
+  "specificDescription": "Build a playable ecosystem, economy, infection, weather, traffic, or social simulation. The player must be able to intervene and observe systemic consequences.",
+  "gradingRubric": "30 pts simulation model; 20 pts player agency; 20 pts emergent behavior; 15 pts visualization; 15 pts reflection.",
+  "localPath": "projects/GDV621/P03/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

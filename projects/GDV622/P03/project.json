@@ -1,0 +1,16 @@
+{
+  "id": "GDV622-P03",
+  "courseCode": "GDV622",
+  "courseTitle": "Multiplayer, Networked Play, and Live Operations",
+  "projectNumber": "P03",
+  "title": "Asynchronous Turn Game",
+  "repoName": "GDV622-P03-asynchronous-turn-game",
+  "status": "placeholder",
+  "genericDescription": "Design play across time; represent pending decisions; make turns meaningful without live presence.",
+  "specificDescription": "Build an asynchronous hotseat, pass-and-play, play-by-email style, or simulated network turn game. Include saveable match state and a clear turn summary.",
+  "gradingRubric": "30 pts asynchronous structure; 20 pts turn quality; 20 pts persistence; 15 pts summary clarity; 15 pts notes.",
+  "localPath": "projects/GDV622/P03/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

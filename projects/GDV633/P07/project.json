@@ -1,0 +1,16 @@
+{
+  "id": "GDV633-P07",
+  "courseCode": "GDV633",
+  "courseTitle": "Track Studio III: Thesis Microgames",
+  "projectNumber": "P07",
+  "title": "Critique Response Game",
+  "repoName": "GDV633-P07-critique-response-game",
+  "status": "placeholder",
+  "genericDescription": "Use critique as production input; identify which feedback serves the thesis; revise without losing authorship.",
+  "specificDescription": "Present a prior thesis microgame for critique, then build a new game or major revision that directly responds to three critique points. Include a response matrix.",
+  "gradingRubric": "30 pts critique integration; 20 pts design improvement; 20 pts thesis continuity; 15 pts response matrix; 15 pts reflection.",
+  "localPath": "projects/GDV633/P07/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "GDV503-P10",
+  "courseCode": "GDV503",
+  "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
+  "projectNumber": "P10",
+  "title": "Polished Micro-Arcade Cabinet",
+  "repoName": "GDV503-P10-polished-micro-arcade-cabinet",
+  "status": "placeholder",
+  "genericDescription": "Combine game feel, UI, audio, and presentation; design for public play; present a coherent brand identity.",
+  "specificDescription": "Build a polished arcade-style game with title treatment, attract loop, tutorial prompt, sound mix, score feedback, and end screen. It must be understandable from a standing demo station.",
+  "gradingRubric": "30 pts complete audiovisual polish; 20 pts onboarding; 20 pts game feel; 15 pts public-play readiness; 15 pts documentation.",
+  "localPath": "projects/GDV503/P10/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

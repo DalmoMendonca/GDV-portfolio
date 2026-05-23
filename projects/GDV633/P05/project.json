@@ -1,0 +1,16 @@
+{
+  "id": "GDV633-P05",
+  "courseCode": "GDV633",
+  "courseTitle": "Track Studio III: Thesis Microgames",
+  "projectNumber": "P05",
+  "title": "Comparative Pair Game",
+  "repoName": "GDV633-P05-comparative-pair-game",
+  "status": "placeholder",
+  "genericDescription": "Show how a design changes under two interpretations; compare mechanics; make contrast playable.",
+  "specificDescription": "Build one game with two modes, two versions, or two playable stances. The difference must represent a meaningful theoretical, aesthetic, cultural, or AI-system comparison.",
+  "gradingRubric": "30 pts comparative design; 20 pts clarity of contrast; 20 pts playability of both versions; 15 pts analysis; 15 pts polish.",
+  "localPath": "projects/GDV633/P05/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

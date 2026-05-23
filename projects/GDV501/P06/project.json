@@ -1,0 +1,16 @@
+{
+  "id": "GDV501-P06",
+  "courseCode": "GDV501",
+  "courseTitle": "Game Systems, Loops, and Player Experience",
+  "projectNumber": "P06",
+  "title": "Choice Consequence Microgame",
+  "repoName": "GDV501-P06-choice-consequence-microgame",
+  "status": "placeholder",
+  "genericDescription": "Represent consequence in mechanics; distinguish cosmetic choice from systemic choice; build replayable branches.",
+  "specificDescription": "Build a 5 to 8 minute game where at least three player decisions change later rules, available actions, or ending conditions. Avoid simple dialogue-only branching unless choices affect play.",
+  "gradingRubric": "30 pts systemic consequences; 20 pts replayable structure; 20 pts clarity of changed state; 15 pts narrative or thematic coherence; 15 pts notes and playtest evidence.",
+  "localPath": "projects/GDV501/P06/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "GDV503-P02",
+  "courseCode": "GDV503",
+  "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
+  "projectNumber": "P02",
+  "title": "Diegetic Interface Game",
+  "repoName": "GDV503-P02-diegetic-interface-game",
+  "status": "placeholder",
+  "genericDescription": "Integrate UI into the game world; reduce HUD dependency; communicate health, score, or objectives through objects and environment.",
+  "specificDescription": "Build a game where at least two essential status indicators are diegetic. Players should not need a conventional corner HUD to understand progress or danger.",
+  "gradingRubric": "30 pts diegetic UI clarity; 20 pts world integration; 20 pts gameplay completeness; 15 pts visual hierarchy; 15 pts playtest evidence.",
+  "localPath": "projects/GDV503/P02/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

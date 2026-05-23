@@ -1,0 +1,16 @@
+{
+  "id": "GDV511-P07",
+  "courseCode": "GDV511",
+  "courseTitle": "Level Design, Spaces, and Encounter Craft",
+  "projectNumber": "P07",
+  "title": "Verticality and Sightline Game",
+  "repoName": "GDV511-P07-verticality-and-sightline-game",
+  "status": "placeholder",
+  "genericDescription": "Use height as design material; control visibility and anticipation; support navigation across layered spaces.",
+  "specificDescription": "Build a level where vertical movement or layered sightlines matter to strategy. Include at least three moments where seeing a destination, threat, or reward changes player choice.",
+  "gradingRubric": "30 pts vertical design; 20 pts sightline composition; 20 pts navigation clarity; 15 pts mechanic integration; 15 pts notes.",
+  "localPath": "projects/GDV511/P07/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

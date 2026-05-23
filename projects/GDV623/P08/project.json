@@ -1,0 +1,16 @@
+{
+  "id": "GDV623-P08",
+  "courseCode": "GDV623",
+  "courseTitle": "Track Studio II: Advanced Authorship",
+  "projectNumber": "P08",
+  "title": "Remix and Citation Game",
+  "repoName": "GDV623-P08-remix-and-citation-game",
+  "status": "placeholder",
+  "genericDescription": "Practice ethical remix; make citation visible in play; distinguish homage, critique, and extraction.",
+  "specificDescription": "Build a game that remixes at least three sources, styles, datasets, mechanics, or cultural forms. Include in-game credits or an interactive citation layer.",
+  "gradingRubric": "30 pts remix design; 20 pts citation quality; 20 pts track relevance; 15 pts originality; 15 pts notes.",
+  "localPath": "projects/GDV623/P08/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

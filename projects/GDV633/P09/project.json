@@ -1,0 +1,16 @@
+{
+  "id": "GDV633-P09",
+  "courseCode": "GDV633",
+  "courseTitle": "Track Studio III: Thesis Microgames",
+  "projectNumber": "P09",
+  "title": "Thesis Synthesis Game",
+  "repoName": "GDV633-P09-thesis-synthesis-game",
+  "status": "placeholder",
+  "genericDescription": "Combine findings from the thesis collection; create a culminating playable statement; show advanced craft.",
+  "specificDescription": "Build the strongest standalone thesis microgame. It must synthesize at least four prior thesis concerns and be prepared for external review.",
+  "gradingRubric": "30 pts synthesis; 20 pts final play quality; 20 pts track mastery; 15 pts external-review readiness; 15 pts documentation.",
+  "localPath": "projects/GDV633/P09/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

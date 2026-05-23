@@ -1,0 +1,16 @@
+{
+  "id": "GDV503-P03",
+  "courseCode": "GDV503",
+  "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
+  "projectNumber": "P03",
+  "title": "Audio-First Game",
+  "repoName": "GDV503-P03-audio-first-game",
+  "status": "placeholder",
+  "genericDescription": "Design gameplay around listening; mix audio cues by priority; provide non-audio alternatives for accessibility.",
+  "specificDescription": "Build a game where sound is central to navigation, timing, stealth, rhythm, or discovery. Include captions, visual pulses, haptics, or other alternatives for critical cues.",
+  "gradingRubric": "30 pts audio mechanic design; 20 pts mix clarity; 20 pts accessible alternatives; 15 pts complete game loop; 15 pts documentation.",
+  "localPath": "projects/GDV503/P03/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

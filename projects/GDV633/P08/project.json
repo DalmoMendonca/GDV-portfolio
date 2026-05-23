@@ -1,0 +1,16 @@
+{
+  "id": "GDV633-P08",
+  "courseCode": "GDV633",
+  "courseTitle": "Track Studio III: Thesis Microgames",
+  "projectNumber": "P08",
+  "title": "Professional Positioning Game",
+  "repoName": "GDV633-P08-professional-positioning-game",
+  "status": "placeholder",
+  "genericDescription": "Build for a target professional role; demonstrate marketable skill; connect track identity to career direction.",
+  "specificDescription": "Build a game aimed at a specific role such as narrative designer, technical designer, gameplay programmer, tools developer, UX designer, producer, AI game designer, creative technologist, educator, or interactive artist. Include a role-alignment note.",
+  "gradingRubric": "30 pts role relevance; 20 pts skill demonstration; 20 pts portfolio readiness; 15 pts role-alignment note; 15 pts polish.",
+  "localPath": "projects/GDV633/P08/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

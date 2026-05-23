@@ -1,0 +1,16 @@
+{
+  "id": "GDV513-P02",
+  "courseCode": "GDV513",
+  "courseTitle": "Track Studio I: Methods and Media",
+  "projectNumber": "P02",
+  "title": "Perspective Shift Game",
+  "repoName": "GDV513-P02-perspective-shift-game",
+  "status": "placeholder",
+  "genericDescription": "Design point of view mechanically; make perspective affect available knowledge or actions; create empathy without forcing a conclusion.",
+  "specificDescription": "Build a game where changing perspective changes rules, goals, language, sensory information, or agency. Include at least two perspectives and a moment where neither is complete alone.",
+  "gradingRubric": "30 pts mechanical perspective design; 20 pts track-specific interpretation; 20 pts clarity of state changes; 15 pts ethical framing; 15 pts playtest notes.",
+  "localPath": "projects/GDV513/P02/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

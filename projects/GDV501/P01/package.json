@@ -1,0 +1,16 @@
+{
+  "name": "GDV501-P01-one-button-timing-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A-grade one-button timing game for GDV501 P01.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "vite": "^7.2.4"
+  },
+  "devDependencies": {}
+}

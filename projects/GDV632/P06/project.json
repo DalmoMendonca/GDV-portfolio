@@ -1,0 +1,16 @@
+{
+  "id": "GDV632-P06",
+  "courseCode": "GDV632",
+  "courseTitle": "Portfolio Capstone: Experimental Production Arcade",
+  "projectNumber": "P06",
+  "title": "Art Direction Showpiece Game",
+  "repoName": "GDV632-P06-art-direction-showpiece-game",
+  "status": "placeholder",
+  "genericDescription": "Establish a coherent visual/audio identity; connect art direction to rules; present production craft.",
+  "specificDescription": "Build a game where art direction is a central portfolio claim. Include style references, final asset sheet, sound palette, and at least one before/after asset iteration.",
+  "gradingRubric": "30 pts art direction; 20 pts integration with play; 20 pts asset quality; 15 pts process evidence; 15 pts presentation.",
+  "localPath": "projects/GDV632/P06/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

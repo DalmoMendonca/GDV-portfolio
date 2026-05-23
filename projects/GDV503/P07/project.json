@@ -1,0 +1,16 @@
+{
+  "id": "GDV503-P07",
+  "courseCode": "GDV503",
+  "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
+  "projectNumber": "P07",
+  "title": "Minimalist Readability Game",
+  "repoName": "GDV503-P07-minimalist-readability-game",
+  "status": "placeholder",
+  "genericDescription": "Communicate with limited assets; establish hierarchy through spacing, motion, contrast, and rhythm; remove nonessential information.",
+  "specificDescription": "Build a complete game using no more than three colors, three sound families, and simple geometric forms. The constraint should improve readability rather than feel unfinished.",
+  "gradingRubric": "30 pts clarity under constraint; 20 pts cohesive minimalist style; 20 pts complete design; 15 pts player comprehension; 15 pts notes.",
+  "localPath": "projects/GDV503/P07/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

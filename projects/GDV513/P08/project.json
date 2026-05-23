@@ -1,0 +1,16 @@
+{
+  "id": "GDV513-P08",
+  "courseCode": "GDV513",
+  "courseTitle": "Track Studio I: Methods and Media",
+  "projectNumber": "P08",
+  "title": "Voice and Agency Game",
+  "repoName": "GDV513-P08-voice-and-agency-game",
+  "status": "placeholder",
+  "genericDescription": "Design speaking, silence, command, or refusal as mechanics; examine who can act and who is acted upon; create player accountability.",
+  "specificDescription": "Build a game where voice, prompt, response, consent, testimony, authorship, or model output changes what can happen. Include at least one meaningful refusal path.",
+  "gradingRubric": "30 pts agency design; 20 pts voice mechanic; 20 pts track alignment; 15 pts respectful framing; 15 pts notes.",
+  "localPath": "projects/GDV513/P08/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

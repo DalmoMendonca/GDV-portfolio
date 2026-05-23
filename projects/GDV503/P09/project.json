@@ -1,0 +1,16 @@
+{
+  "id": "GDV503-P09",
+  "courseCode": "GDV503",
+  "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
+  "projectNumber": "P09",
+  "title": "Accessibility Retrofit Game",
+  "repoName": "GDV503-P09-accessibility-retrofit-game",
+  "status": "placeholder",
+  "genericDescription": "Audit barriers; design options for diverse players; evaluate whether an accessibility feature changes the core challenge appropriately.",
+  "specificDescription": "Start with one previous game or a provided prototype and retrofit at least six accessibility improvements across controls, visuals, audio, pace, text, and difficulty. Submit before/after builds or recordings.",
+  "gradingRubric": "30 pts quality of accessibility improvements; 20 pts preservation of core design; 20 pts implementation completeness; 15 pts before/after evidence; 15 pts audit rationale.",
+  "localPath": "projects/GDV503/P09/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

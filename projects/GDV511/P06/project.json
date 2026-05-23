@@ -1,0 +1,16 @@
+{
+  "id": "GDV511-P06",
+  "courseCode": "GDV511",
+  "courseTitle": "Level Design, Spaces, and Encounter Craft",
+  "projectNumber": "P06",
+  "title": "Environmental Story Game",
+  "repoName": "GDV511-P06-environmental-story-game",
+  "status": "placeholder",
+  "genericDescription": "Communicate narrative through arrangement; use props and spatial sequence; avoid exposition as the main delivery method.",
+  "specificDescription": "Build an explorable space that tells a story through environment, objects, locked/unlocked paths, and player discovery. Text is allowed but cannot carry more than half of the meaning.",
+  "gradingRubric": "30 pts environmental storytelling; 20 pts spatial sequencing; 20 pts interaction design; 15 pts interpretive clarity; 15 pts reflection.",
+  "localPath": "projects/GDV511/P06/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "GDV622-P04",
+  "courseCode": "GDV622",
+  "courseTitle": "Multiplayer, Networked Play, and Live Operations",
+  "projectNumber": "P04",
+  "title": "Online Lobby and Networked Prototype",
+  "repoName": "GDV622-P04-online-lobby-and-networked-prototype",
+  "status": "placeholder",
+  "genericDescription": "Implement basic client/server or peer synchronization; handle latency visibly; maintain authoritative state where appropriate; manage lobby flow.",
+  "specificDescription": "Build a small networked game or technical prototype with at least two connected players or simulated clients. Include create/join lobby flow, ready state, connection status, disconnect handling, latency indication, and a test log.",
+  "gradingRubric": "30 pts networking implementation; 20 pts synchronization quality; 20 pts lobby/connection handling; 15 pts playability; 15 pts technical documentation.",
+  "localPath": "projects/GDV622/P04/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

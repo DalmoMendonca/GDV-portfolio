@@ -1,0 +1,16 @@
+{
+  "id": "GDV633-P06",
+  "courseCode": "GDV633",
+  "courseTitle": "Track Studio III: Thesis Microgames",
+  "projectNumber": "P06",
+  "title": "Public Context Game",
+  "repoName": "GDV633-P06-public-context-game",
+  "status": "placeholder",
+  "genericDescription": "Design for a specific venue or community; account for facilitation, access, and presentation; prepare public documentation.",
+  "specificDescription": "Build a game for a concrete public context such as classroom, museum, gallery, conference, online festival, workplace training, creator community, or AI literacy workshop. Include installation or facilitation notes.",
+  "gradingRubric": "30 pts context fit; 20 pts facilitation readiness; 20 pts accessibility; 15 pts documentation; 15 pts playtest evidence.",
+  "localPath": "projects/GDV633/P06/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

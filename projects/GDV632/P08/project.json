@@ -1,0 +1,16 @@
+{
+  "id": "GDV632-P08",
+  "courseCode": "GDV632",
+  "courseTitle": "Portfolio Capstone: Experimental Production Arcade",
+  "projectNumber": "P08",
+  "title": "Professional Collaboration Game",
+  "repoName": "GDV632-P08-professional-collaboration-game",
+  "status": "placeholder",
+  "genericDescription": "Collaborate across roles; credit contributions; integrate feedback from a domain partner or peer specialist; prepare publication assets collaboratively.",
+  "specificDescription": "Build a game with at least one collaborator, consultant, performer, composer, writer, artist, researcher, or external tester. Include a contribution agreement, credits, press-kit draft, five screenshots, and one short gameplay capture.",
+  "gradingRubric": "30 pts collaboration quality; 20 pts integration of partner contribution; 20 pts final game; 15 pts credits/agreement; 15 pts publication assets and retrospective.",
+  "localPath": "projects/GDV632/P08/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

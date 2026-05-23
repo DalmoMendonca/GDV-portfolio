@@ -1,0 +1,16 @@
+{
+  "id": "GDV631-P03",
+  "courseCode": "GDV631",
+  "courseTitle": "Business, Ethics, Accessibility, and Player Research",
+  "projectNumber": "P03",
+  "title": "Ethical Data Game",
+  "repoName": "GDV631-P03-ethical-data-game",
+  "status": "placeholder",
+  "genericDescription": "Use telemetry responsibly; communicate data collection; turn metrics into design insight; distinguish useful instrumentation from surveillance.",
+  "specificDescription": "Build a game that collects local or simulated analytics such as deaths, retries, choices, fail locations, input errors, retention time, or settings changes. Include consent language, an event schema, a dashboard or report view, and an explanation of what the data suggests.",
+  "gradingRubric": "30 pts ethical data handling; 20 pts useful analytics/schema; 20 pts design insight; 15 pts transparency; 15 pts documentation.",
+  "localPath": "projects/GDV631/P03/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

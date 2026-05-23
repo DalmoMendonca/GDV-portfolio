@@ -1,0 +1,16 @@
+{
+  "id": "GDV632-P04",
+  "courseCode": "GDV632",
+  "courseTitle": "Portfolio Capstone: Experimental Production Arcade",
+  "projectNumber": "P04",
+  "title": "Systems Elegance Game",
+  "repoName": "GDV632-P04-systems-elegance-game",
+  "status": "placeholder",
+  "genericDescription": "Achieve depth from few rules; tune interactions; communicate emergent possibilities.",
+  "specificDescription": "Build a game with no more than five core rules, but at least three emergent strategies or interactions. Include a strategy note based on playtesters' discoveries.",
+  "gradingRubric": "30 pts systemic depth; 20 pts rule elegance; 20 pts player discovery; 15 pts clarity; 15 pts documentation.",
+  "localPath": "projects/GDV632/P04/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

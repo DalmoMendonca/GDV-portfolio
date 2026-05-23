@@ -1,0 +1,16 @@
+{
+  "id": "GDV621-P01",
+  "courseCode": "GDV621",
+  "courseTitle": "Advanced AI, Simulation, and Procedural Systems",
+  "projectNumber": "P01",
+  "title": "Steering Behavior Game",
+  "repoName": "GDV621-P01-steering-behavior-game",
+  "status": "placeholder",
+  "genericDescription": "Implement seek, flee, arrive, wander, flock, or path following; tune agent motion; expose behavior through play.",
+  "specificDescription": "Build a game where the main challenge involves steering agents. Include at least three steering behaviors and a debug overlay showing target vectors or current behavior.",
+  "gradingRubric": "30 pts steering implementation; 20 pts gameplay use; 20 pts tuning and readability; 15 pts debug overlay; 15 pts documentation.",
+  "localPath": "projects/GDV621/P01/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

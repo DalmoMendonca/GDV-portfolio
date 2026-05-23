@@ -1,0 +1,16 @@
+{
+  "id": "GDV511-P10",
+  "courseCode": "GDV511",
+  "courseTitle": "Level Design, Spaces, and Encounter Craft",
+  "projectNumber": "P10",
+  "title": "Level Design Portfolio Piece",
+  "repoName": "GDV511-P10-level-design-portfolio-piece",
+  "status": "placeholder",
+  "genericDescription": "Present level design professionally; document intent and iteration; produce a shippable small level.",
+  "specificDescription": "Build a polished level for an existing prototype or your own controller. Submit the playable build, annotated map, beat chart, and one-page postmortem.",
+  "gradingRubric": "30 pts level quality; 20 pts professional documentation; 20 pts polish and playability; 15 pts iteration evidence; 15 pts portfolio presentation.",
+  "localPath": "projects/GDV511/P10/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

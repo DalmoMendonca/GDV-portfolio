@@ -1,0 +1,16 @@
+{
+  "id": "GDV501-P09",
+  "courseCode": "GDV501",
+  "courseTitle": "Game Systems, Loops, and Player Experience",
+  "projectNumber": "P09",
+  "title": "Emergent Toy to Game Conversion",
+  "repoName": "GDV501-P09-emergent-toy-to-game-conversion",
+  "status": "placeholder",
+  "genericDescription": "Differentiate toy, puzzle, and game; discover affordances through experimentation; add goals without killing expressive play.",
+  "specificDescription": "First build a toy-like interaction system, then add goals, constraints, and feedback to turn it into a game. Submit the final game and a short captured comparison of the toy state and game state.",
+  "gradingRubric": "25 pts expressive interaction; 25 pts successful goal/rule conversion; 20 pts player freedom retained; 15 pts presentation of before/after; 15 pts notes.",
+  "localPath": "projects/GDV501/P09/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

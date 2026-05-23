@@ -1,0 +1,16 @@
+{
+  "id": "GDV621-P06",
+  "courseCode": "GDV621",
+  "courseTitle": "Advanced AI, Simulation, and Procedural Systems",
+  "projectNumber": "P06",
+  "title": "Grammar-Based Content Game",
+  "repoName": "GDV621-P06-grammar-based-content-game",
+  "status": "placeholder",
+  "genericDescription": "Use formal grammars or templates; generate coherent content; constrain combinatorial output.",
+  "specificDescription": "Build a game that generates rooms, quests, dialogue, cards, levels, puzzles, or encounters from grammar rules. Include at least 20 possible outputs and a way to inspect generated structure.",
+  "gradingRubric": "30 pts grammar/system design; 20 pts content coherence; 20 pts gameplay integration; 15 pts inspection tool; 15 pts reflection.",
+  "localPath": "projects/GDV621/P06/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

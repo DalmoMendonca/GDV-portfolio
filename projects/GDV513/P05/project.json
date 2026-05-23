@@ -1,0 +1,16 @@
+{
+  "id": "GDV513-P05",
+  "courseCode": "GDV513",
+  "courseTitle": "Track Studio I: Methods and Media",
+  "projectNumber": "P05",
+  "title": "Rule Translation Game",
+  "repoName": "GDV513-P05-rule-translation-game",
+  "status": "placeholder",
+  "genericDescription": "Translate rules from another domain into play; preserve conceptual integrity; identify what changes during translation.",
+  "specificDescription": "Adapt a scholarly method, artistic constraint, or AI process into a playable rule set. Include a short \"translation key\" showing how original terms map to mechanics.",
+  "gradingRubric": "30 pts quality of rule translation; 20 pts playable depth; 20 pts track relevance; 15 pts translation key; 15 pts reflection.",
+  "localPath": "projects/GDV513/P05/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

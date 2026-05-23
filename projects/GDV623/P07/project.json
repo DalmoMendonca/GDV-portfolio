@@ -1,0 +1,16 @@
+{
+  "id": "GDV623-P07",
+  "courseCode": "GDV623",
+  "courseTitle": "Track Studio II: Advanced Authorship",
+  "projectNumber": "P07",
+  "title": "System Critique Game",
+  "repoName": "GDV623-P07-system-critique-game",
+  "status": "placeholder",
+  "genericDescription": "Represent institutions, platforms, markets, archives, art worlds, or AI systems as playable systems; reveal incentives; avoid simplistic villain design.",
+  "specificDescription": "Build a game that critiques a system through rules and feedback loops. Include at least three stakeholder roles or forces that interact.",
+  "gradingRubric": "30 pts systemic critique; 20 pts stakeholder modeling; 20 pts playability; 15 pts nuance; 15 pts documentation.",
+  "localPath": "projects/GDV623/P07/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

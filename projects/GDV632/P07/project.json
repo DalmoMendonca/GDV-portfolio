@@ -1,0 +1,16 @@
+{
+  "id": "GDV632-P07",
+  "courseCode": "GDV632",
+  "courseTitle": "Portfolio Capstone: Experimental Production Arcade",
+  "projectNumber": "P07",
+  "title": "Emotional Arc Game",
+  "repoName": "GDV632-P07-emotional-arc-game",
+  "status": "placeholder",
+  "genericDescription": "Shape emotion across beginning, middle, and end; use mechanics and pacing rather than exposition alone; test audience response.",
+  "specificDescription": "Build a 5 to 10 minute game with a deliberate emotional arc. Include a beat map showing how mechanics, audio, visuals, and stakes change over time.",
+  "gradingRubric": "30 pts emotional pacing; 20 pts mechanic-theme connection; 20 pts complete arc; 15 pts beat map; 15 pts playtest response.",
+  "localPath": "projects/GDV632/P07/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

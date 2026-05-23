@@ -1,0 +1,16 @@
+{
+  "id": "GDV511-P01",
+  "courseCode": "GDV511",
+  "courseTitle": "Level Design, Spaces, and Encounter Craft",
+  "projectNumber": "P01",
+  "title": "Metrics Gym",
+  "repoName": "GDV511-P01-metrics-gym",
+  "status": "placeholder",
+  "genericDescription": "Establish player metrics; build spaces that fit movement; test jump, sightline, cover, and interaction distances.",
+  "specificDescription": "Build a playable metrics gym for one avatar controller. Include labeled test zones for movement, camera, interaction, hazard spacing, and traversal timing, then include a short challenge using those metrics.",
+  "gradingRubric": "30 pts metric accuracy; 20 pts test coverage; 20 pts playable challenge; 15 pts labeling and documentation; 15 pts revision evidence.",
+  "localPath": "projects/GDV511/P01/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

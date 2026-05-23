@@ -1,0 +1,16 @@
+{
+  "id": "GDV631-P04",
+  "courseCode": "GDV631",
+  "courseTitle": "Business, Ethics, Accessibility, and Player Research",
+  "projectNumber": "P04",
+  "title": "Monetization Model Game",
+  "repoName": "GDV631-P04-monetization-model-game",
+  "status": "placeholder",
+  "genericDescription": "Evaluate monetization's effect on design; distinguish fair value from manipulation; prototype a business model without exploiting players.",
+  "specificDescription": "Build a game that simulates premium, subscription, cosmetic, expansion, donation, educational licensing, or free-to-play economics. No real purchases are allowed. Include a monetization ethics note.",
+  "gradingRubric": "30 pts model-design alignment; 20 pts ethical restraint; 20 pts economic clarity; 15 pts player communication; 15 pts reflection.",
+  "localPath": "projects/GDV631/P04/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

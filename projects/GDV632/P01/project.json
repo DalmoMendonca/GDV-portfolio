@@ -1,0 +1,16 @@
+{
+  "id": "GDV632-P01",
+  "courseCode": "GDV632",
+  "courseTitle": "Portfolio Capstone: Experimental Production Arcade",
+  "projectNumber": "P01",
+  "title": "Signature Mechanic Game",
+  "repoName": "GDV632-P01-signature-mechanic-game",
+  "status": "placeholder",
+  "genericDescription": "Identify a personal design strength; build around one memorable mechanic; present it cleanly.",
+  "specificDescription": "Build a game whose appeal depends on one signature mechanic that can be understood in a short clip. Include a GIF or short capture for portfolio use.",
+  "gradingRubric": "30 pts mechanic originality and clarity; 20 pts execution; 20 pts polish; 15 pts portfolio capture; 15 pts reflection.",
+  "localPath": "projects/GDV632/P01/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

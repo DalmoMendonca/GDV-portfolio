@@ -1,0 +1,16 @@
+{
+  "id": "GDV502-P10",
+  "courseCode": "GDV502",
+  "courseTitle": "Gameplay Programming and Rapid Tools",
+  "projectNumber": "P10",
+  "title": "Modular Prototype Kit Game",
+  "repoName": "GDV502-P10-modular-prototype-kit-game",
+  "status": "placeholder",
+  "genericDescription": "Create reusable gameplay modules; document APIs for future self and teammates; assemble a complete game from components.",
+  "specificDescription": "Build a small game using at least five reusable components such as health, inventory, interactable, timer, spawner, dialogue trigger, or ability module. Include a sample scene demonstrating each component.",
+  "gradingRubric": "30 pts modularity; 20 pts complete final game; 20 pts component demo scene; 15 pts documentation; 15 pts maintainable code.",
+  "localPath": "projects/GDV502/P10/",
+  "gameUrl": "",
+  "githubUrl": "",
+  "netlifyUrl": ""
+}

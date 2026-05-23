@@ -16,9 +16,9 @@ export const courses = [
         "specificDescription": "Build a game controlled by one button only. The player must learn a timing rule, fail safely, and improve within three attempts. Include three difficulty tiers and visual/audio feedback for early, perfect, and late input.",
         "rubric": "30 pts timing design and fairness; 20 pts clarity of feedback; 20 pts complete playable states; 15 pts tuning evidence from playtests; 15 pts designer's note and accessibility.",
         "localPath": "projects/GDV501/P01/",
-        "gameUrl": "./projects/GDV501/P01/index.html",
+        "gameUrl": "https://gdv501-p01-chrono-aperture.netlify.app",
         "githubUrl": "https://github.com/DalmoMendonca/GDV501-P01-one-button-timing-game",
-        "netlifyUrl": ""
+        "netlifyUrl": "https://gdv501-p01-chrono-aperture.netlify.app"
       },
       {
         "id": "GDV501-P02",

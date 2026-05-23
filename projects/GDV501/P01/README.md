@@ -54,6 +54,6 @@ npm run build
 ## Links
 
 - Local project path: projects/GDV501/P01
-- Public game URL: TBD after Netlify deploy
+- Public game URL: https://gdv501-p01-chrono-aperture.netlify.app
 - GitHub repository: https://github.com/DalmoMendonca/GDV501-P01-one-button-timing-game
-- Netlify deploy: TBD
+- Netlify deploy: https://gdv501-p01-chrono-aperture.netlify.app

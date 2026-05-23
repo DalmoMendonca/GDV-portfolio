@@ -17,7 +17,7 @@ export const courses = [
         "rubric": "30 pts timing design and fairness; 20 pts clarity of feedback; 20 pts complete playable states; 15 pts tuning evidence from playtests; 15 pts designer's note and accessibility.",
         "localPath": "projects/GDV501/P01/",
         "gameUrl": "./projects/GDV501/P01/index.html",
-        "githubUrl": "",
+        "githubUrl": "https://github.com/DalmoMendonca/GDV501-P01-one-button-timing-game",
         "netlifyUrl": ""
       },
       {

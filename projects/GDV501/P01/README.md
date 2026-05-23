@@ -55,5 +55,5 @@ npm run build
 
 - Local project path: projects/GDV501/P01
 - Public game URL: TBD after Netlify deploy
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/GDV501-P01-one-button-timing-game
 - Netlify deploy: TBD

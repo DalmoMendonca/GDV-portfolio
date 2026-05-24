@@ -3,14 +3,14 @@
   "courseCode": "GDV502",
   "courseTitle": "Gameplay Programming and Rapid Tools",
   "projectNumber": "P10",
-  "title": "Modular Prototype Kit Game",
+  "title": "Pocket Prototype Kit",
   "repoName": "games-portfolio/projects/GDV502/P10",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Create reusable gameplay modules; document APIs for future self and teammates; assemble a complete game from components.",
-  "specificDescription": "Build a small game using at least five reusable components such as health, inventory, interactable, timer, spawner, dialogue trigger, or ability module. Include a sample scene demonstrating each component.",
+  "specificDescription": "A small adventure assembled from reusable health, inventory, interactable, timer, spawner, dialogue, and ability components. A side panel shows each component firing.",
   "gradingRubric": "30 pts modularity; 20 pts complete final game; 20 pts component demo scene; 15 pts documentation; 15 pts maintainable code.",
   "localPath": "projects/GDV502/P10/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv502-p10-pocket-prototype-kit.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P10",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv502-p10-pocket-prototype-kit.netlify.app"
 }

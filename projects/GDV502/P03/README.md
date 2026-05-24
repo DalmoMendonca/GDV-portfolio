@@ -1,10 +1,8 @@
-# GDV502-P03: Data-Driven Wave Game
+# GDV502-P03: Kite Parade
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
 Public repository target: games-portfolio/projects/GDV502/P03
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
 
 ## Generic Description
 
@@ -12,22 +10,23 @@ Store gameplay parameters outside core logic; build content from structured data
 
 ## Specific Execution
 
-Build a survival, rhythm, tower defense, or encounter game where waves, enemies, items, or events are loaded from JSON, CSV, scriptable objects, resources, or equivalent data assets. Include at least six authored waves.
+A data-driven survival parade. Six authored waves are loaded from `waves.json`; each wave changes kite speed, pattern, density, and reward timing.
 
 ## Grading Rubric
 
 30 pts data-driven architecture; 20 pts content variety; 20 pts balancing and pacing; 15 pts designer usability; 15 pts documentation.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Arrows/WASD move, Space gust, R restart
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 

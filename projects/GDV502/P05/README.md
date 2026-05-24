@@ -1,10 +1,8 @@
-# GDV502-P05: Tool-Assisted Level Builder
+# GDV502-P05: Tile Tea House
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
 Public repository target: games-portfolio/projects/GDV502/P05
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
 
 ## Generic Description
 
@@ -12,22 +10,23 @@ Build internal tools; represent levels as editable data; separate authoring from
 
 ## Specific Execution
 
-Build a small game plus a level editing tool, in-engine editor workflow, or external data workflow. Submit three levels made with the tool and a one-page tool guide for another designer.
+A tiny level-builder and playable puzzle in one. Edit tea-house tiles, test the route, save a level code, and load three provided designer samples.
 
 ## Grading Rubric
 
 30 pts tool usefulness; 20 pts runtime integration; 20 pts quality of authored levels; 15 pts usability of guide; 15 pts maintainability.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Click edit tiles, T test/edit, 1-3 samples, S save code
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 

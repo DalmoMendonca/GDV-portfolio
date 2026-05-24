@@ -1,10 +1,8 @@
-# GDV502-P07: Input Remapping Game
+# GDV502-P07: Compass Courier
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
 Public repository target: games-portfolio/projects/GDV502/P07
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
 
 ## Generic Description
 
@@ -12,22 +10,23 @@ Support multiple input devices; abstract actions from hardware; improve accessib
 
 ## Specific Execution
 
-Build a game playable with keyboard and at least one additional input mode such as gamepad, mouse-only, touch, or adaptive simplified controls. Include an input settings screen or clearly documented remapping path.
+A delivery microgame with keyboard, mouse-click movement, touch support, and an in-game remapping panel for dash/interact actions.
 
 ## Grading Rubric
 
 30 pts input abstraction; 20 pts device support; 20 pts settings usability; 15 pts accessible design choices; 15 pts test report.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Arrows/WASD or click/touch move, K remap dash, L remap interact
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 

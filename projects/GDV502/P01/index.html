@@ -1,52 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GDV502 P01 - State Machine Arcade Game</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <main id="game-container">
-    <header class="game-header">
-      <h1>Neon Evade</h1>
-      <p id="stateDesc">Current State: MENU</p>
-    </header>
-
-    <div class="canvas-wrapper">
-      <canvas id="gameCanvas" width="600" height="400"></canvas>
-      
-      <!-- UI Overlays for States -->
-      <div id="uiMenu" class="overlay">
-        <h2>Neon Evade</h2>
-        <p>Avoid the red squares. Survive as long as possible.</p>
-        <button id="btnStart" class="btn primary mt-4">Start Game</button>
-      </div>
-      
-      <div id="uiCountdown" class="overlay hidden bg-transparent">
-        <h2 id="countdownText" class="huge-text">3</h2>
-      </div>
-      
-      <div id="uiPause" class="overlay hidden">
-        <h2>Paused</h2>
-        <button id="btnResume" class="btn primary mt-4">Resume</button>
-        <button id="btnQuit" class="btn secondary mt-2">Quit to Menu</button>
-      </div>
-      
-      <div id="uiResults" class="overlay hidden">
-        <h2>Game Over</h2>
-        <p>You survived for <span id="finalTime" class="highlight">0.0</span> seconds.</p>
-        <button id="btnRestart" class="btn primary mt-4">Play Again</button>
-        <button id="btnMenu" class="btn secondary mt-2">Main Menu</button>
-      </div>
-    </div>
-    
-    <p class="instruction">Controls: <kbd>Mouse</kbd> to move, <kbd>ESC</kbd> to pause.</p>
-  </main>
-  
-  <script type="module" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="State Garden: A cheerful orchard arcade game with menu, countdown, play, pause, game-over, and results states. A visible state rail and debug log prove every transition." />
+    <title>GDV502-P01 State Garden</title>
+  </head>
+  <body>
+    <main class="shell">
+      <canvas id="game" width="1120" height="700" aria-label="State Garden playable game canvas"></canvas>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>

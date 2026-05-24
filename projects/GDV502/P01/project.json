@@ -3,14 +3,14 @@
   "courseCode": "GDV502",
   "courseTitle": "Gameplay Programming and Rapid Tools",
   "projectNumber": "P01",
-  "title": "State Machine Arcade Game",
+  "title": "State Garden",
   "repoName": "games-portfolio/projects/GDV502/P01",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Implement explicit game states; separate input, update, and rendering concerns; handle transitions reliably.",
-  "specificDescription": "Build an arcade game with menu, countdown, play, pause, game over, and results states. State transitions must be visible in code and testable through a debug key or menu.",
+  "specificDescription": "A cheerful orchard arcade game with menu, countdown, play, pause, game-over, and results states. A visible state rail and debug log prove every transition.",
   "gradingRubric": "30 pts state architecture; 20 pts gameplay completeness; 20 pts transition reliability; 15 pts code readability; 15 pts debug/test documentation.",
   "localPath": "projects/GDV502/P01/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv502-p01-state-garden.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P01",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv502-p01-state-garden.netlify.app"
 }

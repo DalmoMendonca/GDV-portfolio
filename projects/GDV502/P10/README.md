@@ -1,10 +1,8 @@
-# GDV502-P10: Modular Prototype Kit Game
+# GDV502-P10: Pocket Prototype Kit
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
 Public repository target: games-portfolio/projects/GDV502/P10
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
 
 ## Generic Description
 
@@ -12,22 +10,23 @@ Create reusable gameplay modules; document APIs for future self and teammates; a
 
 ## Specific Execution
 
-Build a small game using at least five reusable components such as health, inventory, interactable, timer, spawner, dialogue trigger, or ability module. Include a sample scene demonstrating each component.
+A small adventure assembled from reusable health, inventory, interactable, timer, spawner, dialogue, and ability components. A side panel shows each component firing.
 
 ## Grading Rubric
 
 30 pts modularity; 20 pts complete final game; 20 pts component demo scene; 15 pts documentation; 15 pts maintainable code.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Arrows/WASD move, E interact, Space ability
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 

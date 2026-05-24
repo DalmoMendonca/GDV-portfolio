@@ -3,14 +3,14 @@
   "courseCode": "GDV502",
   "courseTitle": "Gameplay Programming and Rapid Tools",
   "projectNumber": "P06",
-  "title": "Procedural Spawner Game",
+  "title": "Seedfall",
   "repoName": "games-portfolio/projects/GDV502/P06",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Use randomization responsibly; constrain probability; support replayability without unfairness.",
-  "specificDescription": "Build a game that generates enemies, pickups, rooms, or challenges at runtime. Include seed support or a replay code so the same generated session can be reproduced.",
+  "specificDescription": "A seeded procedural orchard run. Hazards, fruit, wind lanes, and exit placement are generated from a replay code with fairness constraints.",
   "gradingRubric": "30 pts procedural logic; 20 pts fairness constraints; 20 pts replayability; 15 pts seed/reproduction support; 15 pts notes.",
   "localPath": "projects/GDV502/P06/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv502-p06-seedfall.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P06",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv502-p06-seedfall.netlify.app"
 }

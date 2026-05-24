@@ -1,46 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GDV502 P06 - Procedural Spawner Game</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <main id="game-container">
-    <header class="game-header">
-      <h1>Seeded Sector</h1>
-      <p>Navigate the procedural asteroid field.</p>
-    </header>
-
-    <div class="hud">
-      <div class="stat-box">
-        <label>Current Seed</label>
-        <div class="seed-input-group">
-          <input type="text" id="seedInput" value="ALPHA">
-          <button id="btnRestart" class="btn outline small">Restart with Seed</button>
-        </div>
-      </div>
-      <div class="score-display">Score: <span id="scoreVal">0</span></div>
-    </div>
-
-    <div class="canvas-wrapper">
-      <canvas id="gameCanvas" width="600" height="400"></canvas>
-      <div id="overlay" class="overlay hidden">
-        <h2 class="danger-text">Hull Breach!</h2>
-        <p>Final Score: <span id="finalScore" class="highlight">0</span></p>
-        <p>Seed played: <span id="finalSeed"></span></p>
-        <button id="btnTryAgain" class="btn primary mt-4">Try Same Seed</button>
-        <button id="btnNewSeed" class="btn secondary mt-2">Generate New Seed</button>
-      </div>
-    </div>
-    
-    <p class="instruction">Controls: <kbd>W</kbd> / <kbd>S</kbd> to move up/down. Collect green crystals, avoid red asteroids.</p>
-  </main>
-  
-  <script type="module" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Seedfall: A seeded procedural orchard run. Hazards, fruit, wind lanes, and exit placement are generated from a replay code with fairness constraints." />
+    <title>GDV502-P06 Seedfall</title>
+  </head>
+  <body>
+    <main class="shell">
+      <canvas id="game" width="1120" height="700" aria-label="Seedfall playable game canvas"></canvas>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>

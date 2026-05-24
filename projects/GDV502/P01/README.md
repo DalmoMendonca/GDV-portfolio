@@ -1,10 +1,8 @@
-# GDV502-P01: State Machine Arcade Game
+# GDV502-P01: State Garden
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
 Public repository target: games-portfolio/projects/GDV502/P01
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
 
 ## Generic Description
 
@@ -12,22 +10,23 @@ Implement explicit game states; separate input, update, and rendering concerns; 
 
 ## Specific Execution
 
-Build an arcade game with menu, countdown, play, pause, game over, and results states. State transitions must be visible in code and testable through a debug key or menu.
+A cheerful orchard arcade game with menu, countdown, play, pause, game-over, and results states. A visible state rail and debug log prove every transition.
 
 ## Grading Rubric
 
 30 pts state architecture; 20 pts gameplay completeness; 20 pts transition reliability; 15 pts code readability; 15 pts debug/test documentation.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Space start/dash, arrows/WASD move, P pause, D debug
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 

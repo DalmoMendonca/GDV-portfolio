@@ -1,10 +1,8 @@
-# GDV502-P09: Performance Budget Game
+# GDV502-P09: Petal Budget
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
 Public repository target: games-portfolio/projects/GDV502/P09
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
 
 ## Generic Description
 
@@ -12,22 +10,23 @@ Profile runtime performance; identify bottlenecks; optimize without removing cor
 
 ## Specific Execution
 
-Build a game with many objects, effects, or simulation elements, then profile and optimize it to meet an agreed frame-rate budget. Submit before/after measurements.
+A swarm game that visualizes object budget, pooling, and frame cost. Toggle optimized mode and compare the measured budget while still playing.
 
 ## Grading Rubric
 
 30 pts profiling method; 20 pts successful optimization; 20 pts preserved gameplay; 15 pts measurement clarity; 15 pts code quality.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Mouse/touch steer, O optimized mode, Space burst
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 

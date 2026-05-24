@@ -3,14 +3,14 @@
   "courseCode": "GDV502",
   "courseTitle": "Gameplay Programming and Rapid Tools",
   "projectNumber": "P03",
-  "title": "Data-Driven Wave Game",
+  "title": "Kite Parade",
   "repoName": "games-portfolio/projects/GDV502/P03",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Store gameplay parameters outside core logic; build content from structured data; enable rapid balancing.",
-  "specificDescription": "Build a survival, rhythm, tower defense, or encounter game where waves, enemies, items, or events are loaded from JSON, CSV, scriptable objects, resources, or equivalent data assets. Include at least six authored waves.",
+  "specificDescription": "A data-driven survival parade. Six authored waves are loaded from `waves.json`; each wave changes kite speed, pattern, density, and reward timing.",
   "gradingRubric": "30 pts data-driven architecture; 20 pts content variety; 20 pts balancing and pacing; 15 pts designer usability; 15 pts documentation.",
   "localPath": "projects/GDV502/P03/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv502-p03-kite-parade.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P03",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv502-p03-kite-parade.netlify.app"
 }

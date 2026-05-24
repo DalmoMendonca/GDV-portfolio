@@ -1,10 +1,8 @@
-# GDV502-P04: Save, Load, and Persistence Game
+# GDV502-P04: Lantern Atlas
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
 Public repository target: games-portfolio/projects/GDV502/P04
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
 
 ## Generic Description
 
@@ -12,22 +10,23 @@ Implement persistence safely; decide what game state matters; communicate saved 
 
 ## Specific Execution
 
-Build a game with progress that survives restart. Save at least player position/progression, unlocked content, settings, and score/history. Include reset and corrupt-save fallback behavior.
+A stamp-collecting exploration game that saves position, collected lantern stamps, settings, and best route. It includes reset and corrupt-save fallback behavior.
 
 ## Grading Rubric
 
 30 pts persistence correctness; 20 pts player-facing save clarity; 20 pts reset/fallback handling; 15 pts testing evidence; 15 pts code organization.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Arrows/WASD move, C contrast, X corrupt-save test, Backspace reset
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 

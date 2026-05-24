@@ -3,14 +3,14 @@
   "courseCode": "GDV502",
   "courseTitle": "Gameplay Programming and Rapid Tools",
   "projectNumber": "P08",
-  "title": "Behavior Tree or Utility AI Game",
+  "title": "Moth Conservatory",
   "repoName": "games-portfolio/projects/GDV502/P08",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Implement structured non-player behavior; debug decision logic; create enemies or companions that signal intent.",
-  "specificDescription": "Build a game with at least two AI actors using a behavior tree, utility scoring, finite-state machine with clear hierarchy, or equivalent architecture. Include a debug display of current decisions.",
+  "specificDescription": "Two behavior-tree moths forage, investigate bells, flee bright lamps, and assist each other. Their current decision nodes are drawn live for debugging.",
   "gradingRubric": "30 pts AI architecture; 20 pts gameplay use of AI; 20 pts readable telegraphing; 15 pts debug display; 15 pts code commentary.",
   "localPath": "projects/GDV502/P08/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv502-p08-moth-conservatory.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P08",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv502-p08-moth-conservatory.netlify.app"
 }

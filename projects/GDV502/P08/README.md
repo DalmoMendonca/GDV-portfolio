@@ -1,10 +1,8 @@
-# GDV502-P08: Behavior Tree or Utility AI Game
+# GDV502-P08: Moth Conservatory
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
 Public repository target: games-portfolio/projects/GDV502/P08
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
 
 ## Generic Description
 
@@ -12,22 +10,23 @@ Implement structured non-player behavior; debug decision logic; create enemies o
 
 ## Specific Execution
 
-Build a game with at least two AI actors using a behavior tree, utility scoring, finite-state machine with clear hierarchy, or equivalent architecture. Include a debug display of current decisions.
+Two behavior-tree moths forage, investigate bells, flee bright lamps, and assist each other. Their current decision nodes are drawn live for debugging.
 
 ## Grading Rubric
 
 30 pts AI architecture; 20 pts gameplay use of AI; 20 pts readable telegraphing; 15 pts debug display; 15 pts code commentary.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Arrows/WASD move, Space ring bell, F toggle lamp
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 

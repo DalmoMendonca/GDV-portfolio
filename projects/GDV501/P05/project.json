@@ -3,14 +3,13 @@
   "courseCode": "GDV501",
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P05",
-  "title": "Movement Verb Game",
-  "repoName": "GDV501-P05-movement-verb-game",
-  "status": "placeholder",
+  "title": "Kinetic Serif",
+  "repoName": "GDV501-P05-kinetic-serif",
+  "status": "implemented",
   "genericDescription": "Make movement itself the primary mechanic; shape challenge through spatial affordances; tune acceleration, friction, jump, dash, glide, or equivalent properties.",
-  "specificDescription": "Build a game with one distinctive movement verb and five short challenge rooms. The game must be completable without combat, inventory, or score as the main attraction.",
-  "gradingRubric": "35 pts movement feel and consistency; 20 pts level use of the verb; 15 pts readable hazards and goals; 15 pts completion polish; 15 pts iteration evidence.",
+  "specificDescription": "Cross five compact rooms using one expressive movement verb: hold to charge, release to dash. Hazards, gates, and landing lanes teach control without combat or inventory.",
   "localPath": "projects/GDV501/P05/",
-  "gameUrl": "",
-  "githubUrl": "",
-  "netlifyUrl": ""
+  "gameUrl": "https://gdv501-p05-kinetic-serif.netlify.app",
+  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P05-kinetic-serif",
+  "netlifyUrl": "https://gdv501-p05-kinetic-serif.netlify.app"
 }

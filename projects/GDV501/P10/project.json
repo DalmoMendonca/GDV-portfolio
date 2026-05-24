@@ -3,14 +3,13 @@
   "courseCode": "GDV501",
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P10",
-  "title": "Ten-Minute Festival Game",
-  "repoName": "GDV501-P10-ten-minute-festival-game",
-  "status": "placeholder",
+  "title": "Festival Signal",
+  "repoName": "GDV501-P10-festival-signal",
+  "status": "implemented",
   "genericDescription": "Scope a complete experience for public play; create immediate onboarding; design for spectators and fast turnover.",
-  "specificDescription": "Build a polished game intended for a classroom festival station. A new player must understand the goal in 30 seconds and finish or restart within 10 minutes. Include a public-facing project page.",
-  "gradingRubric": "30 pts onboarding and accessibility; 25 pts complete festival-ready play; 20 pts system clarity and engagement; 15 pts polish; 10 pts public page and reflection.",
+  "specificDescription": "Rotate signal mirrors to route light through three gates before the festival clock expires. The board is readable from a distance and can be completed or restarted in under ten minutes.",
   "localPath": "projects/GDV501/P10/",
-  "gameUrl": "",
-  "githubUrl": "",
-  "netlifyUrl": ""
+  "gameUrl": "https://gdv501-p10-festival-signal.netlify.app",
+  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P10-festival-signal",
+  "netlifyUrl": "https://gdv501-p10-festival-signal.netlify.app"
 }

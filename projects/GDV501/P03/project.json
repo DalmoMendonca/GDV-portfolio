@@ -3,14 +3,13 @@
   "courseCode": "GDV501",
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P03",
-  "title": "Resource Conversion Puzzle",
-  "repoName": "GDV501-P03-resource-conversion-puzzle",
-  "status": "placeholder",
+  "title": "Alchemist's Ledger",
+  "repoName": "GDV501-P03-alchemists-ledger",
+  "status": "implemented",
   "genericDescription": "Design resources as verbs; create puzzle constraints from conversion rules; teach through level sequence.",
-  "specificDescription": "Build a puzzle game with at least three resource types and two conversion actions. Include five authored levels that introduce, combine, and test the rules without a tutorial paragraph.",
-  "gradingRubric": "30 pts resource economy clarity; 25 pts puzzle progression; 15 pts interface readability; 15 pts bug-free completion path; 15 pts reflection and test notes.",
+  "specificDescription": "Use three resource types and two conversion actions across five authored levels. The sequence introduces conversion, scarcity, and goal checking without a tutorial paragraph.",
   "localPath": "projects/GDV501/P03/",
-  "gameUrl": "",
-  "githubUrl": "",
-  "netlifyUrl": ""
+  "gameUrl": "https://gdv501-p03-alchemists-ledger.netlify.app",
+  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P03-alchemists-ledger",
+  "netlifyUrl": "https://gdv501-p03-alchemists-ledger.netlify.app"
 }

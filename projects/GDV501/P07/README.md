@@ -1,10 +1,8 @@
-# GDV501-P07: Cooperative Constraint Game
+# GDV501-P07: Twin Lock Study
 
 Course: GDV 501 - Game Systems, Loops, and Player Experience
 
-Public repository target: GDV501-P07-cooperative-constraint-game
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
+Public repository target: GDV501-P07-twin-lock-study
 
 ## Generic Description
 
@@ -12,26 +10,26 @@ Design cooperation through asymmetric limits; create communication pressure; eva
 
 ## Specific Execution
 
-Build a two-player local game or single-player game controlling two entities. Each role must have a unique limitation and a unique power. Include at least four encounters that require coordination.
+Control two linked roles in four encounters. The heavy role anchors switches and blocks beams; the light role crosses gaps and collects keys. Either role alone is insufficient.
 
-## Grading Rubric
+## Design Standard
 
-30 pts cooperative dependency; 20 pts role asymmetry; 20 pts encounter progression; 15 pts input and camera usability; 15 pts documentation.
+This project is part of the GDV501 First Principles Arcade. It is built as a finished portfolio artifact: playable start and end states, readable controls, deterministic test hooks, responsive canvas presentation, accessibility basics, and Netlify-ready deployment.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Tab switches roles, arrows/WASD move, Space uses role power
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 
-- Local project path: projects/GDV501/P07
-- Public game URL: TBD
-- GitHub repository: TBD
-- Netlify deploy: TBD
+- Public game URL: https://gdv501-p07-twin-lock-study.netlify.app
+- GitHub repository: https://github.com/DalmoMendonca/GDV501-P07-twin-lock-study
+- Netlify deploy: https://gdv501-p07-twin-lock-study.netlify.app

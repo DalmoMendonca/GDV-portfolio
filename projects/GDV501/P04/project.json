@@ -3,14 +3,13 @@
   "courseCode": "GDV501",
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P04",
-  "title": "Hidden Information Bluffing Game",
-  "repoName": "GDV501-P04-hidden-information-bluffing-game",
-  "status": "placeholder",
+  "title": "The Quiet Bid",
+  "repoName": "GDV501-P04-the-quiet-bid",
+  "status": "implemented",
   "genericDescription": "Use uncertainty as a system; create readable tells and counterplay; design AI or local multiplayer decision moments.",
-  "specificDescription": "Build a two-sided game against another player or a simple bot where private information changes the value of choices. Include at least five rounds per match and a match recap showing key reveals.",
-  "gradingRubric": "30 pts hidden-information design; 20 pts counterplay and strategic depth; 20 pts functional opponent or local multiplayer flow; 15 pts match recap clarity; 15 pts documentation.",
+  "specificDescription": "Play five rounds against a readable bot. Probe, feint, or commit based on partial tells. Match recap reveals the hidden values and explains the counterplay.",
   "localPath": "projects/GDV501/P04/",
-  "gameUrl": "",
-  "githubUrl": "",
-  "netlifyUrl": ""
+  "gameUrl": "https://gdv501-p04-the-quiet-bid.netlify.app",
+  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P04-the-quiet-bid",
+  "netlifyUrl": "https://gdv501-p04-the-quiet-bid.netlify.app"
 }

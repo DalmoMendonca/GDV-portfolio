@@ -1,10 +1,8 @@
-# GDV501-P06: Choice Consequence Microgame
+# GDV501-P06: Civic Fault Lines
 
 Course: GDV 501 - Game Systems, Loops, and Player Experience
 
-Public repository target: GDV501-P06-choice-consequence-microgame
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
+Public repository target: GDV501-P06-civic-fault-lines
 
 ## Generic Description
 
@@ -12,26 +10,26 @@ Represent consequence in mechanics; distinguish cosmetic choice from systemic ch
 
 ## Specific Execution
 
-Build a 5 to 8 minute game where at least three player decisions change later rules, available actions, or ending conditions. Avoid simple dialogue-only branching unless choices affect play.
+Make three civic decisions. Each changes later costs, available actions, trust, and ending conditions. The final state is a mechanical consequence report, not a simple moral label.
 
-## Grading Rubric
+## Design Standard
 
-30 pts systemic consequences; 20 pts replayable structure; 20 pts clarity of changed state; 15 pts narrative or thematic coherence; 15 pts notes and playtest evidence.
+This project is part of the GDV501 First Principles Arcade. It is built as a finished portfolio artifact: playable start and end states, readable controls, deterministic test hooks, responsive canvas presentation, accessibility basics, and Netlify-ready deployment.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Click one policy at each decision point
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 
-- Local project path: projects/GDV501/P06
-- Public game URL: TBD
-- GitHub repository: TBD
-- Netlify deploy: TBD
+- Public game URL: https://gdv501-p06-civic-fault-lines.netlify.app
+- GitHub repository: https://github.com/DalmoMendonca/GDV501-P06-civic-fault-lines
+- Netlify deploy: https://gdv501-p06-civic-fault-lines.netlify.app

@@ -1,10 +1,8 @@
-# GDV501-P05: Movement Verb Game
+# GDV501-P05: Kinetic Serif
 
 Course: GDV 501 - Game Systems, Loops, and Player Experience
 
-Public repository target: GDV501-P05-movement-verb-game
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
+Public repository target: GDV501-P05-kinetic-serif
 
 ## Generic Description
 
@@ -12,26 +10,26 @@ Make movement itself the primary mechanic; shape challenge through spatial affor
 
 ## Specific Execution
 
-Build a game with one distinctive movement verb and five short challenge rooms. The game must be completable without combat, inventory, or score as the main attraction.
+Cross five compact rooms using one expressive movement verb: hold to charge, release to dash. Hazards, gates, and landing lanes teach control without combat or inventory.
 
-## Grading Rubric
+## Design Standard
 
-35 pts movement feel and consistency; 20 pts level use of the verb; 15 pts readable hazards and goals; 15 pts completion polish; 15 pts iteration evidence.
+This project is part of the GDV501 First Principles Arcade. It is built as a finished portfolio artifact: playable start and end states, readable controls, deterministic test hooks, responsive canvas presentation, accessibility basics, and Netlify-ready deployment.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Arrow keys or WASD to steer, hold/release Space to dash
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 
-- Local project path: projects/GDV501/P05
-- Public game URL: TBD
-- GitHub repository: TBD
-- Netlify deploy: TBD
+- Public game URL: https://gdv501-p05-kinetic-serif.netlify.app
+- GitHub repository: https://github.com/DalmoMendonca/GDV501-P05-kinetic-serif
+- Netlify deploy: https://gdv501-p05-kinetic-serif.netlify.app

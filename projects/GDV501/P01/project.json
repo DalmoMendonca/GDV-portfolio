@@ -4,13 +4,12 @@
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P01",
   "title": "Chrono Aperture",
-  "repoName": "GDV501-P01-one-button-timing-game",
+  "repoName": "GDV501-P01-chrono-aperture",
   "status": "implemented",
   "genericDescription": "Design with extreme input constraint; create readable anticipation, action, and result states; tune difficulty through timing windows.",
-  "specificDescription": "Build a game controlled by one button only. The player must learn a timing rule, fail safely, and improve within three attempts. Include three difficulty tiers and visual/audio feedback for early, perfect, and late input.",
-  "gradingRubric": "30 pts timing design and fairness; 20 pts clarity of feedback; 20 pts complete playable states; 15 pts tuning evidence from playtests; 15 pts designer's note and accessibility.",
+  "specificDescription": "Press once as the moving needle enters the active aperture. Three tiers reduce the perfect window while preserving fair anticipation and clear early, good, perfect, and late feedback.",
   "localPath": "projects/GDV501/P01/",
   "gameUrl": "https://gdv501-p01-chrono-aperture.netlify.app",
-  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P01-one-button-timing-game",
+  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P01-chrono-aperture",
   "netlifyUrl": "https://gdv501-p01-chrono-aperture.netlify.app"
 }

@@ -1,10 +1,8 @@
-# GDV501-P03: Resource Conversion Puzzle
+# GDV501-P03: Alchemist's Ledger
 
 Course: GDV 501 - Game Systems, Loops, and Player Experience
 
-Public repository target: GDV501-P03-resource-conversion-puzzle
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
+Public repository target: GDV501-P03-alchemists-ledger
 
 ## Generic Description
 
@@ -12,26 +10,26 @@ Design resources as verbs; create puzzle constraints from conversion rules; teac
 
 ## Specific Execution
 
-Build a puzzle game with at least three resource types and two conversion actions. Include five authored levels that introduce, combine, and test the rules without a tutorial paragraph.
+Use three resource types and two conversion actions across five authored levels. The sequence introduces conversion, scarcity, and goal checking without a tutorial paragraph.
 
-## Grading Rubric
+## Design Standard
 
-30 pts resource economy clarity; 25 pts puzzle progression; 15 pts interface readability; 15 pts bug-free completion path; 15 pts reflection and test notes.
+This project is part of the GDV501 First Principles Arcade. It is built as a finished portfolio artifact: playable start and end states, readable controls, deterministic test hooks, responsive canvas presentation, accessibility basics, and Netlify-ready deployment.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Click conversion actions, R to reset level
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 
-- Local project path: projects/GDV501/P03
-- Public game URL: TBD
-- GitHub repository: TBD
-- Netlify deploy: TBD
+- Public game URL: https://gdv501-p03-alchemists-ledger.netlify.app
+- GitHub repository: https://github.com/DalmoMendonca/GDV501-P03-alchemists-ledger
+- Netlify deploy: https://gdv501-p03-alchemists-ledger.netlify.app

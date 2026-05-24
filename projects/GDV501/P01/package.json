@@ -1,8 +1,7 @@
 {
-  "name": "GDV501-P01-one-button-timing-game",
+  "name": "gdv501-p01-chrono-aperture",
   "version": "1.0.0",
   "private": true,
-  "description": "A-grade one-button timing game for GDV501 P01.",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
@@ -11,6 +10,5 @@
   },
   "dependencies": {
     "vite": "^7.2.4"
-  },
-  "devDependencies": {}
+  }
 }

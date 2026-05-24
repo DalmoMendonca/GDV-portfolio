@@ -3,14 +3,13 @@
   "courseCode": "GDV501",
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P07",
-  "title": "Cooperative Constraint Game",
-  "repoName": "GDV501-P07-cooperative-constraint-game",
-  "status": "placeholder",
+  "title": "Twin Lock Study",
+  "repoName": "GDV501-P07-twin-lock-study",
+  "status": "implemented",
   "genericDescription": "Design cooperation through asymmetric limits; create communication pressure; evaluate whether cooperation is required or optional.",
-  "specificDescription": "Build a two-player local game or single-player game controlling two entities. Each role must have a unique limitation and a unique power. Include at least four encounters that require coordination.",
-  "gradingRubric": "30 pts cooperative dependency; 20 pts role asymmetry; 20 pts encounter progression; 15 pts input and camera usability; 15 pts documentation.",
+  "specificDescription": "Control two linked roles in four encounters. The heavy role anchors switches and blocks beams; the light role crosses gaps and collects keys. Either role alone is insufficient.",
   "localPath": "projects/GDV501/P07/",
-  "gameUrl": "",
-  "githubUrl": "",
-  "netlifyUrl": ""
+  "gameUrl": "https://gdv501-p07-twin-lock-study.netlify.app",
+  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P07-twin-lock-study",
+  "netlifyUrl": "https://gdv501-p07-twin-lock-study.netlify.app"
 }

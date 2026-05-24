@@ -3,14 +3,13 @@
   "courseCode": "GDV501",
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P06",
-  "title": "Choice Consequence Microgame",
-  "repoName": "GDV501-P06-choice-consequence-microgame",
-  "status": "placeholder",
+  "title": "Civic Fault Lines",
+  "repoName": "GDV501-P06-civic-fault-lines",
+  "status": "implemented",
   "genericDescription": "Represent consequence in mechanics; distinguish cosmetic choice from systemic choice; build replayable branches.",
-  "specificDescription": "Build a 5 to 8 minute game where at least three player decisions change later rules, available actions, or ending conditions. Avoid simple dialogue-only branching unless choices affect play.",
-  "gradingRubric": "30 pts systemic consequences; 20 pts replayable structure; 20 pts clarity of changed state; 15 pts narrative or thematic coherence; 15 pts notes and playtest evidence.",
+  "specificDescription": "Make three civic decisions. Each changes later costs, available actions, trust, and ending conditions. The final state is a mechanical consequence report, not a simple moral label.",
   "localPath": "projects/GDV501/P06/",
-  "gameUrl": "",
-  "githubUrl": "",
-  "netlifyUrl": ""
+  "gameUrl": "https://gdv501-p06-civic-fault-lines.netlify.app",
+  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P06-civic-fault-lines",
+  "netlifyUrl": "https://gdv501-p06-civic-fault-lines.netlify.app"
 }

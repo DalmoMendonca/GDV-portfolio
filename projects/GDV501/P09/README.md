@@ -1,10 +1,8 @@
-# GDV501-P09: Emergent Toy to Game Conversion
+# GDV501-P09: Magnet Toybox
 
 Course: GDV 501 - Game Systems, Loops, and Player Experience
 
-Public repository target: GDV501-P09-emergent-toy-to-game-conversion
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
+Public repository target: GDV501-P09-magnet-toybox
 
 ## Generic Description
 
@@ -12,26 +10,26 @@ Differentiate toy, puzzle, and game; discover affordances through experimentatio
 
 ## Specific Execution
 
-First build a toy-like interaction system, then add goals, constraints, and feedback to turn it into a game. Submit the final game and a short captured comparison of the toy state and game state.
+Pull and push drifting particles with a magnetic cursor, then use the same expressive system to herd luminous motes into scoring rings before time expires.
 
-## Grading Rubric
+## Design Standard
 
-25 pts expressive interaction; 25 pts successful goal/rule conversion; 20 pts player freedom retained; 15 pts presentation of before/after; 15 pts notes.
+This project is part of the GDV501 First Principles Arcade. It is built as a finished portfolio artifact: playable start and end states, readable controls, deterministic test hooks, responsive canvas presentation, accessibility basics, and Netlify-ready deployment.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Move mouse or drag, hold Space/click to attract, Shift to repel
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 
-- Local project path: projects/GDV501/P09
-- Public game URL: TBD
-- GitHub repository: TBD
-- Netlify deploy: TBD
+- Public game URL: https://gdv501-p09-magnet-toybox.netlify.app
+- GitHub repository: https://github.com/DalmoMendonca/GDV501-P09-magnet-toybox
+- Netlify deploy: https://gdv501-p09-magnet-toybox.netlify.app

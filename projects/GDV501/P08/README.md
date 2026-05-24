@@ -1,10 +1,8 @@
-# GDV501-P08: Dynamic Difficulty Game
+# GDV501-P08: Director's Cut
 
 Course: GDV 501 - Game Systems, Loops, and Player Experience
 
-Public repository target: GDV501-P08-dynamic-difficulty-game
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
+Public repository target: GDV501-P08-directors-cut
 
 ## Generic Description
 
@@ -12,26 +10,26 @@ Adapt challenge to player performance; measure player state without being intrus
 
 ## Specific Execution
 
-Build a game that tracks at least two performance signals and modifies challenge during play. Include a debug overlay or post-game report showing what adapted and why.
+Dodge pressure waves while collecting signal marks. The director tracks hits, near misses, and collection rate, then changes spawn density, reward value, and recovery support with a transparent report.
 
-## Grading Rubric
+## Design Standard
 
-30 pts adaptive design logic; 20 pts fairness and transparency; 20 pts implementation reliability; 15 pts player report/debug explanation; 15 pts reflection.
+This project is part of the GDV501 First Principles Arcade. It is built as a finished portfolio artifact: playable start and end states, readable controls, deterministic test hooks, responsive canvas presentation, accessibility basics, and Netlify-ready deployment.
 
-## Expected Deliverables
+## Controls
 
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+Arrow keys or WASD to move
+
+## Build Instructions
+
+```bash
+npm install
+npm run dev
+npm run build
+```
 
 ## Links
 
-- Local project path: projects/GDV501/P08
-- Public game URL: TBD
-- GitHub repository: TBD
-- Netlify deploy: TBD
+- Public game URL: https://gdv501-p08-directors-cut.netlify.app
+- GitHub repository: https://github.com/DalmoMendonca/GDV501-P08-directors-cut
+- Netlify deploy: https://gdv501-p08-directors-cut.netlify.app

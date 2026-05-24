@@ -10,7 +10,7 @@ Design resources as verbs; create puzzle constraints from conversion rules; teac
 
 ## Specific Execution
 
-Use three resource types and two conversion actions across five authored levels. The sequence introduces conversion, scarcity, and goal checking without a tutorial paragraph.
+Use ore, glass, and signal as resources. Each level shows current stock, exact target stock, and the recipe on every action button so the puzzle teaches conversion, scarcity, and reversibility through play.
 
 ## Design Standard
 
@@ -18,7 +18,7 @@ This project is part of the GDV501 First Principles Arcade. It is built as a fin
 
 ## Controls
 
-Click conversion actions, R to reset level
+Click a recipe button. R resets the current ledger.
 
 ## Build Instructions
 

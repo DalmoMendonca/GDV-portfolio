@@ -10,7 +10,7 @@ Scope a complete experience for public play; create immediate onboarding; design
 
 ## Specific Execution
 
-Rotate signal mirrors to route light through three gates before the festival clock expires. The board is readable from a distance and can be completed or restarted in under ten minutes.
+Rotate three large mirrors to match the required public-play signal pattern before time expires. The board shows which gates are lit, which mirror orientation is needed, and how close the route is to a complete clear.
 
 ## Design Standard
 
@@ -18,7 +18,7 @@ This project is part of the GDV501 First Principles Arcade. It is built as a fin
 
 ## Controls
 
-Click mirrors to rotate, R to restart
+Click a mirror to rotate it. R restarts the board.
 
 ## Build Instructions
 

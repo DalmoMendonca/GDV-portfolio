@@ -7,7 +7,7 @@
   "repoName": "GDV501-P10-festival-signal",
   "status": "implemented",
   "genericDescription": "Scope a complete experience for public play; create immediate onboarding; design for spectators and fast turnover.",
-  "specificDescription": "Rotate signal mirrors to route light through three gates before the festival clock expires. The board is readable from a distance and can be completed or restarted in under ten minutes.",
+  "specificDescription": "Rotate three large mirrors to match the required public-play signal pattern before time expires. The board shows which gates are lit, which mirror orientation is needed, and how close the route is to a complete clear.",
   "localPath": "projects/GDV501/P10/",
   "gameUrl": "https://gdv501-p10-festival-signal.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/GDV501-P10-festival-signal",

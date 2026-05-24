@@ -8,3 +8,12 @@ Original prompt: Create and publish all ten GDV501 projects as professional exem
 ## TODO
 
 - Build, test, publish, and update live links.
+
+- Reworked visual direction and onboarding after critique: lighter bespoke palette, clearer controls, and less templated presentation.
+- Rebuilt ledger presentation with explicit recipe buttons and exact current/target resource language.
+
+- Reworked visual direction and onboarding after critique: lighter bespoke palette, clearer controls, and less templated presentation.
+- Rebuilt ledger presentation with explicit recipe buttons and exact current/target resource language.
+
+- Reworked visual direction and onboarding after critique: lighter bespoke palette, clearer controls, and less templated presentation.
+- Rebuilt ledger presentation with explicit recipe buttons and exact current/target resource language.

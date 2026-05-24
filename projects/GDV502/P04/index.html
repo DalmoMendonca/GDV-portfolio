@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDV502 P04 - Save, Load, and Persistence Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="game-container">
+    <header class="game-header">
+      <h1>Persistent Idle Miner</h1>
+      <p>Progress survives refresh. Uses LocalStorage.</p>
+    </header>
+
+    <div class="system-panel">
+      <div class="save-status" id="saveStatus">Status: Loaded successfully</div>
+      <div class="sys-buttons">
+        <button id="btnSave" class="btn sys-btn">Force Save</button>
+        <button id="btnReset" class="btn sys-btn danger">Reset Data</button>
+        <button id="btnCorrupt" class="btn sys-btn danger outline">Corrupt Data (Test)</button>
+      </div>
+    </div>
+
+    <div class="game-area">
+      <div class="stats">
+        <h2>Gold: <span id="goldVal" class="gold-text">0</span></h2>
+        <p>Gold Per Second: <span id="gpsVal">0</span></p>
+        <p>Multiplier: x<span id="multVal">1</span></p>
+      </div>
+
+      <button id="btnMine" class="btn primary huge">MINE GOLD</button>
+
+      <div class="upgrades" id="upgradesContainer">
+        <!-- Upgrades injected via JS -->
+      </div>
+    </div>
+
+  </main>
+  
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

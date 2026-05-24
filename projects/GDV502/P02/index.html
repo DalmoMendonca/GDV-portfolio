@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDV502 P02 - Collision and Physics Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="game-container">
+    <header class="game-header">
+      <h1>Ricochet Room</h1>
+      <p>Drag to aim and launch. Reach the green goal.</p>
+    </header>
+
+    <div class="toolbar">
+      <label class="toggle-switch">
+        <input type="checkbox" id="debugToggle">
+        <span class="slider"></span>
+      </label>
+      <span class="toggle-label">Debug Physics Visualization</span>
+      <div style="flex:1"></div>
+      <button id="btnRestart" class="btn secondary small">Reset Level</button>
+    </div>
+
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="600" height="400"></canvas>
+      <div id="overlay" class="overlay hidden">
+        <h2 id="overlayTitle">Level Cleared!</h2>
+        <button id="nextBtn" class="btn primary mt-4">Next Level</button>
+      </div>
+    </div>
+  </main>
+  
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

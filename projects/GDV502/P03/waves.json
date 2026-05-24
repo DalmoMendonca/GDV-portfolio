@@ -1,0 +1,56 @@
+{
+  "waves": [
+    {
+      "id": 1,
+      "name": "Initial Probe",
+      "spawnInterval": 1.5,
+      "enemies": [
+        {"type": "basic", "count": 5}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Swarm",
+      "spawnInterval": 0.5,
+      "enemies": [
+        {"type": "basic", "count": 10}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Fast Movers",
+      "spawnInterval": 1.0,
+      "enemies": [
+        {"type": "basic", "count": 2},
+        {"type": "fast", "count": 6}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Heavy Assault",
+      "spawnInterval": 2.0,
+      "enemies": [
+        {"type": "tank", "count": 3}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Combined Arms",
+      "spawnInterval": 0.8,
+      "enemies": [
+        {"type": "tank", "count": 2},
+        {"type": "fast", "count": 10}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Final Stand",
+      "spawnInterval": 0.4,
+      "enemies": [
+        {"type": "tank", "count": 5},
+        {"type": "fast", "count": 15},
+        {"type": "basic", "count": 10}
+      ]
+    }
+  ]
+}

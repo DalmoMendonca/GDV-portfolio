@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDV502 P05 - Tool-Assisted Level Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="game-container">
+    <header class="game-header">
+      <h1>Dungeon Maker Tool</h1>
+      <p>Build, test, and export levels seamlessly.</p>
+    </header>
+
+    <div class="tool-layout">
+      <!-- Sidebar Tools -->
+      <aside class="sidebar">
+        <h3>Tools</h3>
+        <div class="tool-group" id="toolSelect">
+          <label><input type="radio" name="tool" value="wall" checked> Wall (Draw)</label>
+          <label><input type="radio" name="tool" value="start"> Set Start</label>
+          <label><input type="radio" name="tool" value="goal"> Set Goal</label>
+          <label><input type="radio" name="tool" value="erase"> Eraser</label>
+        </div>
+        
+        <h3>Actions</h3>
+        <button id="btnPlay" class="btn primary">Play Mode</button>
+        <button id="btnStop" class="btn secondary hidden">Stop Test</button>
+        <button id="btnExport" class="btn outline mt-2">Export JSON</button>
+        <button id="btnClear" class="btn danger outline mt-2">Clear Map</button>
+
+        <h3>Load Authored Levels</h3>
+        <select id="lvlSelect" class="lvl-select mt-2">
+          <option value="1">Level 1: The Hallway</option>
+          <option value="2">Level 2: The Maze</option>
+          <option value="3">Level 3: The Gauntlet</option>
+        </select>
+        <button id="btnLoad" class="btn outline mt-2">Load Level</button>
+      </aside>
+
+      <!-- Canvas Area -->
+      <div class="canvas-area">
+        <canvas id="gameCanvas" width="500" height="400"></canvas>
+        <div id="overlay" class="overlay hidden">
+          <h2 id="overlayTitle">Level Cleared!</h2>
+          <button id="btnOverlayClose" class="btn primary mt-4">Back to Editor</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Export Modal -->
+    <div id="exportModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Level JSON</h3>
+        <textarea id="exportText" rows="6" readonly></textarea>
+        <p class="instruction">Copy this JSON to share your level.</p>
+        <button id="btnCloseModal" class="btn secondary">Close</button>
+      </div>
+    </div>
+
+  </main>
+  
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

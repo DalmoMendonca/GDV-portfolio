@@ -2,7 +2,7 @@
 
 Course: GDV 511 - Level Design, Spaces, and Encounter Craft
 
-Public repository target: GDV511-P02-tutorial-without-text
+Public repository target: games-portfolio/projects/GDV511/P02
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a level that teaches a mechanic without tutorial text, voiceover, or pop-u
 
 - Local project path: projects/GDV511/P02
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P02
 - Netlify deploy: TBD

@@ -2,7 +2,7 @@
 
 Course: GDV 501 - Game Systems, Loops, and Player Experience
 
-Public repository target: GDV501-P02-hazard-dividend
+Public repository target: games-portfolio/projects/GDV501/P02
 
 ## Generic Description
 
@@ -31,5 +31,5 @@ npm run build
 ## Links
 
 - Public game URL: https://gdv501-p02-hazard-dividend.netlify.app
-- GitHub repository: https://github.com/DalmoMendonca/GDV501-P02-hazard-dividend
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV501/P02
 - Netlify deploy: https://gdv501-p02-hazard-dividend.netlify.app

@@ -2,7 +2,7 @@
 
 Course: GDV 511 - Level Design, Spaces, and Encounter Craft
 
-Public repository target: GDV511-P10-level-design-portfolio-piece
+Public repository target: games-portfolio/projects/GDV511/P10
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a polished level for an existing prototype or your own controller. Submit 
 
 - Local project path: projects/GDV511/P10
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P10
 - Netlify deploy: TBD

@@ -2,7 +2,7 @@
 
 Course: GDV 621 - Advanced AI, Simulation, and Procedural Systems
 
-Public repository target: GDV621-P05-adaptive-npc-memory-and-relationship-game
+Public repository target: games-portfolio/projects/GDV621/P05
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game where at least two NPCs remember player actions and change availabl
 
 - Local project path: projects/GDV621/P05
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV621/P05
 - Netlify deploy: TBD

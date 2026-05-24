@@ -4,12 +4,12 @@
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P08",
   "title": "Director's Cut",
-  "repoName": "GDV501-P08-directors-cut",
+  "repoName": "games-portfolio/projects/GDV501/P08",
   "status": "implemented",
   "genericDescription": "Adapt challenge to player performance; measure player state without being intrusive; preserve dignity and agency when assistance is provided.",
   "specificDescription": "Dodge pressure waves while collecting signal marks. The director tracks hits, near misses, and collection rate, then changes spawn density, reward value, and recovery support with a transparent report.",
   "localPath": "projects/GDV501/P08/",
   "gameUrl": "https://gdv501-p08-directors-cut.netlify.app",
-  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P08-directors-cut",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV501/P08",
   "netlifyUrl": "https://gdv501-p08-directors-cut.netlify.app"
 }

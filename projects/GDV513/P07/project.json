@@ -4,13 +4,13 @@
   "courseTitle": "Track Studio I: Methods and Media",
   "projectNumber": "P07",
   "title": "Place-Based Game",
-  "repoName": "GDV513-P07-place-based-game",
+  "repoName": "games-portfolio/projects/GDV513/P07",
   "status": "placeholder",
   "genericDescription": "Represent place through interaction; use spatial design to express social, cultural, aesthetic, or computational meaning; avoid generic backdrops.",
   "specificDescription": "Build a game set in a specific place, real or imagined. The place must shape mechanics, not only visual theme. Include a short context note or artist statement.",
   "gradingRubric": "30 pts place-mechanic connection; 20 pts specificity; 20 pts level/spatial quality; 15 pts track interpretation; 15 pts documentation.",
   "localPath": "projects/GDV513/P07/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P07",
   "netlifyUrl": ""
 }

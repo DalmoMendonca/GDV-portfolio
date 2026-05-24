@@ -4,13 +4,13 @@
   "courseTitle": "Business, Ethics, Accessibility, and Player Research",
   "projectNumber": "P07",
   "title": "Funding Pitch Prototype",
-  "repoName": "GDV631-P07-funding-pitch-prototype",
+  "repoName": "games-portfolio/projects/GDV631/P07",
   "status": "placeholder",
   "genericDescription": "Align prototype with grant, publisher, client, or investor expectations; define scope and budget; communicate risk honestly.",
   "specificDescription": "Build a prototype intended for one funding context. Submit a two-page pitch brief including audience, budget category, timeline, comparable works, and risk.",
   "gradingRubric": "30 pts prototype-pitch alignment; 20 pts business clarity; 20 pts scope realism; 15 pts game quality; 15 pts presentation.",
   "localPath": "projects/GDV631/P07/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV631/P07",
   "netlifyUrl": ""
 }

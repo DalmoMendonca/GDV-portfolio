@@ -2,7 +2,7 @@
 
 Course: GDV 631 - Business, Ethics, Accessibility, and Player Research
 
-Public repository target: GDV631-P05-serious-or-applied-game
+Public repository target: games-portfolio/projects/GDV631/P05
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build an applied game with a measurable non-entertainment objective. Include a l
 
 - Local project path: projects/GDV631/P05
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV631/P05
 - Netlify deploy: TBD

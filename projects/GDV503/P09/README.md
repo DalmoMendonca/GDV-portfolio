@@ -2,7 +2,7 @@
 
 Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
 
-Public repository target: GDV503-P09-accessibility-retrofit-game
+Public repository target: games-portfolio/projects/GDV503/P09
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Start with one previous game or a provided prototype and retrofit at least six a
 
 - Local project path: projects/GDV503/P09
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P09
 - Netlify deploy: TBD

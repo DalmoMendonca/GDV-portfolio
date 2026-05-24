@@ -2,7 +2,7 @@
 
 Course: GDV 513 - Track Studio I: Methods and Media
 
-Public repository target: GDV513-P04-memory-and-reconstruction-game
+Public repository target: games-portfolio/projects/GDV513/P04
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game where players reconstruct an event, place, artwork, dataset, or rel
 
 - Local project path: projects/GDV513/P04
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P04
 - Netlify deploy: TBD

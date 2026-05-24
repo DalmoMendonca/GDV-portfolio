@@ -2,7 +2,7 @@
 
 Course: GDV 512 - Applied Game Mathematics, Technical Art, and Production Pipelines
 
-Public repository target: GDV512-P02-vector-billiards-game
+Public repository target: games-portfolio/projects/GDV512/P02
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a billiards, ricochet shooter, laser puzzle, or pinball-like game where bo
 
 - Local project path: projects/GDV512/P02
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV512/P02
 - Netlify deploy: TBD

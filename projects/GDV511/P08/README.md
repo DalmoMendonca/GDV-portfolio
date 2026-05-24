@@ -2,7 +2,7 @@
 
 Course: GDV 511 - Level Design, Spaces, and Encounter Craft
 
-Public repository target: GDV511-P08-constraint-remix-level
+Public repository target: games-portfolio/projects/GDV511/P08
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game with one core mechanic and five compact levels. Each level must int
 
 - Local project path: projects/GDV511/P08
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P08
 - Netlify deploy: TBD

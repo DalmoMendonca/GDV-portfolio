@@ -4,13 +4,13 @@
   "courseTitle": "Level Design, Spaces, and Encounter Craft",
   "projectNumber": "P02",
   "title": "Tutorial Without Text",
-  "repoName": "GDV511-P02-tutorial-without-text",
+  "repoName": "games-portfolio/projects/GDV511/P02",
   "status": "placeholder",
   "genericDescription": "Teach through spatial arrangement; introduce one concept at a time; verify comprehension through player action.",
   "specificDescription": "Build a level that teaches a mechanic without tutorial text, voiceover, or pop-up instructions. Use gating, repetition, framing, and consequence to teach.",
   "gradingRubric": "30 pts nonverbal teaching; 20 pts pacing; 20 pts completion clarity; 15 pts playtest observation; 15 pts polish.",
   "localPath": "projects/GDV511/P02/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P02",
   "netlifyUrl": ""
 }

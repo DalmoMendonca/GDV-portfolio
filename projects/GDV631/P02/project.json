@@ -4,13 +4,13 @@
   "courseTitle": "Business, Ethics, Accessibility, and Player Research",
   "projectNumber": "P02",
   "title": "Accessibility-First Game",
-  "repoName": "GDV631-P02-accessibility-first-game",
+  "repoName": "games-portfolio/projects/GDV631/P02",
   "status": "placeholder",
   "genericDescription": "Design accessibility from the beginning; prioritize features for a specific access need; test with representative constraints.",
   "specificDescription": "Build a game designed around one primary accessibility goal such as low vision, Deaf or hard-of-hearing play, motor accessibility, cognitive load, photosensitivity, or low literacy. Include a feature checklist.",
   "gradingRubric": "30 pts accessibility-first design; 20 pts implementation quality; 20 pts playability; 15 pts checklist and testing; 15 pts reflection.",
   "localPath": "projects/GDV631/P02/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV631/P02",
   "netlifyUrl": ""
 }

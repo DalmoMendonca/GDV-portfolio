@@ -2,7 +2,7 @@
 
 Course: GDV 511 - Level Design, Spaces, and Encounter Craft
 
-Public repository target: GDV511-P05-combat-arena-with-phases
+Public repository target: games-portfolio/projects/GDV511/P05
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build an arena encounter with at least three phases. Each phase must alter space
 
 - Local project path: projects/GDV511/P05
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P05
 - Netlify deploy: TBD

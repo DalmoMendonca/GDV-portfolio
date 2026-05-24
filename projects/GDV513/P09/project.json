@@ -4,13 +4,13 @@
   "courseTitle": "Track Studio I: Methods and Media",
   "projectNumber": "P09",
   "title": "Interpretive Scoring Game",
-  "repoName": "GDV513-P09-interpretive-scoring-game",
+  "repoName": "games-portfolio/projects/GDV513/P09",
   "status": "placeholder",
   "genericDescription": "Build scoring around interpretation rather than pure optimization; reveal values through evaluation; support multiple defensible outcomes.",
   "specificDescription": "Build a game with a scoring or feedback system that evaluates interpretive choices, aesthetic decisions, historical arguments, or AI collaboration patterns. Include a score explanation screen.",
   "gradingRubric": "30 pts interpretive scoring model; 20 pts outcome variety; 20 pts transparency; 15 pts track relevance; 15 pts reflection.",
   "localPath": "projects/GDV513/P09/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P09",
   "netlifyUrl": ""
 }

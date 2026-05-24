@@ -2,7 +2,7 @@
 
 Course: GDV 512 - Applied Game Mathematics, Technical Art, and Production Pipelines
 
-Public repository target: GDV512-P09-version-control-collaboration-game
+Public repository target: games-portfolio/projects/GDV512/P09
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ In pairs or small teams, build a game with at least 30 meaningful commits, issue
 
 - Local project path: projects/GDV512/P09
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV512/P09
 - Netlify deploy: TBD

@@ -2,7 +2,7 @@
 
 Course: GDV 513 - Track Studio I: Methods and Media
 
-Public repository target: GDV513-P01-archive-ritual-or-dataset-game
+Public repository target: games-portfolio/projects/GDV513/P01
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Storytelling and Digital Humanities students adapt an archive item, historical e
 
 - Local project path: projects/GDV513/P01
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P01
 - Netlify deploy: TBD

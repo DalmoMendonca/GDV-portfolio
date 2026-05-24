@@ -2,7 +2,7 @@
 
 Course: GDV 632 - Portfolio Capstone: Experimental Production Arcade
 
-Public repository target: GDV632-P02-constraint-mastery-game
+Public repository target: games-portfolio/projects/GDV632/P02
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game under a severe constraint chosen from one screen, one minute, one i
 
 - Local project path: projects/GDV632/P02
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV632/P02
 - Netlify deploy: TBD

@@ -2,7 +2,7 @@
 
 Course: GDV 631 - Business, Ethics, Accessibility, and Player Research
 
-Public repository target: GDV631-P06-user-research-instrument-game
+Public repository target: games-portfolio/projects/GDV631/P06
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game and run a small study with at least five participants. The study mu
 
 - Local project path: projects/GDV631/P06
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV631/P06
 - Netlify deploy: TBD

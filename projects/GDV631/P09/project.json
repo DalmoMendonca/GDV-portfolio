@@ -4,13 +4,13 @@
   "courseTitle": "Business, Ethics, Accessibility, and Player Research",
   "projectNumber": "P09",
   "title": "Community Feedback Game",
-  "repoName": "GDV631-P09-community-feedback-game",
+  "repoName": "games-portfolio/projects/GDV631/P09",
   "status": "placeholder",
   "genericDescription": "Gather and triage community feedback; distinguish taste from usability; make a revision plan.",
   "specificDescription": "Publish or privately distribute a game to a small community. Collect at least 10 feedback items, categorize them, implement at least three changes, and justify three rejected changes.",
   "gradingRubric": "30 pts feedback process; 20 pts revision quality; 20 pts triage reasoning; 15 pts community communication; 15 pts reflection.",
   "localPath": "projects/GDV631/P09/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV631/P09",
   "netlifyUrl": ""
 }

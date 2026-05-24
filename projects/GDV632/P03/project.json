@@ -4,13 +4,13 @@
   "courseTitle": "Portfolio Capstone: Experimental Production Arcade",
   "projectNumber": "P03",
   "title": "Genre Fluency Game",
-  "repoName": "GDV632-P03-genre-fluency-game",
+  "repoName": "games-portfolio/projects/GDV632/P03",
   "status": "placeholder",
   "genericDescription": "Demonstrate command of a known genre; identify genre conventions; add a focused twist.",
   "specificDescription": "Build a polished microgame in a recognized genre such as platformer, shmup, roguelike, tactics, puzzle, rhythm, management, visual novel, deckbuilder, or immersive sim. Include one twist that changes player priorities.",
   "gradingRubric": "30 pts genre fluency; 20 pts twist integration; 20 pts playability; 15 pts polish; 15 pts notes.",
   "localPath": "projects/GDV632/P03/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV632/P03",
   "netlifyUrl": ""
 }

@@ -2,7 +2,7 @@
 
 Course: GDV 621 - Advanced AI, Simulation, and Procedural Systems
 
-Public repository target: GDV621-P10-transparent-ai-portfolio-game
+Public repository target: games-portfolio/projects/GDV621/P10
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a polished AI or procedural game with a player-facing explanation of how t
 
 - Local project path: projects/GDV621/P10
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV621/P10
 - Netlify deploy: TBD

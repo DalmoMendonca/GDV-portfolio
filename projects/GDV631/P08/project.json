@@ -4,13 +4,13 @@
   "courseTitle": "Business, Ethics, Accessibility, and Player Research",
   "projectNumber": "P08",
   "title": "Platform Compliance Game",
-  "repoName": "GDV631-P08-platform-compliance-game",
+  "repoName": "games-portfolio/projects/GDV631/P08",
   "status": "placeholder",
   "genericDescription": "Prepare for platform requirements; handle ratings, privacy, store assets, accessibility expectations, and technical checks; plan release constraints.",
   "specificDescription": "Build a game and prepare a mock release package for a target platform such as itch.io, Steam, mobile, console concept submission, museum kiosk, classroom LMS, or web portal. Include store capsules or thumbnails, short and long descriptions, screenshots, content guidance, privacy notes, and a build checklist.",
   "gradingRubric": "30 pts platform readiness; 20 pts compliance research; 20 pts store/release assets; 15 pts technical stability; 15 pts notes.",
   "localPath": "projects/GDV631/P08/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV631/P08",
   "netlifyUrl": ""
 }

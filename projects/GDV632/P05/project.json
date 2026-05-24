@@ -4,13 +4,13 @@
   "courseTitle": "Portfolio Capstone: Experimental Production Arcade",
   "projectNumber": "P05",
   "title": "Technical Showpiece Game",
-  "repoName": "GDV632-P05-technical-showpiece-game",
+  "repoName": "games-portfolio/projects/GDV632/P05",
   "status": "placeholder",
   "genericDescription": "Demonstrate a technical specialty; package complexity behind a playable experience; document technical decisions.",
   "specificDescription": "Build a game featuring a technical focus such as shaders, procedural animation, AI, networking, physics, tools, performance, data visualization, or unusual input. Include a technical breakdown.",
   "gradingRubric": "30 pts technical achievement; 20 pts gameplay integration; 20 pts stability; 15 pts technical breakdown; 15 pts polish.",
   "localPath": "projects/GDV632/P05/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV632/P05",
   "netlifyUrl": ""
 }

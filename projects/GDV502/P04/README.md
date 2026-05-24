@@ -2,7 +2,7 @@
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
-Public repository target: GDV502-P04-save-load-and-persistence-game
+Public repository target: games-portfolio/projects/GDV502/P04
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game with progress that survives restart. Save at least player position/
 
 - Local project path: projects/GDV502/P04
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P04
 - Netlify deploy: TBD

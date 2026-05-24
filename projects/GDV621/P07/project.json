@@ -4,13 +4,13 @@
   "courseTitle": "Advanced AI, Simulation, and Procedural Systems",
   "projectNumber": "P07",
   "title": "Machine Perception, LLM, or Classification Game",
-  "repoName": "GDV621-P07-machine-perception-llm-or-classification-game",
+  "repoName": "games-portfolio/projects/GDV621/P07",
   "status": "placeholder",
   "genericDescription": "Use classification, recognition, language-model output, or signal interpretation; design around uncertainty; communicate confidence and latency.",
   "specificDescription": "Build a game that uses image, audio, gesture, text, player-behavior classification, or structured language-model output through an approved model, library, local model, API, or simulated service. Include confidence feedback, loading/failure states, fallback behavior, and secure handling of any keys or credentials.",
   "gradingRubric": "30 pts model/service integration; 20 pts uncertainty and latency design; 20 pts player feedback; 15 pts fallback and safety; 15 pts documentation.",
   "localPath": "projects/GDV621/P07/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV621/P07",
   "netlifyUrl": ""
 }

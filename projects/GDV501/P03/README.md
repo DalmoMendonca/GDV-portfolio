@@ -2,7 +2,7 @@
 
 Course: GDV 501 - Game Systems, Loops, and Player Experience
 
-Public repository target: GDV501-P03-alchemists-ledger
+Public repository target: games-portfolio/projects/GDV501/P03
 
 ## Generic Description
 
@@ -31,5 +31,5 @@ npm run build
 ## Links
 
 - Public game URL: https://gdv501-p03-alchemists-ledger.netlify.app
-- GitHub repository: https://github.com/DalmoMendonca/GDV501-P03-alchemists-ledger
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV501/P03
 - Netlify deploy: https://gdv501-p03-alchemists-ledger.netlify.app

@@ -2,7 +2,7 @@
 
 Course: GDV 631 - Business, Ethics, Accessibility, and Player Research
 
-Public repository target: GDV631-P01-audience-hypothesis-game
+Public repository target: games-portfolio/projects/GDV631/P01
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game for a clearly defined audience. Before building, write three audien
 
 - Local project path: projects/GDV631/P01
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV631/P01
 - Netlify deploy: TBD

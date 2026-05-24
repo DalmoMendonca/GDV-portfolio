@@ -4,13 +4,13 @@
   "courseTitle": "Track Studio I: Methods and Media",
   "projectNumber": "P04",
   "title": "Memory and Reconstruction Game",
-  "repoName": "GDV513-P04-memory-and-reconstruction-game",
+  "repoName": "games-portfolio/projects/GDV513/P04",
   "status": "placeholder",
   "genericDescription": "Represent memory as incomplete system; design reconstruction through action; communicate uncertainty.",
   "specificDescription": "Build a game where players reconstruct an event, place, artwork, dataset, or relationship from fragments. Include at least one ambiguity that remains meaningfully unresolved.",
   "gradingRubric": "30 pts reconstruction mechanics; 20 pts productive ambiguity; 20 pts track application; 15 pts player guidance; 15 pts notes.",
   "localPath": "projects/GDV513/P04/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P04",
   "netlifyUrl": ""
 }

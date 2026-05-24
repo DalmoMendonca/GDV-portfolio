@@ -3,6 +3,20 @@ import path from "node:path";
 
 const root = path.resolve(new URL("..", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
 const courseRoot = path.join(root, "projects", "GDV501");
+const monorepoName = "games-portfolio";
+const monorepoUrl = "https://github.com/DalmoMendonca/games-portfolio/tree/master";
+
+function sourcePath(game) {
+  return `projects/GDV501/P${game.n}`;
+}
+
+function sourceTarget(game) {
+  return `${monorepoName}/${sourcePath(game)}`;
+}
+
+function sourceUrl(game) {
+  return `${monorepoUrl}/${sourcePath(game)}`;
+}
 
 const games = [
   {
@@ -341,7 +355,7 @@ function readme(game) {
 
 Course: GDV 501 - Game Systems, Loops, and Player Experience
 
-Public repository target: ${game.repo}
+Public repository target: ${sourceTarget(game)}
 
 ## Generic Description
 
@@ -370,7 +384,7 @@ npm run build
 ## Links
 
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: ${sourceUrl(game)}
 - Netlify deploy: TBD
 `;
 }
@@ -382,13 +396,13 @@ function projectJson(game) {
     courseTitle: "Game Systems, Loops, and Player Experience",
     projectNumber: `P${game.n}`,
     title: game.title,
-    repoName: game.repo,
+    repoName: sourceTarget(game),
     status: "implemented",
     genericDescription: game.generic,
     specificDescription: game.specific,
-    localPath: `projects/GDV501/P${game.n}/`,
+    localPath: `${sourcePath(game)}/`,
     gameUrl: "",
-    githubUrl: "",
+    githubUrl: sourceUrl(game),
     netlifyUrl: "",
   }, null, 2);
 }
@@ -416,12 +430,12 @@ for (const game of games) {
   updated = updated.replace(re, (block) => {
     return block
       .replace(/"title": "[^"]*"/, `"title": "${game.title}"`)
-      .replace(/"repoName": "[^"]*"/, `"repoName": "${game.repo}"`)
+      .replace(/"repoName": "[^"]*"/, `"repoName": "${sourceTarget(game)}"`)
       .replace(/"status": "[^"]*"/, `"status": "implemented"`)
       .replace(/"genericDescription": "[^"]*"/, `"genericDescription": ${JSON.stringify(game.generic)}`)
       .replace(/"specificDescription": "[^"]*"/, `"specificDescription": ${JSON.stringify(game.specific)}`)
       .replace(/"gameUrl": "[^"]*"/, `"gameUrl": ""`)
-      .replace(/"githubUrl": "[^"]*"/, `"githubUrl": ""`)
+      .replace(/"githubUrl": "[^"]*"/, `"githubUrl": "${sourceUrl(game)}"`)
       .replace(/"netlifyUrl": "[^"]*"/, `"netlifyUrl": ""`);
   });
 }

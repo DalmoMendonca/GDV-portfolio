@@ -2,7 +2,7 @@
 
 Course: GDV 513 - Track Studio I: Methods and Media
 
-Public repository target: GDV513-P05-rule-translation-game
+Public repository target: games-portfolio/projects/GDV513/P05
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Adapt a scholarly method, artistic constraint, or AI process into a playable rul
 
 - Local project path: projects/GDV513/P05
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P05
 - Netlify deploy: TBD

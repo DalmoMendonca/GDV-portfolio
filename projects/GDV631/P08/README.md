@@ -2,7 +2,7 @@
 
 Course: GDV 631 - Business, Ethics, Accessibility, and Player Research
 
-Public repository target: GDV631-P08-platform-compliance-game
+Public repository target: games-portfolio/projects/GDV631/P08
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game and prepare a mock release package for a target platform such as it
 
 - Local project path: projects/GDV631/P08
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV631/P08
 - Netlify deploy: TBD

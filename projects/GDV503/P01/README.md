@@ -2,7 +2,7 @@
 
 Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
 
-Public repository target: GDV503-P01-impact-and-hit-stop-game
+Public repository target: games-portfolio/projects/GDV503/P01
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build an action game centered on impacts. Include at least three feedback layers
 
 - Local project path: projects/GDV503/P01
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P01
 - Netlify deploy: TBD

@@ -2,7 +2,7 @@
 
 Course: GDV 513 - Track Studio I: Methods and Media
 
-Public repository target: GDV513-P06-ethical-choice-microgame
+Public repository target: games-portfolio/projects/GDV513/P06
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game around a dilemma involving cultural interpretation, authenticity, a
 
 - Local project path: projects/GDV513/P06
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P06
 - Netlify deploy: TBD

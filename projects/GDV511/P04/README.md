@@ -2,7 +2,7 @@
 
 Course: GDV 511 - Level Design, Spaces, and Encounter Craft
 
-Public repository target: GDV511-P04-stealth-encounter-level
+Public repository target: games-portfolio/projects/GDV511/P04
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a stealth game or level with at least three guards or sensors, two routes 
 
 - Local project path: projects/GDV511/P04
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P04
 - Netlify deploy: TBD

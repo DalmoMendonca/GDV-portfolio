@@ -4,13 +4,13 @@
   "courseTitle": "Advanced AI, Simulation, and Procedural Systems",
   "projectNumber": "P10",
   "title": "Transparent AI Portfolio Game",
-  "repoName": "GDV621-P10-transparent-ai-portfolio-game",
+  "repoName": "games-portfolio/projects/GDV621/P10",
   "status": "placeholder",
   "genericDescription": "Build an AI-driven game suitable for portfolio review; document model/system behavior; expose limits honestly; show governance maturity.",
   "specificDescription": "Build a polished AI or procedural game with a player-facing explanation of how the system works, what it cannot do, how player data is used or not used, what content is generated, and what human review or constraints are in place. Include a compact model card or system card.",
   "gradingRubric": "30 pts AI/system quality; 20 pts polished play; 20 pts transparency; 15 pts ethical documentation/model card; 15 pts presentation.",
   "localPath": "projects/GDV621/P10/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV621/P10",
   "netlifyUrl": ""
 }

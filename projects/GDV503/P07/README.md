@@ -2,7 +2,7 @@
 
 Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
 
-Public repository target: GDV503-P07-minimalist-readability-game
+Public repository target: games-portfolio/projects/GDV503/P07
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a complete game using no more than three colors, three sound families, and
 
 - Local project path: projects/GDV503/P07
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P07
 - Netlify deploy: TBD

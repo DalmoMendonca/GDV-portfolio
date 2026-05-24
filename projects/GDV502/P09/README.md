@@ -2,7 +2,7 @@
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
-Public repository target: GDV502-P09-performance-budget-game
+Public repository target: games-portfolio/projects/GDV502/P09
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game with many objects, effects, or simulation elements, then profile an
 
 - Local project path: projects/GDV502/P09
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P09
 - Netlify deploy: TBD

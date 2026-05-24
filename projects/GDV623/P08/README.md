@@ -2,7 +2,7 @@
 
 Course: GDV 623 - Track Studio II: Advanced Authorship
 
-Public repository target: GDV623-P08-remix-and-citation-game
+Public repository target: games-portfolio/projects/GDV623/P08
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game that remixes at least three sources, styles, datasets, mechanics, o
 
 - Local project path: projects/GDV623/P08
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV623/P08
 - Netlify deploy: TBD

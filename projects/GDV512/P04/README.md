@@ -2,7 +2,7 @@
 
 Course: GDV 512 - Applied Game Mathematics, Technical Art, and Production Pipelines
 
-Public repository target: GDV512-P04-planetary-gravity-game
+Public repository target: games-portfolio/projects/GDV512/P04
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a spaceship, orbit, slingshot, or gravity-puzzle game where celestial bodi
 
 - Local project path: projects/GDV512/P04
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV512/P04
 - Netlify deploy: TBD

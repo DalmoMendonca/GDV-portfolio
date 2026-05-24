@@ -2,7 +2,7 @@
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
-Public repository target: GDV502-P10-modular-prototype-kit-game
+Public repository target: games-portfolio/projects/GDV502/P10
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a small game using at least five reusable components such as health, inven
 
 - Local project path: projects/GDV502/P10
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P10
 - Netlify deploy: TBD

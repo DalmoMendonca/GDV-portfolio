@@ -2,7 +2,7 @@
 
 Course: GDV 621 - Advanced AI, Simulation, and Procedural Systems
 
-Public repository target: GDV621-P02-goap-or-planner-game
+Public repository target: games-portfolio/projects/GDV621/P02
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game with at least one agent that chooses action sequences using GOAP, p
 
 - Local project path: projects/GDV621/P02
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV621/P02
 - Netlify deploy: TBD

@@ -2,7 +2,7 @@
 
 Course: GDV 513 - Track Studio I: Methods and Media
 
-Public repository target: GDV513-P09-interpretive-scoring-game
+Public repository target: games-portfolio/projects/GDV513/P09
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game with a scoring or feedback system that evaluates interpretive choic
 
 - Local project path: projects/GDV513/P09
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P09
 - Netlify deploy: TBD

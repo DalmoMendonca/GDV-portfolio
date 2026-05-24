@@ -4,13 +4,13 @@
   "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
   "projectNumber": "P08",
   "title": "Emotional Interface Game",
-  "repoName": "GDV503-P08-emotional-interface-game",
+  "repoName": "games-portfolio/projects/GDV503/P08",
   "status": "placeholder",
   "genericDescription": "Connect UI state to emotion; use typography, pacing, sound, and layout to shape feeling; maintain usability under expressive presentation.",
   "specificDescription": "Build a game where the interface changes in response to player condition, story state, or system pressure. The UI must remain readable and controllable at all times.",
   "gradingRubric": "30 pts expressive UI concept; 20 pts usability; 20 pts technical implementation; 15 pts emotional coherence; 15 pts reflection.",
   "localPath": "projects/GDV503/P08/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P08",
   "netlifyUrl": ""
 }

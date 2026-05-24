@@ -4,13 +4,13 @@
   "courseTitle": "Track Studio III: Thesis Microgames",
   "projectNumber": "P01",
   "title": "Thesis Question Game",
-  "repoName": "GDV633-P01-thesis-question-game",
+  "repoName": "games-portfolio/projects/GDV633/P01",
   "status": "placeholder",
   "genericDescription": "Convert a thesis question into play; establish stakes; invite investigation rather than merely state a topic.",
   "specificDescription": "Build a game that introduces the central question for the track thesis collection. Storytelling and Digital Humanities projects should identify the interpretive question. Metamodern Interactive Art projects should identify the aesthetic or experiential tension. Gaming for the AI Age projects should identify the AI design problem, capability, or risk.",
   "gradingRubric": "30 pts thesis-question clarity; 20 pts playable investigation; 20 pts track fit; 15 pts polish; 15 pts statement.",
   "localPath": "projects/GDV633/P01/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV633/P01",
   "netlifyUrl": ""
 }

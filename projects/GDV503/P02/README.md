@@ -2,7 +2,7 @@
 
 Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
 
-Public repository target: GDV503-P02-diegetic-interface-game
+Public repository target: games-portfolio/projects/GDV503/P02
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game where at least two essential status indicators are diegetic. Player
 
 - Local project path: projects/GDV503/P02
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P02
 - Netlify deploy: TBD

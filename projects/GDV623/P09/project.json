@@ -4,13 +4,13 @@
   "courseTitle": "Track Studio II: Advanced Authorship",
   "projectNumber": "P09",
   "title": "Failure, Glitch, or Refusal Game",
-  "repoName": "GDV623-P09-failure-glitch-or-refusal-game",
+  "repoName": "games-portfolio/projects/GDV623/P09",
   "status": "placeholder",
   "genericDescription": "Use failure as expressive form; design productive friction; support players through unusual interaction.",
   "specificDescription": "Build a game where failure, glitch, refusal, broken automation, unstable memory, or impossible desire is central. The game must still be intentionally playable and finishable.",
   "gradingRubric": "30 pts expressive failure design; 20 pts intentionality; 20 pts finishability; 15 pts track connection; 15 pts reflection.",
   "localPath": "projects/GDV623/P09/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV623/P09",
   "netlifyUrl": ""
 }

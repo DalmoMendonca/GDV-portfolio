@@ -4,13 +4,13 @@
   "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
   "projectNumber": "P05",
   "title": "Menu as Game",
-  "repoName": "GDV503-P05-menu-as-game",
+  "repoName": "games-portfolio/projects/GDV503/P05",
   "status": "placeholder",
   "genericDescription": "Treat menu navigation as interaction design; build settings and progression screens; reduce friction before play.",
   "specificDescription": "Build a game where the front end, options, level select, or inventory screen includes meaningful interaction. Include keyboard/gamepad or equivalent non-pointer navigation.",
   "gradingRubric": "30 pts interface usability; 20 pts menu-game integration; 20 pts options completeness; 15 pts input support; 15 pts documentation.",
   "localPath": "projects/GDV503/P05/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P05",
   "netlifyUrl": ""
 }

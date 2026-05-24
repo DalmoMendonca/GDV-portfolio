@@ -4,13 +4,13 @@
   "courseTitle": "Applied Game Mathematics, Technical Art, and Production Pipelines",
   "projectNumber": "P02",
   "title": "Vector Billiards Game",
-  "repoName": "GDV512-P02-vector-billiards-game",
+  "repoName": "games-portfolio/projects/GDV512/P02",
   "status": "placeholder",
   "genericDescription": "Apply vector reflection, dot products, collision normals, and angle prediction; expose mathematical behavior through readable play.",
   "specificDescription": "Build a billiards, ricochet shooter, laser puzzle, or pinball-like game where bounce angles are central. Include an optional debug overlay showing incoming vector, surface normal, and reflected vector.",
   "gradingRubric": "30 pts mathematical correctness; 20 pts readable physics feedback; 20 pts complete game loop; 15 pts debug visualization; 15 pts tuning and documentation.",
   "localPath": "projects/GDV512/P02/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV512/P02",
   "netlifyUrl": ""
 }

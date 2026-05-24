@@ -2,7 +2,7 @@
 
 Course: GDV 633 - Track Studio III: Thesis Microgames
 
-Public repository target: GDV633-P07-critique-response-game
+Public repository target: games-portfolio/projects/GDV633/P07
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Present a prior thesis microgame for critique, then build a new game or major re
 
 - Local project path: projects/GDV633/P07
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV633/P07
 - Netlify deploy: TBD

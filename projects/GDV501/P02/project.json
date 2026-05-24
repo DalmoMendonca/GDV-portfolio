@@ -4,12 +4,12 @@
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P02",
   "title": "Hazard Dividend",
-  "repoName": "GDV501-P02-hazard-dividend",
+  "repoName": "games-portfolio/projects/GDV501/P02",
   "status": "implemented",
   "genericDescription": "Model risk, reward, and opportunity cost; communicate danger without text dependency; balance short-term gain against long-term survival.",
   "specificDescription": "Collect valuable cores in a field of patrol hazards. Each core increases score, hazard speed, and map pressure. Exit early for a banking bonus or keep collecting for a riskier multiplier.",
   "localPath": "projects/GDV501/P02/",
   "gameUrl": "https://gdv501-p02-hazard-dividend.netlify.app",
-  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P02-hazard-dividend",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV501/P02",
   "netlifyUrl": "https://gdv501-p02-hazard-dividend.netlify.app"
 }

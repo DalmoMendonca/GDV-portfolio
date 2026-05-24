@@ -2,7 +2,7 @@
 
 Course: GDV 511 - Level Design, Spaces, and Encounter Craft
 
-Public repository target: GDV511-P01-metrics-gym
+Public repository target: games-portfolio/projects/GDV511/P01
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a playable metrics gym for one avatar controller. Include labeled test zon
 
 - Local project path: projects/GDV511/P01
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P01
 - Netlify deploy: TBD

@@ -2,7 +2,7 @@
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
-Public repository target: GDV502-P02-collision-and-physics-challenge
+Public repository target: games-portfolio/projects/GDV502/P02
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game where the main challenge depends on collision, bounce, sliding, pus
 
 - Local project path: projects/GDV502/P02
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P02
 - Netlify deploy: TBD

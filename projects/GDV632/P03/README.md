@@ -2,7 +2,7 @@
 
 Course: GDV 632 - Portfolio Capstone: Experimental Production Arcade
 
-Public repository target: GDV632-P03-genre-fluency-game
+Public repository target: games-portfolio/projects/GDV632/P03
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a polished microgame in a recognized genre such as platformer, shmup, rogu
 
 - Local project path: projects/GDV632/P03
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV632/P03
 - Netlify deploy: TBD

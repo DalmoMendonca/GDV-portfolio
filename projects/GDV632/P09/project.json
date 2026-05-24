@@ -4,13 +4,13 @@
   "courseTitle": "Portfolio Capstone: Experimental Production Arcade",
   "projectNumber": "P09",
   "title": "Portfolio Revision Game",
-  "repoName": "GDV632-P09-portfolio-revision-game",
+  "repoName": "games-portfolio/projects/GDV632/P09",
   "status": "placeholder",
   "genericDescription": "Revisit old work with professional standards; decide what to preserve; measure improvement; prepare a game for a new platform or access context.",
   "specificDescription": "Choose one prior program game and rebuild or substantially revise it. The revision must include one substantial porting, optimization, or accessibility goal such as WebGL/HTML5 optimization, mobile touch controls, controller support, high-contrast mode, subtitle pass, or load-time reduction. Submit original and revised builds or videos, plus a change log explaining design and technical improvements.",
   "gradingRubric": "30 pts improvement quality; 20 pts preservation of core idea; 20 pts polish and platform/access readiness; 15 pts before/after evidence; 15 pts reflection.",
   "localPath": "projects/GDV632/P09/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV632/P09",
   "netlifyUrl": ""
 }

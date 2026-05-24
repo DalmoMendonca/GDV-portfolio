@@ -2,7 +2,7 @@
 
 Course: GDV 633 - Track Studio III: Thesis Microgames
 
-Public repository target: GDV633-P10-thesis-collection-launcher
+Public repository target: games-portfolio/projects/GDV633/P10
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a playable launcher, website, exhibition menu, or anthology wrapper contai
 
 - Local project path: projects/GDV633/P10
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV633/P10
 - Netlify deploy: TBD

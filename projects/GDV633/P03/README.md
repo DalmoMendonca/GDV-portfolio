@@ -2,7 +2,7 @@
 
 Course: GDV 633 - Track Studio III: Thesis Microgames
 
-Public repository target: GDV633-P03-audience-challenge-game
+Public repository target: games-portfolio/projects/GDV633/P03
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game that asks the intended audience to reconsider a habit, belief, expe
 
 - Local project path: projects/GDV633/P03
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV633/P03
 - Netlify deploy: TBD

@@ -2,7 +2,7 @@
 
 Course: GDV 621 - Advanced AI, Simulation, and Procedural Systems
 
-Public repository target: GDV621-P09-emergent-narrative-simulation-game
+Public repository target: games-portfolio/projects/GDV621/P09
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game where story arises from agents, resources, relationships, or world 
 
 - Local project path: projects/GDV621/P09
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV621/P09
 - Netlify deploy: TBD

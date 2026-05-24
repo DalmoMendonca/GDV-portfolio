@@ -4,13 +4,13 @@
   "courseTitle": "Advanced AI, Simulation, and Procedural Systems",
   "projectNumber": "P04",
   "title": "Procedural Dungeon or Map Game",
-  "repoName": "GDV621-P04-procedural-dungeon-or-map-game",
+  "repoName": "games-portfolio/projects/GDV621/P04",
   "status": "placeholder",
   "genericDescription": "Generate traversable spaces; validate solvability; balance randomness with authored structure.",
   "specificDescription": "Build a game with generated maps that include start, goal, obstacles, rewards, and at least one authored design constraint. Include a seed input and a map validation report.",
   "gradingRubric": "30 pts generation quality; 20 pts solvability validation; 20 pts gameplay variety; 15 pts seed/debug tools; 15 pts notes.",
   "localPath": "projects/GDV621/P04/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV621/P04",
   "netlifyUrl": ""
 }

@@ -4,13 +4,13 @@
   "courseTitle": "Applied Game Mathematics, Technical Art, and Production Pipelines",
   "projectNumber": "P05",
   "title": "Screen-Space Outline or Highlight Shader Game",
-  "repoName": "GDV512-P05-screen-space-outline-or-highlight-shader-game",
+  "repoName": "games-portfolio/projects/GDV512/P05",
   "status": "placeholder",
   "genericDescription": "Use materials, render passes, depth, normals, masks, or engine-equivalent techniques to communicate affordances; separate visual effect from game logic.",
   "specificDescription": "Build a game where interactable, dangerous, hidden, or selected objects are communicated through a custom outline, highlight, x-ray, silhouette, or screen-space effect. Include at least three gameplay states with distinct visual treatment.",
   "gradingRubric": "30 pts shader/material implementation; 20 pts gameplay readability; 20 pts visual polish; 15 pts performance and artifact control; 15 pts technical breakdown.",
   "localPath": "projects/GDV512/P05/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV512/P05",
   "netlifyUrl": ""
 }

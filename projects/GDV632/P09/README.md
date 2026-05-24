@@ -2,7 +2,7 @@
 
 Course: GDV 632 - Portfolio Capstone: Experimental Production Arcade
 
-Public repository target: GDV632-P09-portfolio-revision-game
+Public repository target: games-portfolio/projects/GDV632/P09
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Choose one prior program game and rebuild or substantially revise it. The revisi
 
 - Local project path: projects/GDV632/P09
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV632/P09
 - Netlify deploy: TBD

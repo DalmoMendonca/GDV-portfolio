@@ -2,7 +2,7 @@
 
 Course: GDV 621 - Advanced AI, Simulation, and Procedural Systems
 
-Public repository target: GDV621-P04-procedural-dungeon-or-map-game
+Public repository target: games-portfolio/projects/GDV621/P04
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game with generated maps that include start, goal, obstacles, rewards, a
 
 - Local project path: projects/GDV621/P04
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV621/P04
 - Netlify deploy: TBD

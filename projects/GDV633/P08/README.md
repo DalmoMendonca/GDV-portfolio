@@ -2,7 +2,7 @@
 
 Course: GDV 633 - Track Studio III: Thesis Microgames
 
-Public repository target: GDV633-P08-professional-positioning-game
+Public repository target: games-portfolio/projects/GDV633/P08
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game aimed at a specific role such as narrative designer, technical desi
 
 - Local project path: projects/GDV633/P08
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV633/P08
 - Netlify deploy: TBD

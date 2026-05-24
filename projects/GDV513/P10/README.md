@@ -2,7 +2,7 @@
 
 Course: GDV 513 - Track Studio I: Methods and Media
 
-Public repository target: GDV513-P10-track-methods-portfolio-game
+Public repository target: games-portfolio/projects/GDV513/P10
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build the strongest track-focused game of the semester. It must combine at least
 
 - Local project path: projects/GDV513/P10
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P10
 - Netlify deploy: TBD

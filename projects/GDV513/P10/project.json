@@ -4,13 +4,13 @@
   "courseTitle": "Track Studio I: Methods and Media",
   "projectNumber": "P10",
   "title": "Track Methods Portfolio Game",
-  "repoName": "GDV513-P10-track-methods-portfolio-game",
+  "repoName": "games-portfolio/projects/GDV513/P10",
   "status": "placeholder",
   "genericDescription": "Synthesize track methods; present a refined playable study; connect project to future thesis direction.",
   "specificDescription": "Build the strongest track-focused game of the semester. It must combine at least three methods from earlier projects and include an annotated bibliography, influence map, or technical model card as appropriate.",
   "gradingRubric": "30 pts synthesis; 20 pts final play quality; 20 pts track sophistication; 15 pts supporting research artifact; 15 pts presentation.",
   "localPath": "projects/GDV513/P10/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P10",
   "netlifyUrl": ""
 }

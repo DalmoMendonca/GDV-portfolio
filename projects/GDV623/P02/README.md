@@ -2,7 +2,7 @@
 
 Course: GDV 623 - Track Studio II: Advanced Authorship
 
-Public repository target: GDV623-P02-adaptation-game
+Public repository target: games-portfolio/projects/GDV623/P02
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Adapt a poem, essay, performance, dataset, model behavior, painting, oral histor
 
 - Local project path: projects/GDV623/P02
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV623/P02
 - Netlify deploy: TBD

@@ -2,7 +2,7 @@
 
 Course: GDV 511 - Level Design, Spaces, and Encounter Craft
 
-Public repository target: GDV511-P07-verticality-and-sightline-game
+Public repository target: games-portfolio/projects/GDV511/P07
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a level where vertical movement or layered sightlines matter to strategy. 
 
 - Local project path: projects/GDV511/P07
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P07
 - Netlify deploy: TBD

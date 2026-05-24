@@ -4,13 +4,13 @@
   "courseTitle": "Gameplay Programming and Rapid Tools",
   "projectNumber": "P09",
   "title": "Performance Budget Game",
-  "repoName": "GDV502-P09-performance-budget-game",
+  "repoName": "games-portfolio/projects/GDV502/P09",
   "status": "placeholder",
   "genericDescription": "Profile runtime performance; identify bottlenecks; optimize without removing core design value.",
   "specificDescription": "Build a game with many objects, effects, or simulation elements, then profile and optimize it to meet an agreed frame-rate budget. Submit before/after measurements.",
   "gradingRubric": "30 pts profiling method; 20 pts successful optimization; 20 pts preserved gameplay; 15 pts measurement clarity; 15 pts code quality.",
   "localPath": "projects/GDV502/P09/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P09",
   "netlifyUrl": ""
 }

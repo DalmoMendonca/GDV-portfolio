@@ -4,13 +4,13 @@
   "courseTitle": "Gameplay Programming and Rapid Tools",
   "projectNumber": "P07",
   "title": "Input Remapping Game",
-  "repoName": "GDV502-P07-input-remapping-game",
+  "repoName": "games-portfolio/projects/GDV502/P07",
   "status": "placeholder",
   "genericDescription": "Support multiple input devices; abstract actions from hardware; improve accessibility through control options.",
   "specificDescription": "Build a game playable with keyboard and at least one additional input mode such as gamepad, mouse-only, touch, or adaptive simplified controls. Include an input settings screen or clearly documented remapping path.",
   "gradingRubric": "30 pts input abstraction; 20 pts device support; 20 pts settings usability; 15 pts accessible design choices; 15 pts test report.",
   "localPath": "projects/GDV502/P07/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P07",
   "netlifyUrl": ""
 }

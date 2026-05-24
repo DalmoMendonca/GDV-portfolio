@@ -2,7 +2,7 @@
 
 Course: GDV 511 - Level Design, Spaces, and Encounter Craft
 
-Public repository target: GDV511-P06-environmental-story-game
+Public repository target: games-portfolio/projects/GDV511/P06
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build an explorable space that tells a story through environment, objects, locke
 
 - Local project path: projects/GDV511/P06
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P06
 - Netlify deploy: TBD

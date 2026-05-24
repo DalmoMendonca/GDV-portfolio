@@ -2,7 +2,7 @@
 
 Course: GDV 632 - Portfolio Capstone: Experimental Production Arcade
 
-Public repository target: GDV632-P07-emotional-arc-game
+Public repository target: games-portfolio/projects/GDV632/P07
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a 5 to 10 minute game with a deliberate emotional arc. Include a beat map 
 
 - Local project path: projects/GDV632/P07
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV632/P07
 - Netlify deploy: TBD

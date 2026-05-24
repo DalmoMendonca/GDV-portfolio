@@ -2,7 +2,7 @@
 
 Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
 
-Public repository target: GDV503-P05-menu-as-game
+Public repository target: games-portfolio/projects/GDV503/P05
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game where the front end, options, level select, or inventory screen inc
 
 - Local project path: projects/GDV503/P05
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P05
 - Netlify deploy: TBD

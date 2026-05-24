@@ -2,7 +2,7 @@
 
 Course: GDV 512 - Applied Game Mathematics, Technical Art, and Production Pipelines
 
-Public repository target: GDV512-P01-48-hour-scope-game
+Public repository target: games-portfolio/projects/GDV512/P01
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a complete game in 48 hours using a written feature lock after hour 8. Sub
 
 - Local project path: projects/GDV512/P01
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV512/P01
 - Netlify deploy: TBD

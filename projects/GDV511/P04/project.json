@@ -4,13 +4,13 @@
   "courseTitle": "Level Design, Spaces, and Encounter Craft",
   "projectNumber": "P04",
   "title": "Stealth Encounter Level",
-  "repoName": "GDV511-P04-stealth-encounter-level",
+  "repoName": "games-portfolio/projects/GDV511/P04",
   "status": "placeholder",
   "genericDescription": "Design patrol routes, vision cones, cover, and escape paths; balance failure states; create readable stealth affordances.",
   "specificDescription": "Build a stealth game or level with at least three guards or sensors, two routes to the objective, and one recoverable mistake state before failure.",
   "gradingRubric": "30 pts stealth encounter design; 20 pts route choice; 20 pts feedback and readability; 15 pts recoverability; 15 pts notes.",
   "localPath": "projects/GDV511/P04/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P04",
   "netlifyUrl": ""
 }

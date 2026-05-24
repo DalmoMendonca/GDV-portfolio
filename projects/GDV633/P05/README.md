@@ -2,7 +2,7 @@
 
 Course: GDV 633 - Track Studio III: Thesis Microgames
 
-Public repository target: GDV633-P05-comparative-pair-game
+Public repository target: games-portfolio/projects/GDV633/P05
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build one game with two modes, two versions, or two playable stances. The differ
 
 - Local project path: projects/GDV633/P05
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV633/P05
 - Netlify deploy: TBD

@@ -4,13 +4,13 @@
   "courseTitle": "Track Studio I: Methods and Media",
   "projectNumber": "P03",
   "title": "Text as System Game",
-  "repoName": "GDV513-P03-text-as-system-game",
+  "repoName": "games-portfolio/projects/GDV513/P03",
   "status": "placeholder",
   "genericDescription": "Use language as playable material; connect text to state changes; avoid static exposition.",
   "specificDescription": "Build a game where words, prompts, labels, poems, commands, dialogue, metadata, or generated text directly alter play. Track lens determines whether the text is historical, poetic, or AI-mediated.",
   "gradingRubric": "30 pts text-mechanic integration; 20 pts interaction depth; 20 pts track coherence; 15 pts readability and accessibility; 15 pts documentation.",
   "localPath": "projects/GDV513/P03/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P03",
   "netlifyUrl": ""
 }

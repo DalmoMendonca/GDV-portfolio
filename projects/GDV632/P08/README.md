@@ -2,7 +2,7 @@
 
 Course: GDV 632 - Portfolio Capstone: Experimental Production Arcade
 
-Public repository target: GDV632-P08-professional-collaboration-game
+Public repository target: games-portfolio/projects/GDV632/P08
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game with at least one collaborator, consultant, performer, composer, wr
 
 - Local project path: projects/GDV632/P08
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV632/P08
 - Netlify deploy: TBD

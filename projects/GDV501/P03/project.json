@@ -4,12 +4,12 @@
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P03",
   "title": "Alchemist's Ledger",
-  "repoName": "GDV501-P03-alchemists-ledger",
+  "repoName": "games-portfolio/projects/GDV501/P03",
   "status": "implemented",
   "genericDescription": "Design resources as verbs; create puzzle constraints from conversion rules; teach through level sequence.",
   "specificDescription": "Use ore, glass, and signal as resources. Each level shows current stock, exact target stock, and the recipe on every action button so the puzzle teaches conversion, scarcity, and reversibility through play.",
   "localPath": "projects/GDV501/P03/",
   "gameUrl": "https://gdv501-p03-alchemists-ledger.netlify.app",
-  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P03-alchemists-ledger",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV501/P03",
   "netlifyUrl": "https://gdv501-p03-alchemists-ledger.netlify.app"
 }

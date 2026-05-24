@@ -4,13 +4,13 @@
   "courseTitle": "Track Studio II: Advanced Authorship",
   "projectNumber": "P01",
   "title": "Argument Game",
-  "repoName": "GDV623-P01-argument-game",
+  "repoName": "games-portfolio/projects/GDV623/P01",
   "status": "placeholder",
   "genericDescription": "Make a claim through mechanics; support interpretation with evidence; allow players to test the claim.",
   "specificDescription": "Storytelling and Digital Humanities students build a playable humanities argument. Metamodern Interactive Art students build a game that oscillates between sincerity and critique. Gaming for the AI Age students build a game that argues about AI capability, labor, risk, or creativity. Include an author's statement.",
   "gradingRubric": "30 pts strength of playable argument; 20 pts track sophistication; 20 pts player agency; 15 pts supporting statement; 15 pts playtest response.",
   "localPath": "projects/GDV623/P01/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV623/P01",
   "netlifyUrl": ""
 }

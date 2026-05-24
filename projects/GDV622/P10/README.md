@@ -2,7 +2,7 @@
 
 Course: GDV 622 - Multiplayer, Networked Play, and Live Operations
 
-Public repository target: GDV622-P10-live-ops-portfolio-game
+Public repository target: games-portfolio/projects/GDV622/P10
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a polished game that includes social, networked, asynchronous, mobile/touc
 
 - Local project path: projects/GDV622/P10
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV622/P10
 - Netlify deploy: TBD

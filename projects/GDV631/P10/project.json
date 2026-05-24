@@ -4,13 +4,13 @@
   "courseTitle": "Business, Ethics, Accessibility, and Player Research",
   "projectNumber": "P10",
   "title": "Responsible Release Game",
-  "repoName": "GDV631-P10-responsible-release-game",
+  "repoName": "games-portfolio/projects/GDV631/P10",
   "status": "placeholder",
   "genericDescription": "Combine ethics, accessibility, business, and research; prepare a game for public or stakeholder release; document responsibilities.",
   "specificDescription": "Build a polished game with a release checklist covering accessibility, privacy, credits, licenses, content warnings if needed, known issues, and audience support.",
   "gradingRubric": "30 pts release readiness; 20 pts responsible design documentation; 20 pts game quality; 15 pts accessibility/privacy checks; 15 pts presentation.",
   "localPath": "projects/GDV631/P10/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV631/P10",
   "netlifyUrl": ""
 }

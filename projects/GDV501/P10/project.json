@@ -4,12 +4,12 @@
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P10",
   "title": "Festival Signal",
-  "repoName": "GDV501-P10-festival-signal",
+  "repoName": "games-portfolio/projects/GDV501/P10",
   "status": "implemented",
   "genericDescription": "Scope a complete experience for public play; create immediate onboarding; design for spectators and fast turnover.",
   "specificDescription": "Rotate three large mirrors to match the required public-play signal pattern before time expires. The board shows which gates are lit, which mirror orientation is needed, and how close the route is to a complete clear.",
   "localPath": "projects/GDV501/P10/",
   "gameUrl": "https://gdv501-p10-festival-signal.netlify.app",
-  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P10-festival-signal",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV501/P10",
   "netlifyUrl": "https://gdv501-p10-festival-signal.netlify.app"
 }

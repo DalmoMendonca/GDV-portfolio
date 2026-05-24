@@ -5,6 +5,8 @@ const root = path.resolve(new URL("..", import.meta.url).pathname.replace(/^\/([
 const curriculumPath = path.join(root, "curriculum.md");
 const projectsRoot = path.join(root, "projects");
 const dataDir = path.join(root, "src", "data");
+const monorepoName = "games-portfolio";
+const monorepoUrl = "https://github.com/DalmoMendonca/games-portfolio/tree/master";
 
 function slugify(value) {
   return value
@@ -78,8 +80,8 @@ function parseCurriculum(markdown) {
 
 function projectReadme(course, project) {
   const id = `${course.code}-P${project.projectNumber}`;
-  const titleSlug = slugify(project.title);
-  const repoName = `${id}-${titleSlug}`;
+  const sourcePath = `projects/${course.code}/P${project.projectNumber}`;
+  const repoName = `${monorepoName}/${sourcePath}`;
   return `# ${id}: ${project.title}
 
 Course: ${course.displayCode} - ${course.title}
@@ -113,16 +115,17 @@ ${project.gradingRubric || "See course rubric in curriculum.md."}
 
 ## Links
 
-- Local project path: projects/${course.code}/P${project.projectNumber}
+- Local project path: ${sourcePath}
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: ${monorepoUrl}/${sourcePath}
 - Netlify deploy: TBD
 `;
 }
 
 function projectJson(course, project) {
   const id = `${course.code}-P${project.projectNumber}`;
-  const repoName = `${id}-${slugify(project.title)}`;
+  const sourcePath = `projects/${course.code}/P${project.projectNumber}`;
+  const repoName = `${monorepoName}/${sourcePath}`;
   return JSON.stringify(
     {
       id,
@@ -135,9 +138,9 @@ function projectJson(course, project) {
       genericDescription: project.learningObjectives,
       specificDescription: project.executionDetails,
       gradingRubric: project.gradingRubric,
-      localPath: `projects/${course.code}/P${project.projectNumber}/`,
+      localPath: `${sourcePath}/`,
       gameUrl: id === "GDV501-P01" ? `projects/${course.code}/P${project.projectNumber}/index.html` : "",
-      githubUrl: "",
+      githubUrl: `${monorepoUrl}/${sourcePath}`,
       netlifyUrl: "",
     },
     null,
@@ -152,20 +155,21 @@ function portfolioData(courses) {
     title: course.title,
     projects: course.projects.map((project) => {
       const id = `${course.code}-P${project.projectNumber}`;
+      const sourcePath = `projects/${course.code}/P${project.projectNumber}`;
       return {
         id,
         courseCode: course.code,
         courseTitle: course.title,
         projectNumber: `P${project.projectNumber}`,
         title: project.title,
-        repoName: `${id}-${slugify(project.title)}`,
+        repoName: `${monorepoName}/${sourcePath}`,
         status: id === "GDV501-P01" ? "implemented" : "placeholder",
         genericDescription: project.learningObjectives,
         specificDescription: project.executionDetails,
         rubric: project.gradingRubric,
-        localPath: `projects/${course.code}/P${project.projectNumber}/`,
+        localPath: `${sourcePath}/`,
         gameUrl: id === "GDV501-P01" ? `./projects/${course.code}/P${project.projectNumber}/index.html` : "",
-        githubUrl: "",
+        githubUrl: `${monorepoUrl}/${sourcePath}`,
         netlifyUrl: "",
       };
     }),

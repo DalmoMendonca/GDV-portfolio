@@ -2,7 +2,7 @@
 
 Course: GDV 633 - Track Studio III: Thesis Microgames
 
-Public repository target: GDV633-P04-material-experiment-game
+Public repository target: games-portfolio/projects/GDV633/P04
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game using an unusual material constraint such as scanned documents, phy
 
 - Local project path: projects/GDV633/P04
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV633/P04
 - Netlify deploy: TBD

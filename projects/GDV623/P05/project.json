@@ -4,13 +4,13 @@
   "courseTitle": "Track Studio II: Advanced Authorship",
   "projectNumber": "P05",
   "title": "Counterfactual Game",
-  "repoName": "GDV623-P05-counterfactual-game",
+  "repoName": "games-portfolio/projects/GDV623/P05",
   "status": "placeholder",
   "genericDescription": "Explore alternative possibilities; model causal changes; prevent counterfactuals from becoming arbitrary fantasy.",
   "specificDescription": "Build a game that asks \"what if\" about a historical event, aesthetic convention, social ritual, or AI-mediated future. At least three variables must alter the outcome space.",
   "gradingRubric": "30 pts counterfactual model; 20 pts causal clarity; 20 pts track-specific insight; 15 pts player-facing explanation; 15 pts notes.",
   "localPath": "projects/GDV623/P05/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV623/P05",
   "netlifyUrl": ""
 }

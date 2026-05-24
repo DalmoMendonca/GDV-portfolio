@@ -4,13 +4,13 @@
   "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
   "projectNumber": "P01",
   "title": "Impact and Hit-Stop Game",
-  "repoName": "GDV503-P01-impact-and-hit-stop-game",
+  "repoName": "games-portfolio/projects/GDV503/P01",
   "status": "placeholder",
   "genericDescription": "Use animation timing to communicate force; apply hit-stop, screen shake, particles, and sound without obscuring play; tune feedback intensity.",
   "specificDescription": "Build an action game centered on impacts. Include at least three feedback layers per successful action and an options toggle to reduce camera shake or intense effects.",
   "gradingRubric": "30 pts impact readability; 20 pts feedback layering; 20 pts playability under effects; 15 pts accessibility toggle; 15 pts reflection.",
   "localPath": "projects/GDV503/P01/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P01",
   "netlifyUrl": ""
 }

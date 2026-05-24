@@ -2,7 +2,7 @@
 
 Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
 
-Public repository target: GDV503-P06-animation-driven-character-game
+Public repository target: games-portfolio/projects/GDV503/P06
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game with a character or avatar that has at least eight readable animati
 
 - Local project path: projects/GDV503/P06
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P06
 - Netlify deploy: TBD

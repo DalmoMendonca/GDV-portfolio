@@ -2,7 +2,7 @@
 
 Course: GDV 622 - Multiplayer, Networked Play, and Live Operations
 
-Public repository target: GDV622-P03-asynchronous-turn-game
+Public repository target: games-portfolio/projects/GDV622/P03
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build an asynchronous hotseat, pass-and-play, play-by-email style, or simulated 
 
 - Local project path: projects/GDV622/P03
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV622/P03
 - Netlify deploy: TBD

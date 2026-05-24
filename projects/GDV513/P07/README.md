@@ -2,7 +2,7 @@
 
 Course: GDV 513 - Track Studio I: Methods and Media
 
-Public repository target: GDV513-P07-place-based-game
+Public repository target: games-portfolio/projects/GDV513/P07
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game set in a specific place, real or imagined. The place must shape mec
 
 - Local project path: projects/GDV513/P07
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV513/P07
 - Netlify deploy: TBD

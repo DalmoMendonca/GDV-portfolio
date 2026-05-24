@@ -2,7 +2,7 @@
 
 Course: GDV 511 - Level Design, Spaces, and Encounter Craft
 
-Public repository target: GDV511-P09-nonlinear-mission-game
+Public repository target: games-portfolio/projects/GDV511/P09
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a mission with at least three objectives available in nonlinear order. At 
 
 - Local project path: projects/GDV511/P09
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P09
 - Netlify deploy: TBD

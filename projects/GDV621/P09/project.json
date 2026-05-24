@@ -4,13 +4,13 @@
   "courseTitle": "Advanced AI, Simulation, and Procedural Systems",
   "projectNumber": "P09",
   "title": "Emergent Narrative Simulation Game",
-  "repoName": "GDV621-P09-emergent-narrative-simulation-game",
+  "repoName": "games-portfolio/projects/GDV621/P09",
   "status": "placeholder",
   "genericDescription": "Connect simulation events to story interpretation; generate narrative from systems; preserve player-readable causality.",
   "specificDescription": "Build a game where story arises from agents, resources, relationships, or world events. Include a chronicle, newspaper, log, rumor board, or recap generated from play.",
   "gradingRubric": "30 pts emergence; 20 pts narrative readability; 20 pts systemic causality; 15 pts recap artifact; 15 pts reflection.",
   "localPath": "projects/GDV621/P09/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV621/P09",
   "netlifyUrl": ""
 }

@@ -2,7 +2,7 @@
 
 Course: GDV 512 - Applied Game Mathematics, Technical Art, and Production Pipelines
 
-Public repository target: GDV512-P05-screen-space-outline-or-highlight-shader-game
+Public repository target: games-portfolio/projects/GDV512/P05
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game where interactable, dangerous, hidden, or selected objects are comm
 
 - Local project path: projects/GDV512/P05
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV512/P05
 - Netlify deploy: TBD

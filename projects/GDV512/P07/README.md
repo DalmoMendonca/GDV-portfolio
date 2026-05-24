@@ -2,7 +2,7 @@
 
 Course: GDV 512 - Applied Game Mathematics, Technical Art, and Production Pipelines
 
-Public repository target: GDV512-P07-procedural-mesh-or-tile-generation-game
+Public repository target: games-portfolio/projects/GDV512/P07
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game with a generated terrain, city block, cave, island, board, path net
 
 - Local project path: projects/GDV512/P07
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV512/P07
 - Netlify deploy: TBD

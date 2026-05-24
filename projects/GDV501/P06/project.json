@@ -4,12 +4,12 @@
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P06",
   "title": "Civic Fault Lines",
-  "repoName": "GDV501-P06-civic-fault-lines",
+  "repoName": "games-portfolio/projects/GDV501/P06",
   "status": "implemented",
   "genericDescription": "Represent consequence in mechanics; distinguish cosmetic choice from systemic choice; build replayable branches.",
   "specificDescription": "Make three civic decisions. Each changes later costs, available actions, trust, and ending conditions. The final state is a mechanical consequence report, not a simple moral label.",
   "localPath": "projects/GDV501/P06/",
   "gameUrl": "https://gdv501-p06-civic-fault-lines.netlify.app",
-  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P06-civic-fault-lines",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV501/P06",
   "netlifyUrl": "https://gdv501-p06-civic-fault-lines.netlify.app"
 }

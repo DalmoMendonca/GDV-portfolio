@@ -4,13 +4,13 @@
   "courseTitle": "Multiplayer, Networked Play, and Live Operations",
   "projectNumber": "P01",
   "title": "Local Competitive Game",
-  "repoName": "GDV622-P01-local-competitive-game",
+  "repoName": "games-portfolio/projects/GDV622/P01",
   "status": "placeholder",
   "genericDescription": "Design readable competition; support immediate rematch; balance asymmetry or symmetry.",
   "specificDescription": "Build a two- to four-player local competitive game with round structure, scorekeeping, and at least one comeback mechanic or anti-runaway rule.",
   "gradingRubric": "30 pts competitive design; 20 pts balance; 20 pts input/readability; 15 pts rematch flow; 15 pts playtest notes.",
   "localPath": "projects/GDV622/P01/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV622/P01",
   "netlifyUrl": ""
 }

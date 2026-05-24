@@ -2,7 +2,7 @@
 
 Course: GDV 622 - Multiplayer, Networked Play, and Live Operations
 
-Public repository target: GDV622-P07-in-game-economy-game
+Public repository target: games-portfolio/projects/GDV622/P07
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game with a closed or semi-closed economy involving at least three resou
 
 - Local project path: projects/GDV622/P07
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV622/P07
 - Netlify deploy: TBD

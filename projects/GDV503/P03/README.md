@@ -2,7 +2,7 @@
 
 Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
 
-Public repository target: GDV503-P03-audio-first-game
+Public repository target: games-portfolio/projects/GDV503/P03
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a game where sound is central to navigation, timing, stealth, rhythm, or d
 
 - Local project path: projects/GDV503/P03
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P03
 - Netlify deploy: TBD

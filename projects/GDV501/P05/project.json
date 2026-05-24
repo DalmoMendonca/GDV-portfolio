@@ -4,12 +4,12 @@
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P05",
   "title": "Kinetic Serif",
-  "repoName": "GDV501-P05-kinetic-serif",
+  "repoName": "games-portfolio/projects/GDV501/P05",
   "status": "implemented",
   "genericDescription": "Make movement itself the primary mechanic; shape challenge through spatial affordances; tune acceleration, friction, jump, dash, glide, or equivalent properties.",
   "specificDescription": "Cross five compact rooms using one expressive movement verb: hold to charge, release to dash. Hazards, gates, and landing lanes teach control without combat or inventory.",
   "localPath": "projects/GDV501/P05/",
   "gameUrl": "https://gdv501-p05-kinetic-serif.netlify.app",
-  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P05-kinetic-serif",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV501/P05",
   "netlifyUrl": "https://gdv501-p05-kinetic-serif.netlify.app"
 }

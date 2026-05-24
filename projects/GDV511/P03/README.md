@@ -2,7 +2,7 @@
 
 Course: GDV 511 - Level Design, Spaces, and Encounter Craft
 
-Public repository target: GDV511-P03-hub-and-spoke-exploration-game
+Public repository target: games-portfolio/projects/GDV511/P03
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a small hub with at least four spokes. Each spoke must contain a distinct 
 
 - Local project path: projects/GDV511/P03
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P03
 - Netlify deploy: TBD

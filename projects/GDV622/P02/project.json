@@ -4,13 +4,13 @@
   "courseTitle": "Multiplayer, Networked Play, and Live Operations",
   "projectNumber": "P02",
   "title": "Local Cooperative Game",
-  "repoName": "GDV622-P02-local-cooperative-game",
+  "repoName": "games-portfolio/projects/GDV622/P02",
   "status": "placeholder",
   "genericDescription": "Design shared goals; create interdependence; prevent one player from doing all meaningful work.",
   "specificDescription": "Build a local cooperative game for two players where each player has a distinct responsibility. Include fail states caused by coordination breakdown, not only individual skill.",
   "gradingRubric": "30 pts cooperation design; 20 pts role balance; 20 pts shared feedback; 15 pts accessibility of inputs; 15 pts documentation.",
   "localPath": "projects/GDV622/P02/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV622/P02",
   "netlifyUrl": ""
 }

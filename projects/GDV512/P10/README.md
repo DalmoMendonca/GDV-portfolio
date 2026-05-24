@@ -2,7 +2,7 @@
 
 Course: GDV 512 - Applied Game Mathematics, Technical Art, and Production Pipelines
 
-Public repository target: GDV512-P10-technical-vertical-slice-showcase-game
+Public repository target: games-portfolio/projects/GDV512/P10
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a showcase-ready game over a multi-week sprint. It must include at least o
 
 - Local project path: projects/GDV512/P10
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV512/P10
 - Netlify deploy: TBD

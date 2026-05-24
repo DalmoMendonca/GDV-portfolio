@@ -4,13 +4,13 @@
   "courseTitle": "Multiplayer, Networked Play, and Live Operations",
   "projectNumber": "P07",
   "title": "In-Game Economy Game",
-  "repoName": "GDV622-P07-in-game-economy-game",
+  "repoName": "games-portfolio/projects/GDV622/P07",
   "status": "placeholder",
   "genericDescription": "Design sources, sinks, scarcity, pricing, soft currency, hard currency, or non-monetary equivalents; prevent degenerate loops; communicate value without manipulative pressure.",
   "specificDescription": "Build a game with a closed or semi-closed economy involving at least three resources and two sinks. It may simulate premium currency, crafting value, faction influence, energy, or reputation, but no real purchases are allowed. Include a balance sheet showing expected flow per minute or turn.",
   "gradingRubric": "30 pts economy model; 20 pts balance; 20 pts player decision quality; 15 pts value communication; 15 pts balance and ethics documentation.",
   "localPath": "projects/GDV622/P07/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV622/P07",
   "netlifyUrl": ""
 }

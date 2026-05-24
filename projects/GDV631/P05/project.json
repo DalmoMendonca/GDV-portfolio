@@ -4,13 +4,13 @@
   "courseTitle": "Business, Ethics, Accessibility, and Player Research",
   "projectNumber": "P05",
   "title": "Serious or Applied Game",
-  "repoName": "GDV631-P05-serious-or-applied-game",
+  "repoName": "games-portfolio/projects/GDV631/P05",
   "status": "placeholder",
   "genericDescription": "Build toward learning, training, health, civic, or organizational outcomes; connect outcome to assessment; avoid reducing the game to a quiz.",
   "specificDescription": "Build an applied game with a measurable non-entertainment objective. Include a logic model explaining inputs, activities, outputs, and desired outcomes.",
   "gradingRubric": "30 pts applied design quality; 20 pts outcome alignment; 20 pts assessment method; 15 pts playability; 15 pts documentation.",
   "localPath": "projects/GDV631/P05/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV631/P05",
   "netlifyUrl": ""
 }

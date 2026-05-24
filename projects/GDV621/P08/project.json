@@ -4,13 +4,13 @@
   "courseTitle": "Advanced AI, Simulation, and Procedural Systems",
   "projectNumber": "P08",
   "title": "AI Director Game",
-  "repoName": "GDV621-P08-ai-director-game",
+  "repoName": "games-portfolio/projects/GDV621/P08",
   "status": "placeholder",
   "genericDescription": "Pace challenge dynamically; model player intensity; control spawning, resources, or events through a director system.",
   "specificDescription": "Build a game with an AI director that changes encounter pressure based on player state. Include a timeline visualization or post-run log of director decisions.",
   "gradingRubric": "30 pts director logic; 20 pts pacing quality; 20 pts fairness; 15 pts visualization/log; 15 pts notes.",
   "localPath": "projects/GDV621/P08/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV621/P08",
   "netlifyUrl": ""
 }

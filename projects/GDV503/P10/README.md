@@ -2,7 +2,7 @@
 
 Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
 
-Public repository target: GDV503-P10-polished-micro-arcade-cabinet
+Public repository target: games-portfolio/projects/GDV503/P10
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a polished arcade-style game with title treatment, attract loop, tutorial 
 
 - Local project path: projects/GDV503/P10
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P10
 - Netlify deploy: TBD

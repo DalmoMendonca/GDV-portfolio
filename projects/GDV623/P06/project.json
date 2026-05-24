@@ -4,13 +4,13 @@
   "courseTitle": "Track Studio II: Advanced Authorship",
   "projectNumber": "P06",
   "title": "Embodiment Game",
-  "repoName": "GDV623-P06-embodiment-game",
+  "repoName": "games-portfolio/projects/GDV623/P06",
   "status": "placeholder",
   "genericDescription": "Use input, timing, constraint, and feedback to shape embodied experience; connect body and meaning; accommodate different bodies.",
   "specificDescription": "Build a game where physical interaction, rhythm, pace, posture, gesture, or sensory limitation matters. Include an alternative control or play mode.",
   "gradingRubric": "30 pts embodied design; 20 pts conceptual connection; 20 pts accessibility; 15 pts polish; 15 pts reflection.",
   "localPath": "projects/GDV623/P06/",
   "gameUrl": "",
-  "githubUrl": "",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV623/P06",
   "netlifyUrl": ""
 }

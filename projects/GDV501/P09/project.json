@@ -4,12 +4,12 @@
   "courseTitle": "Game Systems, Loops, and Player Experience",
   "projectNumber": "P09",
   "title": "Magnet Toybox",
-  "repoName": "GDV501-P09-magnet-toybox",
+  "repoName": "games-portfolio/projects/GDV501/P09",
   "status": "implemented",
   "genericDescription": "Differentiate toy, puzzle, and game; discover affordances through experimentation; add goals without killing expressive play.",
   "specificDescription": "Pull and push drifting particles with a magnetic cursor, then use the same expressive system to herd luminous motes into scoring rings before time expires.",
   "localPath": "projects/GDV501/P09/",
   "gameUrl": "https://gdv501-p09-magnet-toybox.netlify.app",
-  "githubUrl": "https://github.com/DalmoMendonca/GDV501-P09-magnet-toybox",
+  "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV501/P09",
   "netlifyUrl": "https://gdv501-p09-magnet-toybox.netlify.app"
 }

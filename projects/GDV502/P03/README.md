@@ -2,7 +2,7 @@
 
 Course: GDV 502 - Gameplay Programming and Rapid Tools
 
-Public repository target: GDV502-P03-data-driven-wave-game
+Public repository target: games-portfolio/projects/GDV502/P03
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a survival, rhythm, tower defense, or encounter game where waves, enemies,
 
 - Local project path: projects/GDV502/P03
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV502/P03
 - Netlify deploy: TBD

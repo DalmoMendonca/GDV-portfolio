@@ -2,7 +2,7 @@
 
 Course: GDV 623 - Track Studio II: Advanced Authorship
 
-Public repository target: GDV623-P10-advanced-track-showcase-game
+Public repository target: games-portfolio/projects/GDV623/P10
 
 Netlify status: Placeholder. Deploy this game when implementation begins.
 
@@ -33,5 +33,5 @@ Build a refined game suitable for a public showcase, research demo, gallery crit
 
 - Local project path: projects/GDV623/P10
 - Public game URL: TBD
-- GitHub repository: TBD
+- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV623/P10
 - Netlify deploy: TBD

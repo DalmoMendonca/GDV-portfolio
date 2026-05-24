@@ -3,14 +3,14 @@
   "courseCode": "GDV503",
   "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
   "projectNumber": "P04",
-  "title": "Color and Shape Language Game",
+  "title": "Shape Signal Yard",
   "repoName": "games-portfolio/projects/GDV503/P04",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Use color, silhouette, and shape to distinguish roles; design for color vision accessibility; reinforce rules visually.",
-  "specificDescription": "Build a game with at least five object types that are understandable by shape and behavior, not color alone. Include a colorblind-safe palette or alternate mode.",
+  "specificDescription": "A rail-yard sorting game where circles, diamonds, chevrons, gates, and stars have unique motion rules and a colorblind-safe hatch mode.",
   "gradingRubric": "30 pts visual language consistency; 20 pts accessibility; 20 pts rule readability; 15 pts aesthetic cohesion; 15 pts notes.",
   "localPath": "projects/GDV503/P04/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv503-p04-shape-signal-yard.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P04",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv503-p04-shape-signal-yard.netlify.app"
 }

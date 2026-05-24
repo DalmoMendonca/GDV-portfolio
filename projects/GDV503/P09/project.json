@@ -3,14 +3,14 @@
   "courseCode": "GDV503",
   "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
   "projectNumber": "P09",
-  "title": "Accessibility Retrofit Game",
+  "title": "Access Kitchen",
   "repoName": "games-portfolio/projects/GDV503/P09",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Audit barriers; design options for diverse players; evaluate whether an accessibility feature changes the core challenge appropriately.",
-  "specificDescription": "Start with one previous game or a provided prototype and retrofit at least six accessibility improvements across controls, visuals, audio, pace, text, and difficulty. Submit before/after builds or recordings.",
+  "specificDescription": "A cooking microgame with live toggles for captions, high contrast, slow mode, larger text, simplified motion, remap hinting, and difficulty assist.",
   "gradingRubric": "30 pts quality of accessibility improvements; 20 pts preservation of core design; 20 pts implementation completeness; 15 pts before/after evidence; 15 pts audit rationale.",
   "localPath": "projects/GDV503/P09/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv503-p09-access-kitchen.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P09",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv503-p09-access-kitchen.netlify.app"
 }

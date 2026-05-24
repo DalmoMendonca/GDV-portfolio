@@ -3,14 +3,14 @@
   "courseCode": "GDV503",
   "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
   "projectNumber": "P07",
-  "title": "Minimalist Readability Game",
+  "title": "Three-Color Tides",
   "repoName": "games-portfolio/projects/GDV503/P07",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Communicate with limited assets; establish hierarchy through spacing, motion, contrast, and rhythm; remove nonessential information.",
-  "specificDescription": "Build a complete game using no more than three colors, three sound families, and simple geometric forms. The constraint should improve readability rather than feel unfinished.",
+  "specificDescription": "A three-color avoidance game where spacing, tempo, and motion hierarchy carry all readability without ornament.",
   "gradingRubric": "30 pts clarity under constraint; 20 pts cohesive minimalist style; 20 pts complete design; 15 pts player comprehension; 15 pts notes.",
   "localPath": "projects/GDV503/P07/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv503-p07-three-color-tides.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P07",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv503-p07-three-color-tides.netlify.app"
 }

@@ -3,14 +3,14 @@
   "courseCode": "GDV503",
   "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
   "projectNumber": "P01",
-  "title": "Impact and Hit-Stop Game",
+  "title": "Knockout Bento",
   "repoName": "games-portfolio/projects/GDV503/P01",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Use animation timing to communicate force; apply hit-stop, screen shake, particles, and sound without obscuring play; tune feedback intensity.",
-  "specificDescription": "Build an action game centered on impacts. Include at least three feedback layers per successful action and an options toggle to reduce camera shake or intense effects.",
+  "specificDescription": "A lunch-tray action game where every clean strike produces squash, hit-stop, confetti, knockback, and a readable reduced-motion alternative.",
   "gradingRubric": "30 pts impact readability; 20 pts feedback layering; 20 pts playability under effects; 15 pts accessibility toggle; 15 pts reflection.",
   "localPath": "projects/GDV503/P01/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv503-p01-knockout-bento.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P01",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv503-p01-knockout-bento.netlify.app"
 }

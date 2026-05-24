@@ -1,37 +1,23 @@
-# GDV503-P01: Impact and Hit-Stop Game
+# GDV503-P01: Knockout Bento
 
-Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
+A lunch-tray action game where every clean strike produces squash, hit-stop, confetti, knockback, and a readable reduced-motion alternative.
 
-Public repository target: games-portfolio/projects/GDV503/P01
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
-
-## Generic Description
-
+## Learning Objective
 Use animation timing to communicate force; apply hit-stop, screen shake, particles, and sound without obscuring play; tune feedback intensity.
 
-## Specific Execution
+## Controls
+Arrows/WASD move, Space strike, M reduce motion
 
-Build an action game centered on impacts. Include at least three feedback layers per successful action and an options toggle to reduce camera shake or intense effects.
-
-## Grading Rubric
-
+## Assessment Rubric
 30 pts impact readability; 20 pts feedback layering; 20 pts playability under effects; 15 pts accessibility toggle; 15 pts reflection.
 
-## Expected Deliverables
-
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+## Build
+```bash
+npm install
+npm run build
+npm run dev
+```
 
 ## Links
-
-- Local project path: projects/GDV503/P01
-- Public game URL: TBD
-- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P01
-- Netlify deploy: TBD
+- Playable build: https://gdv503-p01-knockout-bento.netlify.app
+- Source: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P01

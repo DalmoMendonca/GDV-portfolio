@@ -1,37 +1,23 @@
-# GDV503-P06: Animation-Driven Character Game
+# GDV503-P06: Pose Courier
 
-Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
+A paper courier with eight readable pose states: idle, run, brake, crouch, charge, dash, recover, and celebrate, all tied to mechanics.
 
-Public repository target: games-portfolio/projects/GDV503/P06
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
-
-## Generic Description
-
+## Learning Objective
 Use animation states to communicate intention; connect animation timing to mechanics; avoid animation that lies about collision or control.
 
-## Specific Execution
+## Controls
+Arrows/WASD move, Space dash, Shift crouch/cancel
 
-Build a game with a character or avatar that has at least eight readable animation states or pose changes tied to mechanics. Include at least one cancel, recovery, or anticipation rule.
-
-## Grading Rubric
-
+## Assessment Rubric
 30 pts animation readability; 20 pts mechanic-animation alignment; 20 pts control responsiveness; 15 pts polish; 15 pts iteration notes.
 
-## Expected Deliverables
-
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+## Build
+```bash
+npm install
+npm run build
+npm run dev
+```
 
 ## Links
-
-- Local project path: projects/GDV503/P06
-- Public game URL: TBD
-- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P06
-- Netlify deploy: TBD
+- Playable build: https://gdv503-p06-pose-courier.netlify.app
+- Source: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P06

@@ -1,37 +1,23 @@
-# GDV503-P04: Color and Shape Language Game
+# GDV503-P04: Shape Signal Yard
 
-Course: GDV 503 - Game Feel, UI, Audio, and Visual Communication
+A rail-yard sorting game where circles, diamonds, chevrons, gates, and stars have unique motion rules and a colorblind-safe hatch mode.
 
-Public repository target: games-portfolio/projects/GDV503/P04
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
-
-## Generic Description
-
+## Learning Objective
 Use color, silhouette, and shape to distinguish roles; design for color vision accessibility; reinforce rules visually.
 
-## Specific Execution
+## Controls
+Arrows/WASD move, Space collect/sort, C hatch mode
 
-Build a game with at least five object types that are understandable by shape and behavior, not color alone. Include a colorblind-safe palette or alternate mode.
-
-## Grading Rubric
-
+## Assessment Rubric
 30 pts visual language consistency; 20 pts accessibility; 20 pts rule readability; 15 pts aesthetic cohesion; 15 pts notes.
 
-## Expected Deliverables
-
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+## Build
+```bash
+npm install
+npm run build
+npm run dev
+```
 
 ## Links
-
-- Local project path: projects/GDV503/P04
-- Public game URL: TBD
-- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P04
-- Netlify deploy: TBD
+- Playable build: https://gdv503-p04-shape-signal-yard.netlify.app
+- Source: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P04

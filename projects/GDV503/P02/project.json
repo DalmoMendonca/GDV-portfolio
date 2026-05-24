@@ -3,14 +3,14 @@
   "courseCode": "GDV503",
   "courseTitle": "Game Feel, UI, Audio, and Visual Communication",
   "projectNumber": "P02",
-  "title": "Diegetic Interface Game",
+  "title": "Suitcase Submarine",
   "repoName": "games-portfolio/projects/GDV503/P02",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Integrate UI into the game world; reduce HUD dependency; communicate health, score, or objectives through objects and environment.",
-  "specificDescription": "Build a game where at least two essential status indicators are diegetic. Players should not need a conventional corner HUD to understand progress or danger.",
+  "specificDescription": "A tiny submarine where oxygen is shown by cabin bubbles and treasure progress by suitcase stickers mounted in the vessel itself.",
   "gradingRubric": "30 pts diegetic UI clarity; 20 pts world integration; 20 pts gameplay completeness; 15 pts visual hierarchy; 15 pts playtest evidence.",
   "localPath": "projects/GDV503/P02/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv503-p02-suitcase-submarine.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV503/P02",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv503-p02-suitcase-submarine.netlify.app"
 }

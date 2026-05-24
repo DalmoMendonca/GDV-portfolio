@@ -1,37 +1,23 @@
-# GDV511-P02: Tutorial Without Text
+# GDV511-P02: Silent Switchhouse
 
-Course: GDV 511 - Level Design, Spaces, and Encounter Craft
+A wordless switch level where framing, repetition, locked doors, and visible consequences teach pressure plates without pop-up instruction.
 
-Public repository target: games-portfolio/projects/GDV511/P02
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
-
-## Generic Description
-
+## Learning Objective
 Teach through spatial arrangement; introduce one concept at a time; verify comprehension through player action.
 
-## Specific Execution
+## Controls
+Arrows/WASD move, Space pulse, R restart
 
-Build a level that teaches a mechanic without tutorial text, voiceover, or pop-up instructions. Use gating, repetition, framing, and consequence to teach.
-
-## Grading Rubric
-
+## Assessment Rubric
 30 pts nonverbal teaching; 20 pts pacing; 20 pts completion clarity; 15 pts playtest observation; 15 pts polish.
 
-## Expected Deliverables
-
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+## Build
+```bash
+npm install
+npm run build
+npm run dev
+```
 
 ## Links
-
-- Local project path: projects/GDV511/P02
-- Public game URL: TBD
-- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P02
-- Netlify deploy: TBD
+- Playable build: https://gdv511-p02-silent-switchhouse.netlify.app
+- Source: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P02

@@ -3,14 +3,14 @@
   "courseCode": "GDV511",
   "courseTitle": "Level Design, Spaces, and Encounter Craft",
   "projectNumber": "P03",
-  "title": "Hub and Spoke Exploration Game",
+  "title": "Compass Plaza",
   "repoName": "games-portfolio/projects/GDV511/P03",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Design navigable hubs; create landmarks and return paths; reward optional exploration.",
-  "specificDescription": "Build a small hub with at least four spokes. Each spoke must contain a distinct challenge and a reward or information piece that changes how the hub is perceived or used.",
+  "specificDescription": "A four-spoke hub where each route teaches a different spatial problem and returns with a landmark reward that changes the central plaza.",
   "gradingRubric": "30 pts hub navigation; 20 pts spoke variety; 20 pts reward design; 15 pts landmark readability; 15 pts documentation.",
   "localPath": "projects/GDV511/P03/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv511-p03-compass-plaza.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P03",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv511-p03-compass-plaza.netlify.app"
 }

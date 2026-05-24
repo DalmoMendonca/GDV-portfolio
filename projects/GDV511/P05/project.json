@@ -3,14 +3,14 @@
   "courseCode": "GDV511",
   "courseTitle": "Level Design, Spaces, and Encounter Craft",
   "projectNumber": "P05",
-  "title": "Combat Arena with Phases",
+  "title": "Clockwork Courtyard",
   "repoName": "games-portfolio/projects/GDV511/P05",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Shape combat through space; use enemy composition and arena changes; pace intensity across phases.",
-  "specificDescription": "Build an arena encounter with at least three phases. Each phase must alter space, enemy behavior, objective pressure, or resource availability.",
+  "specificDescription": "A three-phase encounter where gates, cover, enemy pressure, and resources rotate through the arena without hiding the rules.",
   "gradingRubric": "30 pts encounter pacing; 20 pts arena affordances; 20 pts phase differentiation; 15 pts fairness and telegraphing; 15 pts testing.",
   "localPath": "projects/GDV511/P05/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv511-p05-clockwork-courtyard.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P05",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv511-p05-clockwork-courtyard.netlify.app"
 }

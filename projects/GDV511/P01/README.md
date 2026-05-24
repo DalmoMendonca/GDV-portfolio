@@ -1,37 +1,23 @@
-# GDV511-P01: Metrics Gym
+# GDV511-P01: Metric Meadow
 
-Course: GDV 511 - Level Design, Spaces, and Encounter Craft
+A readable metrics gym with movement lanes, cover tests, hazard spacing, sightline rulers, and a final challenge stitched from those measured parts.
 
-Public repository target: games-portfolio/projects/GDV511/P01
-
-Netlify status: Placeholder. Deploy this game when implementation begins.
-
-## Generic Description
-
+## Learning Objective
 Establish player metrics; build spaces that fit movement; test jump, sightline, cover, and interaction distances.
 
-## Specific Execution
+## Controls
+Arrows/WASD move, Space test dash, R restart
 
-Build a playable metrics gym for one avatar controller. Include labeled test zones for movement, camera, interaction, hazard spacing, and traversal timing, then include a short challenge using those metrics.
-
-## Grading Rubric
-
+## Assessment Rubric
 30 pts metric accuracy; 20 pts test coverage; 20 pts playable challenge; 15 pts labeling and documentation; 15 pts revision evidence.
 
-## Expected Deliverables
-
-- Playable build
-- Source repository
-- 30 to 90 second capture video or GIF
-- Designer's note
-- One-page postmortem
-- Accessibility checklist
-- Build instructions
-- Public portfolio metadata
+## Build
+```bash
+npm install
+npm run build
+npm run dev
+```
 
 ## Links
-
-- Local project path: projects/GDV511/P01
-- Public game URL: TBD
-- GitHub repository: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P01
-- Netlify deploy: TBD
+- Playable build: https://gdv511-p01-metric-meadow.netlify.app
+- Source: https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P01

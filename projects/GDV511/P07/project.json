@@ -3,14 +3,14 @@
   "courseCode": "GDV511",
   "courseTitle": "Level Design, Spaces, and Encounter Craft",
   "projectNumber": "P07",
-  "title": "Verticality and Sightline Game",
+  "title": "Vista Stair",
   "repoName": "games-portfolio/projects/GDV511/P07",
-  "status": "placeholder",
+  "status": "implemented",
   "genericDescription": "Use height as design material; control visibility and anticipation; support navigation across layered spaces.",
-  "specificDescription": "Build a level where vertical movement or layered sightlines matter to strategy. Include at least three moments where seeing a destination, threat, or reward changes player choice.",
+  "specificDescription": "A layered stair-and-lift level where high balconies reveal threats, rewards, and destinations before the player can reach them.",
   "gradingRubric": "30 pts vertical design; 20 pts sightline composition; 20 pts navigation clarity; 15 pts mechanic integration; 15 pts notes.",
   "localPath": "projects/GDV511/P07/",
-  "gameUrl": "",
+  "gameUrl": "https://gdv511-p07-vista-stair.netlify.app",
   "githubUrl": "https://github.com/DalmoMendonca/games-portfolio/tree/master/projects/GDV511/P07",
-  "netlifyUrl": ""
+  "netlifyUrl": "https://gdv511-p07-vista-stair.netlify.app"
 }

@@ -15,6 +15,12 @@ The portfolio and all 120 project folders live here. Each project is structured 
 
 The portfolio deploys to Netlify as one site. Individual projects may also deploy to their own Netlify sites, but their source links point back to the matching subfolder in this monorepo.
 
+## Production Standard
+
+This portfolio is governed by [docs/production-standard.md](docs/production-standard.md). The short version: P01-P09 in each course are focused playable studies, while every P10 is a substantial course capstone that must synthesize the course into a full, portfolio-defining game. Existing early P10s are playable placeholders until reworked to meet that capstone bar.
+
+The P10 roadmap lives in [docs/p10-masterpiece-roadmap.md](docs/p10-masterpiece-roadmap.md).
+
 ## Commands
 
 ```bash

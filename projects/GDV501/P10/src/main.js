@@ -1,223 +1,611 @@
 import "./styles.css";
 
-const cfg = {"n":"10","title":"Festival Signal","slug":"festival-signal","repo":"GDV501-P10-festival-signal","kind":"festival","deck":"Rotate three signal mirrors until every festival gate lights.","generic":"Scope a complete experience for public play; create immediate onboarding; design for spectators and fast turnover.","specific":"Rotate three large mirrors to match the required public-play signal pattern before time expires. The board shows which gates are lit, which mirror orientation is needed, and how close the route is to a complete clear.","controls":"Click a mirror to rotate it. R restarts the board.","palette":["#f7f3da","#202417","#6f9f2d","#cf8b22","#bf4b4b"],"id":"GDV501-P10"};
 const canvas = document.querySelector("#game");
 const ctx = canvas.getContext("2d");
 const W = 1120;
 const H = 700;
 const TAU = Math.PI * 2;
+
 const keys = new Set();
-const pointer = { x: W / 2, y: H / 2, down: false };
+const pointer = { x: W / 2, y: H / 2, down: false, clicked: false };
 let last = 0;
 
-const s = {
-  mode: "menu",
-  t: 0,
-  score: 0,
-  message: cfg.deck,
-  log: [],
-  started: false,
-  game: {},
+const COLORS = {
+  paper: "#fff7df",
+  ink: "#1f2a24",
+  green: "#2f8f63",
+  teal: "#1f9aa5",
+  gold: "#f2b23a",
+  red: "#d94f45",
+  plum: "#6d4c9f",
+  blue: "#4f7dc9",
+  smoke: "rgba(31,42,36,.18)",
 };
 
-function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
-function dist(a, b, c, d) { return Math.hypot(a - c, b - d); }
-function lerp(a, b, t) { return a + (b - a) * t; }
-function wrap(v, max) { return ((v % max) + max) % max; }
-function rnd(seed) { const x = Math.sin(seed * 999.91) * 43758.5453; return x - Math.floor(x); }
-function down(...names) { return names.some((name) => keys.has(name)); }
-function addLog(text) { s.log.unshift(text); s.log = s.log.slice(0, 6); }
+const districts = [
+  {
+    id: "gate",
+    name: "Lantern Gate",
+    x: 456,
+    y: 202,
+    color: COLORS.gold,
+    need: "focus",
+    story: "The gate crew needs a clean opening signal before the first procession.",
+  },
+  {
+    id: "market",
+    name: "Market Row",
+    x: 642,
+    y: 150,
+    color: COLORS.teal,
+    need: "rhythm",
+    story: "Vendors are ready, but their timing flags are out of phase.",
+  },
+  {
+    id: "garden",
+    name: "Quiet Garden",
+    x: 842,
+    y: 230,
+    color: COLORS.green,
+    need: "mercy",
+    story: "Guests can recover here if the festival becomes too loud.",
+  },
+  {
+    id: "stage",
+    name: "Main Stage",
+    x: 962,
+    y: 442,
+    color: COLORS.red,
+    need: "spectacle",
+    story: "Performers need a spectacular beam without blinding the crowd.",
+  },
+  {
+    id: "pier",
+    name: "River Pier",
+    x: 588,
+    y: 506,
+    color: COLORS.blue,
+    need: "closure",
+    story: "The closing boats will only launch if the route home is lit.",
+  },
+];
 
-function initGame() {
-  s.mode = "play";
-  s.t = 0;
-  s.score = 0;
-  s.log = [];
-  s.started = true;
-  if (cfg.kind === "timing") initTiming();
-  if (cfg.kind === "risk") initRisk();
-  if (cfg.kind === "resource") initResource();
-  if (cfg.kind === "bluff") initBluff();
-  if (cfg.kind === "movement") initMovement();
-  if (cfg.kind === "choice") initChoice();
-  if (cfg.kind === "coop") initCoop();
-  if (cfg.kind === "adaptive") initAdaptive();
-  if (cfg.kind === "toy") initToy();
-  if (cfg.kind === "festival") initFestival();
+const nights = [
+  {
+    title: "Night 1: Open the Grounds",
+    goal: ["gate", "market", "garden"],
+    time: 150,
+    mirrors: [0, 1, 2],
+    crowd: 56,
+  },
+  {
+    title: "Night 2: The Long Procession",
+    goal: ["gate", "market", "garden", "stage"],
+    time: 170,
+    mirrors: [1, 3, 0],
+    crowd: 68,
+  },
+  {
+    title: "Night 3: River Finale",
+    goal: ["gate", "market", "garden", "stage", "pier"],
+    time: 190,
+    mirrors: [2, 0, 3],
+    crowd: 74,
+  },
+];
+
+const state = {
+  mode: "title",
+  night: 0,
+  time: 0,
+  score: 0,
+  crowd: 0,
+  resolve: 0,
+  message: "Route signal beams through the festival, help each district, and keep the crowd delighted through three nights.",
+  log: [],
+  player: { x: 416, y: 590, r: 14, speed: 210 },
+  mirrors: [],
+  beams: [],
+  sparks: [],
+  helped: new Set(),
+  lit: new Set(),
+  route: [],
+  reduceMotion: false,
+  showMap: true,
+  ending: "",
+};
+
+function clamp(v, a, b) {
+  return Math.max(a, Math.min(b, v));
 }
 
-function finish(message) {
-  s.mode = "complete";
-  s.message = message;
-  addLog(message);
+function dist(a, b, c, d) {
+  return Math.hypot(a - c, b - d);
 }
 
-function fail(message) {
-  s.mode = "complete";
-  s.message = message;
-  addLog(message);
+function ease(t) {
+  return t * t * (3 - 2 * t);
 }
 
-function initTiming() {
-  s.game = { tier: 0, attempt: 1, angle: -1.2, target: 4.7, score: 0, last: "Ready", pulse: 0, history: [] };
-  s.message = "Commit when the needle crosses the lit aperture.";
+function rnd(seed) {
+  const x = Math.sin(seed * 991.13) * 43758.5453;
+  return x - Math.floor(x);
 }
-function updateTiming(dt) {
-  const g = s.game;
-  const speed = [1.7, 2.45, 3.3][g.tier];
-  g.angle = wrap(g.angle + speed * dt, TAU);
-  g.pulse = Math.max(0, g.pulse - dt * 2);
+
+function has(...codes) {
+  return codes.some((c) => keys.has(c));
 }
-function timingAction() {
-  const g = s.game;
-  const perfect = [0.22, 0.16, 0.11][g.tier];
-  const good = [0.58, 0.44, 0.32][g.tier];
-  let diff = Math.abs(wrap(g.angle - g.target + Math.PI, TAU) - Math.PI);
-  const label = diff <= perfect ? "Perfect" : diff <= good ? "Good" : g.angle < g.target ? "Early" : "Late";
-  const pts = label === "Perfect" ? 120 : label === "Good" ? 70 : 20;
-  g.score += pts;
-  s.score = g.score;
-  g.last = label + " +" + pts;
-  g.pulse = 1;
-  g.history.push(label);
-  addLog(g.last);
-  if (g.attempt >= 9) finish("Run complete: " + g.score + " points, " + g.history.filter((x) => x === "Perfect").length + " perfect hits.");
-  else {
-    g.attempt++;
-    if ((g.attempt - 1) % 3 === 0) g.tier++;
-    g.target = [4.7, 1.1, 2.8][g.tier];
+
+function addLog(text) {
+  state.log.unshift(text);
+  state.log = state.log.slice(0, 6);
+}
+
+function text(value, x, y, size = 16, color = COLORS.ink, weight = 750, align = "left") {
+  ctx.fillStyle = color;
+  ctx.font = `${weight} ${size}px Inter, Segoe UI, system-ui, sans-serif`;
+  ctx.textAlign = align;
+  ctx.textBaseline = "alphabetic";
+  ctx.fillText(value, x, y);
+}
+
+function wrapText(value, x, y, width, lineHeight, size = 16, color = COLORS.ink) {
+  ctx.font = `720 ${size}px Inter, Segoe UI, system-ui, sans-serif`;
+  let line = "";
+  for (const word of String(value).split(" ")) {
+    const test = line ? `${line} ${word}` : word;
+    if (ctx.measureText(test).width > width && line) {
+      text(line, x, y, size, color, 720);
+      line = word;
+      y += lineHeight;
+    } else {
+      line = test;
+    }
+  }
+  if (line) text(line, x, y, size, color, 720);
+}
+
+function circle(x, y, r, fill, stroke = null, width = 2) {
+  ctx.beginPath();
+  ctx.arc(x, y, r, 0, TAU);
+  ctx.fillStyle = fill;
+  ctx.fill();
+  if (stroke) {
+    ctx.lineWidth = width;
+    ctx.strokeStyle = stroke;
+    ctx.stroke();
   }
 }
 
-function initRisk() {
-  s.game = { p:{x:150,y:350,r:16}, gate:{x:1010,y:350,r:34}, level:0, banked:false, mult:1, time:70,
-    items:Array.from({length:9},(_,i)=>({x:260+rnd(i)*620,y:110+rnd(i+20)*480,taken:false,value:80+i*15})),
-    hazards:Array.from({length:4},(_,i)=>({x:340+rnd(i+50)*520,y:160+rnd(i+60)*360,a:rnd(i+70)*TAU,sp:55+i*12})) };
-  s.message = "Collect cores. Each one raises danger. Bank at the right gate whenever your nerve breaks.";
+function rect(x, y, w, h, fill, stroke = null, width = 2) {
+  ctx.fillStyle = fill;
+  ctx.fillRect(x, y, w, h);
+  if (stroke) {
+    ctx.lineWidth = width;
+    ctx.strokeStyle = stroke;
+    ctx.strokeRect(x, y, w, h);
+  }
 }
-function updateRisk(dt) {
-  const g=s.game,p=g.p; const sp=220;
-  p.x=clamp(p.x+(down("ArrowRight","KeyD")-down("ArrowLeft","KeyA"))*sp*dt,50,W-50);
-  p.y=clamp(p.y+(down("ArrowDown","KeyS")-down("ArrowUp","KeyW"))*sp*dt,80,H-70);
-  g.time-=dt; if(g.time<=0) fail("Time expired with "+s.score+" bankable points.");
-  g.items.forEach((it)=>{ if(!it.taken&&dist(p.x,p.y,it.x,it.y)<28){it.taken=true; g.level++; g.mult+=.2; s.score+=Math.round(it.value*g.mult); addLog("Core taken. Danger multiplier "+g.mult.toFixed(1));}});
-  g.hazards.forEach((h,i)=>{h.a+=dt*(.7+i*.16+g.level*.08); h.x+=Math.cos(h.a)*h.sp*dt; h.y+=Math.sin(h.a*1.3)*h.sp*dt; if(h.x<70||h.x>1050)h.a=Math.PI-h.a; if(h.y<95||h.y>610)h.a=-h.a; if(dist(p.x,p.y,h.x,h.y)<25){s.score=Math.max(0,s.score-90); p.x=150;p.y=350; addLog("Collision. Score pressure reset.");}});
-  if(g.level===9) finish("All cores collected. Full-risk clear: "+s.score+" points.");
+
+function rounded(x, y, w, h, r, fill, stroke = null) {
+  ctx.beginPath();
+  ctx.roundRect(x, y, w, h, r);
+  ctx.fillStyle = fill;
+  ctx.fill();
+  if (stroke) {
+    ctx.strokeStyle = stroke;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  }
 }
-function bankRisk(){ const g=s.game,p=g.p; if(dist(p.x,p.y,g.gate.x,g.gate.y)<64) finish("Banked safely at "+s.score+" points after "+g.level+" cores."); else addLog("Bank gate is on the right edge."); }
 
-function initResource(){
-  s.game={level:0,moves:0,levels:[
-    {a:4,b:0,c:0,goal:{a:1,b:1,c:1}},
-    {a:6,b:1,c:0,goal:{a:0,b:3,c:1}},
-    {a:3,b:2,c:1,goal:{a:2,b:0,c:4}},
-    {a:8,b:0,c:2,goal:{a:1,b:4,c:2}},
-    {a:5,b:3,c:0,goal:{a:0,b:1,c:5}},
-  ]};
-  s.message="Convert ore to glass, glass to signal, or recycle signal. Meet each ledger exactly.";
+function line(x1, y1, x2, y2, color, width = 2) {
+  ctx.strokeStyle = color;
+  ctx.lineWidth = width;
+  ctx.beginPath();
+  ctx.moveTo(x1, y1);
+  ctx.lineTo(x2, y2);
+  ctx.stroke();
 }
-function resourceState(){return s.game.levels[s.game.level];}
-function convert(type){const l=resourceState(); if(type==="forge"&&l.a>=2){l.a-=2;l.b++;s.game.moves++;} if(type==="focus"&&l.b>=1&&l.a>=1){l.b--;l.a--;l.c+=2;s.game.moves++;} if(type==="reclaim"&&l.c>=1){l.c--;l.a+=2;s.game.moves++;} const g=l.goal; if(l.a===g.a&&l.b===g.b&&l.c===g.c){addLog("Level "+(s.game.level+1)+" balanced."); if(s.game.level===4)finish("All five ledgers balanced in "+s.game.moves+" moves."); else s.game.level++;}}
 
-function initBluff(){s.game={round:1,wins:0,losses:0,hand:0,bot:0,tell:"",recap:[]}; dealBluff(); s.message="Read the tell. Probe reveals more. Feint punishes overconfidence. Commit wins high value.";}
-function dealBluff(){const g=s.game; g.hand=1+Math.floor(rnd(g.round+s.t+3)*9); g.bot=1+Math.floor(rnd(g.round+22)*9); g.tell=g.bot>=7?"Bot steadies the coin.":g.bot<=3?"Bot keeps touching the discard.":"Bot watches your hand, not the pot.";}
-function bluff(action){const g=s.game; let out=""; if(action==="probe"){out="Probe: hidden value is "+(g.bot>=6?"high.":g.bot<=3?"low.":"uncertain.");}
- if(action==="feint"){const ok=g.bot>=7; ok?g.wins++:g.losses++; out=ok?"Feint worked against a strong hidden card.":"Feint failed; no pressure to exploit.";}
- if(action==="commit"){const ok=g.hand>=g.bot; ok?g.wins++:g.losses++; out="You "+(ok?"won":"lost")+" "+g.hand+" vs hidden "+g.bot+".";}
- addLog(out); g.recap.push(out); if(action!=="probe"){ if(g.round>=5)finish("Match over: "+g.wins+" wins, "+g.losses+" losses. Recap preserves every reveal."); else {g.round++; dealBluff();}}}
+function startNight(index = 0) {
+  const night = nights[index];
+  state.mode = "play";
+  state.night = index;
+  state.time = night.time;
+  state.crowd = night.crowd;
+  state.resolve = 0;
+  state.message = night.title;
+  state.player.x = 416;
+  state.player.y = 590;
+  state.helped = new Set();
+  state.lit = new Set();
+  state.route = [];
+  state.beams = [];
+  state.sparks = [];
+  state.mirrors = [
+    { x: 548, y: 292, angle: night.mirrors[0], label: "Sun" },
+    { x: 706, y: 354, angle: night.mirrors[1], label: "Bell" },
+    { x: 820, y: 520, angle: night.mirrors[2], label: "River" },
+  ];
+  addLog(`${night.title} begins.`);
+  solveSignals();
+}
 
-function initMovement(){s.game={room:0,p:{x:90,y:530,vx:0,vy:0,r:15,charge:0,on:false},rooms:[0,1,2,3,4]}; s.message="Hold Space to charge the dash. Release toward the landing lane.";}
-function updateMovement(dt){const g=s.game,p=g.p; const left=down("ArrowLeft","KeyA"),right=down("ArrowRight","KeyD"); p.vx+=((right-left)*460-p.vx*5)*dt; p.vy+=900*dt; if(down("Space"))p.charge=clamp(p.charge+dt,0,1); p.x+=p.vx*dt; p.y+=p.vy*dt; if(p.y>550){p.y=550;p.vy=0;p.on=true;} if(p.x<40||p.x>1080){p.x=clamp(p.x,40,1080);p.vx*=-.2;} const goalX=980, hazardX=360+g.room*90; if(dist(p.x,p.y,hazardX,535)<28){p.x=90;p.y=530;p.vx=0;p.vy=0; addLog("Hazard clipped. Room reset.");} if(p.x>goalX){ if(g.room===4)finish("Five-room dash study complete."); else {g.room++; p.x=90;p.y=530;p.vx=0;p.vy=0; addLog("Room "+(g.room+1));}}}
-function releaseDash(){const p=s.game.p;if(p.charge>.08){p.vx+=520*p.charge*(down("ArrowLeft","KeyA")?-1:1);p.vy-=360*p.charge;p.charge=0;}}
+function nextNight() {
+  if (state.night >= nights.length - 1) {
+    state.mode = "ending";
+    state.ending = state.crowd >= 68
+      ? "The festival closes as a citywide ritual. Every route home is lit, and the crowd leaves singing the signal pattern."
+      : "The festival survives, but the crowd remembers the rough edges. The signal worked; the public play needed more grace.";
+    state.score += Math.round(state.crowd * 5 + state.resolve * 120);
+    return;
+  }
+  startNight(state.night + 1);
+}
 
-function initChoice(){s.game={step:0,trust:5,budget:5,access:5,choices:[]}; s.message="Each public choice rewrites future costs and ending conditions.";}
-function choose(i){const g=s.game; const table=[["Fund transit",1,-2,2],["Cut taxes",-2,2,-1],["Open records",2,-1,1],["Emergency powers",-3,1,-2],["Mutual aid",2,-2,2],["Private contract",-2,2,-2],["Public audit",2,-1,1],["Quiet settlement",-1,1,-1],["Citizen assembly",3,-2,3]]; const c=table[g.step*3+i]; g.trust=clamp(g.trust+c[1],0,10); g.budget=clamp(g.budget+c[2],0,10); g.access=clamp(g.access+c[3],0,10); g.choices.push(c[0]); addLog(c[0]); g.step++; if(g.step>=3){const label=g.trust+g.access+g.budget>=18?"durable coalition":"fragile compromise"; finish(label+": trust "+g.trust+", budget "+g.budget+", access "+g.access+".");}}
+function rotateMirror(index) {
+  const m = state.mirrors[index];
+  m.angle = (m.angle + 1) % 4;
+  state.crowd = clamp(state.crowd - 1, 0, 100);
+  addLog(`${m.label} mirror rotated.`);
+  if (!state.reduceMotion) {
+    for (let i = 0; i < 10; i++) {
+      state.sparks.push({ x: m.x, y: m.y, vx: (rnd(i + state.time) - 0.5) * 120, vy: (rnd(i + 20 + state.time) - 0.5) * 120, life: 0.55, color: COLORS.gold });
+    }
+  }
+  solveSignals();
+}
 
-function initCoop(){s.game={room:0,active:"heavy",heavy:{x:110,y:510},light:{x:160,y:430},key:false,beam:true}; s.message="Use two asymmetric roles. Heavy anchors. Light reaches. Both must exit.";}
-function updateCoop(dt){const g=s.game,a=g[g.active],sp=g.active==="heavy"?150:230; a.x=clamp(a.x+(down("ArrowRight","KeyD")-down("ArrowLeft","KeyA"))*sp*dt,60,1060); a.y=clamp(a.y+(down("ArrowDown","KeyS")-down("ArrowUp","KeyW"))*sp*dt,120,560); if(g.active==="light"&&dist(a.x,a.y,760,250)<38){g.key=true; addLog("Light recovered the key.");} if(g.heavy.x>430&&g.heavy.x<540&&g.heavy.y>470)g.beam=false; else g.beam=true; if(g.key&&!g.beam&&g.heavy.x>930&&g.light.x>930){ if(g.room===3)finish("Four asymmetric encounters complete."); else {g.room++;g.heavy={x:110,y:510};g.light={x:160,y:430};g.key=false;g.beam=true;addLog("Encounter "+(g.room+1));}}}
+function solveSignals() {
+  state.beams = [];
+  state.lit = new Set();
+  const source = { x: 414, y: 336 };
+  const points = [source, ...state.mirrors.map((m) => ({ x: m.x, y: m.y }))];
+  for (let i = 0; i < state.mirrors.length; i++) {
+    const from = points[i];
+    const mirror = state.mirrors[i];
+    const target = districts[(mirror.angle + i) % districts.length];
+    state.beams.push({ x1: from.x, y1: from.y, x2: mirror.x, y2: mirror.y, color: target.color, alpha: 0.35 });
+    state.beams.push({ x1: mirror.x, y1: mirror.y, x2: target.x, y2: target.y, color: target.color, alpha: 0.65 });
+    state.lit.add(target.id);
+  }
+  state.resolve = nights[state.night].goal.filter((id) => state.lit.has(id) && state.helped.has(id)).length;
+}
 
-function initAdaptive(){s.game={p:{x:W/2,y:H/2},time:60,hits:0,near:0,level:1,marks:[],waves:[]}; s.message="The director adapts using hits, near misses, and collection rate. The report is visible.";}
-function updateAdaptive(dt){const g=s.game,p=g.p;p.x=clamp(p.x+(down("ArrowRight","KeyD")-down("ArrowLeft","KeyA"))*230*dt,70,1050);p.y=clamp(p.y+(down("ArrowDown","KeyS")-down("ArrowUp","KeyW"))*230*dt,95,610);g.time-=dt;if(g.time<=0)finish("Director report: level "+g.level+", hits "+g.hits+", near misses "+g.near+", score "+s.score+"."); if(Math.floor(s.t*2)%3===0&&g.marks.length<5)g.marks.push({x:100+rnd(s.t+g.marks.length)*900,y:110+rnd(s.t+9)*460}); if(Math.floor(s.t*(.7+g.level*.18))!==Math.floor((s.t-dt)*(.7+g.level*.18)))g.waves.push({x:rnd(s.t)*W,y:90,r:14,vy:95+g.level*25});g.waves.forEach(w=>{w.y+=w.vy*dt;if(dist(p.x,p.y,w.x,w.y)<24){g.hits++;g.level=Math.max(1,g.level-.4);w.y=999;addLog("Director softened after a hit.");} else if(dist(p.x,p.y,w.x,w.y)<54)g.near+=dt;});g.waves=g.waves.filter(w=>w.y<680);g.marks=g.marks.filter(m=>{if(dist(p.x,p.y,m.x,m.y)<26){s.score+=25;g.level=clamp(g.level+.2,1,5);return false}return true});}
+function nearbyDistrict() {
+  return districts.find((d) => dist(state.player.x, state.player.y, d.x, d.y) < 42);
+}
 
-function initToy(){s.game={time:70,mode:"toy",particles:Array.from({length:40},(_,i)=>({x:120+rnd(i)*880,y:100+rnd(i+4)*500,vx:(rnd(i+9)-.5)*80,vy:(rnd(i+19)-.5)*80,caught:false})),rings:[{x:260,y:350,r:44},{x:560,y:240,r:44},{x:850,y:430,r:44}]};s.message="A toy field with a game layer: herd motes into scoring rings.";}
-function updateToy(dt){const g=s.game;g.time-=dt;if(g.time<=0)finish("Toy converted to game: "+s.score+" ring captures.");g.particles.forEach((p)=>{const d=Math.max(35,dist(p.x,p.y,pointer.x,pointer.y));const force=(pointer.down||down("Space")?1:down("ShiftLeft","ShiftRight")?-1:0)*900/(d*d);p.vx+=(pointer.x-p.x)*force*dt;p.vy+=(pointer.y-p.y)*force*dt;p.x+=p.vx*dt;p.y+=p.vy*dt;p.vx*=.992;p.vy*=.992;p.x=wrap(p.x,W);p.y=wrap(p.y,H);g.rings.forEach(r=>{if(!p.caught&&dist(p.x,p.y,r.x,r.y)<r.r){p.caught=true;s.score+=10;}});});}
+function nearbyMirror() {
+  return state.mirrors.findIndex((m) => dist(state.player.x, state.player.y, m.x, m.y) < 42);
+}
 
-function initFestival(){s.game={time:150,mirrors:[{x:360,y:350,a:0,goal:1,label:"A"},{x:600,y:350,a:2,goal:3,label:"B"},{x:840,y:350,a:1,goal:0,label:"C"}],gates:[{x:460,y:260,on:false},{x:700,y:440,on:false},{x:940,y:300,on:false}]};s.message="Click mirrors until each face points at its matching gate: A up-right, B down-right, C straight right.";}
-function clickFestival(x,y){const m=s.game.mirrors.find(m=>dist(x,y,m.x,m.y)<54); if(m){m.a=(m.a+1)%4; addLog("Mirror "+m.label+" rotated to "+["right","up-right","down-left","down-right"][m.a]+".");}}
-function updateFestival(dt){const g=s.game;g.time-=dt;if(g.time<=0)fail("Festival clock expired. Gates lit: "+g.gates.filter(x=>x.on).length+"/3.");g.gates.forEach((gt,i)=>gt.on=g.mirrors[i].a===g.mirrors[i].goal);if(g.gates.every(gt=>gt.on))finish("All three gates lit. Festival-ready clear.");}
+function interact() {
+  if (state.mode === "title") {
+    startNight(0);
+    return;
+  }
+  if (state.mode === "complete") {
+    nextNight();
+    return;
+  }
+  if (state.mode === "ending") {
+    startNight(0);
+    return;
+  }
+  const mirrorIndex = nearbyMirror();
+  if (mirrorIndex >= 0) {
+    rotateMirror(mirrorIndex);
+    return;
+  }
+  const district = nearbyDistrict();
+  if (district) {
+    if (!state.lit.has(district.id)) {
+      addLog(`${district.name} needs a routed beam first.`);
+      state.crowd = clamp(state.crowd - 2, 0, 100);
+      return;
+    }
+    if (!state.helped.has(district.id)) {
+      state.helped.add(district.id);
+      state.score += 100;
+      state.crowd = clamp(state.crowd + 7, 0, 100);
+      addLog(`${district.name}: ${district.need} restored.`);
+      if (!state.reduceMotion) {
+        for (let i = 0; i < 22; i++) {
+          state.sparks.push({ x: district.x, y: district.y, vx: (rnd(i + state.time) - 0.5) * 150, vy: (rnd(i + 40 + state.time) - 0.5) * 150, life: 0.8, color: district.color });
+        }
+      }
+      solveSignals();
+    } else {
+      addLog(`${district.name} is already ready.`);
+    }
+  }
+}
 
 function update(dt) {
-  if (s.mode !== "play") return;
-  s.t += dt;
-  if (cfg.kind === "timing") updateTiming(dt);
-  if (cfg.kind === "risk") updateRisk(dt);
-  if (cfg.kind === "movement") updateMovement(dt);
-  if (cfg.kind === "coop") updateCoop(dt);
-  if (cfg.kind === "adaptive") updateAdaptive(dt);
-  if (cfg.kind === "toy") updateToy(dt);
-  if (cfg.kind === "festival") updateFestival(dt);
+  if (state.mode !== "play") return;
+  state.time -= dt;
+  if (state.time <= 0) {
+    state.mode = "complete";
+    state.message = "The night ended before the whole signal pattern resolved.";
+    addLog("Night ended.");
+    return;
+  }
+
+  const dx = (has("ArrowRight", "KeyD") ? 1 : 0) - (has("ArrowLeft", "KeyA") ? 1 : 0);
+  const dy = (has("ArrowDown", "KeyS") ? 1 : 0) - (has("ArrowUp", "KeyW") ? 1 : 0);
+  if (dx || dy) {
+    const mag = Math.hypot(dx, dy);
+    state.player.x = clamp(state.player.x + (dx / mag) * state.player.speed * dt, 396, 1036);
+    state.player.y = clamp(state.player.y + (dy / mag) * state.player.speed * dt, 76, 635);
+  }
+
+  state.sparks = state.sparks.filter((p) => {
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
+    p.vx *= 0.97;
+    p.vy *= 0.97;
+    p.life -= dt;
+    return p.life > 0;
+  });
+
+  const required = nights[state.night].goal.length;
+  if (state.resolve >= required) {
+    state.mode = "complete";
+    state.message = `${nights[state.night].title} cleared: ${required}/${required} districts lit and ready.`;
+    state.score += Math.round(state.time * 4 + state.crowd * 2);
+    addLog("Night clear.");
+  }
 }
 
-function rect(x,y,w,h,fill,stroke){ctx.fillStyle=fill;ctx.fillRect(x,y,w,h);if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=1.5;ctx.strokeRect(x,y,w,h);}}
-function text(t,x,y,size=18,color=cfg.palette[1],weight=600,align="left"){ctx.fillStyle=color;ctx.font=weight+" "+size+"px Inter, Segoe UI, sans-serif";ctx.textAlign=align;ctx.textBaseline="alphabetic";ctx.fillText(t,x,y);}
-function wrapText(t,x,y,w,lh,size=18,color=cfg.palette[1],weight=600,align="left"){ctx.font=weight+" "+size+"px Inter, Segoe UI, sans-serif";let line="";for(const word of t.split(" ")){const test=line?line+" "+word:word;if(ctx.measureText(test).width>w&&line){text(line,x,y,size,color,weight,align);line=word;y+=lh;}else line=test;}if(line)text(line,x,y,size,color,weight,align);}
-function circle(x,y,r,fill,stroke){ctx.beginPath();ctx.arc(x,y,r,0,TAU);ctx.fillStyle=fill;ctx.fill();if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=2;ctx.stroke();}}
-function header(){
-  text(cfg.id ?? "GDV501-P"+cfg.n,54,56,14,cfg.palette[2],900);
-  text(cfg.title,54,94,34,cfg.palette[1],900);
-  wrapText(s.message,54,130,360,24,17,"rgba(24,32,28,.72)",650);
-  text("Score "+Math.round(s.score),54,215,18,cfg.palette[2],800);
-  text(cfg.controls,54,626,17,cfg.palette[1],800);
-  text("R restart   F fullscreen",54,654,13,"rgba(24,32,28,.52)",700);
-}
-function shell(){
-  const g=ctx.createLinearGradient(0,0,W,H);
-  g.addColorStop(0,cfg.palette[0]);
-  g.addColorStop(.62,"#ffffff");
-  g.addColorStop(1,cfg.palette[0]);
-  ctx.fillStyle=g;
-  ctx.fillRect(0,0,W,H);
+function drawBackground() {
+  const g = ctx.createLinearGradient(0, 0, W, H);
+  g.addColorStop(0, "#fff4d3");
+  g.addColorStop(0.55, "#e7f3d2");
+  g.addColorStop(1, "#ffe1d8");
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, W, H);
+
   ctx.save();
-  ctx.globalAlpha=.55;
-  if(cfg.kind==="timing"){for(let i=0;i<18;i++){circle(840,360,70+i*28,"transparent",cfg.palette[i%2?2:3]);}}
-  else if(cfg.kind==="risk"){for(let i=0;i<16;i++){rect(390+i*38,110+(i%5)*78,26,26,"rgba(36,107,159,.10)");}}
-  else if(cfg.kind==="resource"){for(let i=0;i<12;i++){rect(404+i*54,116+(i%3)*38,36,22,"rgba(166,84,45,.10)");}}
-  else if(cfg.kind==="bluff"){for(let i=0;i<9;i++){circle(470+i*62,150+(i%2)*48,24,"rgba(125,79,158,.09)");}}
-  else if(cfg.kind==="movement"){for(let i=0;i<9;i++){ctx.beginPath();ctx.moveTo(390+i*75,610);ctx.quadraticCurveTo(420+i*75,500,465+i*75,555);ctx.strokeStyle="rgba(23,130,166,.16)";ctx.lineWidth=5;ctx.stroke();}}
-  else if(cfg.kind==="choice"){for(let i=0;i<8;i++){rect(430+i*68,120+i%2*44,42,42,"rgba(47,139,103,.10)");}}
-  else if(cfg.kind==="coop"){for(let i=0;i<10;i++){rect(405+i*62,140,38,420,"rgba(45,103,178,.06)");}}
-  else if(cfg.kind==="adaptive"){for(let i=0;i<8;i++){circle(500+i*72,180+(i%3)*90,38,"rgba(33,122,159,.08)");}}
-  else if(cfg.kind==="toy"){for(let i=0;i<40;i++){circle(420+rnd(i)*560,130+rnd(i+4)*420,4+rnd(i+8)*8,"rgba(26,138,150,.16)");}}
-  else if(cfg.kind==="festival"){for(let i=0;i<10;i++){ctx.strokeStyle="rgba(207,139,34,.16)";ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(390,150+i*42);ctx.lineTo(1060,120+i*48);ctx.stroke();}}
+  ctx.globalAlpha = 0.35;
+  for (let i = 0; i < 70; i++) {
+    const x = 90 + rnd(i) * 980;
+    const y = 70 + rnd(i + 80) * 560;
+    const c = [COLORS.gold, COLORS.green, COLORS.teal, COLORS.red, COLORS.plum][i % 5];
+    circle(x, y, 2 + rnd(i + 3) * 4, c);
+  }
   ctx.restore();
-  ctx.strokeStyle="rgba(24,32,28,.22)";
-  ctx.lineWidth=2;
-  ctx.strokeRect(28,28,W-56,H-56);
-  header();
+
+  rounded(32, 32, 314, 620, 8, "rgba(255,255,255,.78)", "rgba(31,42,36,.18)");
+  rounded(372, 46, 706, 596, 10, "rgba(255,255,255,.42)", "rgba(31,42,36,.16)");
+
+  for (let x = 400; x < 1060; x += 42) line(x, 72, x, 620, "rgba(31,42,36,.055)", 1);
+  for (let y = 86; y < 620; y += 42) line(392, y, 1060, y, "rgba(31,42,36,.055)", 1);
+
+  line(416, 590, 456, 202, "rgba(31,42,36,.12)", 11);
+  line(456, 202, 642, 150, "rgba(31,42,36,.12)", 11);
+  line(642, 150, 842, 230, "rgba(31,42,36,.12)", 11);
+  line(842, 230, 962, 442, "rgba(31,42,36,.12)", 11);
+  line(962, 442, 588, 506, "rgba(31,42,36,.12)", 11);
+  line(588, 506, 416, 590, "rgba(31,42,36,.12)", 11);
 }
 
-function renderTiming(){const g=s.game,cx=630,cy=356,r=162;circle(cx,cy,r,"rgba(24,32,28,.045)","rgba(24,32,28,.18)");const good=[0.58,0.44,0.32][g.tier],perfect=[0.22,0.16,0.11][g.tier];ctx.lineWidth=26;ctx.lineCap="round";ctx.strokeStyle="rgba(24,32,28,.18)";ctx.beginPath();ctx.arc(cx,cy,r,g.target-good,g.target+good);ctx.stroke();ctx.strokeStyle=cfg.palette[2];ctx.lineWidth=30;ctx.beginPath();ctx.arc(cx,cy,r,g.target-perfect,g.target+perfect);ctx.stroke();ctx.strokeStyle=cfg.palette[3];ctx.lineWidth=6;ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx+Math.cos(g.angle)*r,cy+Math.sin(g.angle)*r);ctx.stroke();circle(cx+Math.cos(g.angle)*r,cy+Math.sin(g.angle)*r,15,cfg.palette[3]);text(g.attempt+"/9",cx,cy+10,34,cfg.palette[1],900,"center");text(g.last,850,300,28,cfg.palette[3],900);}
-function renderRisk(){const g=s.game;circle(g.gate.x,g.gate.y,g.gate.r,"rgba(24,32,28,.055)",cfg.palette[3]);g.items.forEach(it=>!it.taken&&circle(it.x,it.y,12,cfg.palette[3]));g.hazards.forEach(h=>circle(h.x,h.y,16,cfg.palette[4]));circle(g.p.x,g.p.y,g.p.r,cfg.palette[2]);text("Risk x"+g.mult.toFixed(1)+"  Time "+Math.ceil(g.time),760,92,18,cfg.palette[1],800);}
-function renderResource(){const l=resourceState();["a","b","c"].forEach((k,i)=>{rect(450+i*130,230,94,120,"rgba(24,32,28,.06)","rgba(24,32,28,.2)");text(["Ore","Glass","Signal"][i],497+i*130,265,16,cfg.palette[3],900,"center");text(l[k],497+i*130,327,42,cfg.palette[1],900,"center");text("goal "+l.goal[k],497+i*130,368,14,"rgba(24,32,28,.6)",700,"center");});["forge","focus","reclaim"].forEach((b,i)=>drawButton(426+i*165,450,136,54,b));text("Level "+(s.game.level+1)+"/5   Moves "+s.game.moves,450,178,20,cfg.palette[1],800);}
-function renderBluff(){const g=s.game;rect(455,220,140,190,"rgba(24,32,28,.075)",cfg.palette[2]);rect(690,220,140,190,"rgba(24,32,28,.045)",cfg.palette[4]);text(String(g.hand),525,330,72,cfg.palette[1],900,"center");text("?",760,330,72,cfg.palette[1],900,"center");wrapText(g.tell,455,455,380,26,20,cfg.palette[3],800);["probe","feint","commit"].forEach((b,i)=>drawButton(420+i*155,520,130,54,b));text("Round "+g.round+"/5  Wins "+g.wins+" Losses "+g.losses,455,178,20,cfg.palette[1],800);}
-function renderMovement(){const g=s.game,p=g.p;rect(420,570,620,16,"rgba(24,32,28,.2)");circle(360+g.room*90,550,24,cfg.palette[4]);rect(960,500,62,86,"rgba(24,32,28,.055)",cfg.palette[3]);circle(p.x,p.y,p.r,cfg.palette[2]);rect(450,96,260*p.charge,10,cfg.palette[3]);text("Room "+(g.room+1)+"/5",450,178,20,cfg.palette[1],800);}
-function renderChoice(){const g=s.game;["Trust","Budget","Access"].forEach((n,i)=>{text(n,450,170+i*48,16,cfg.palette[1],800);rect(540,154+i*48,220,18,"rgba(24,32,28,.085)");rect(540,154+i*48,22*[g.trust,g.budget,g.access][i],18,[cfg.palette[2],cfg.palette[3],cfg.palette[4]][i]);});const labels=[["Fund transit","Cut taxes","Open records"],["Emergency powers","Mutual aid","Private contract"],["Public audit","Quiet settlement","Citizen assembly"]][g.step]||[];labels.forEach((b,i)=>drawButton(430,330+i*75,300,54,b));text("Decision "+(g.step+1)+"/3",450,280,22,cfg.palette[1],900);}
-function renderCoop(){const g=s.game;rect(420,590,640,14,"rgba(24,32,28,.18)");rect(430,510,110,64,g.beam?"rgba(238,111,134,.35)":"rgba(118,166,255,.16)",g.beam?cfg.palette[4]:cfg.palette[2]);circle(760,250,18,g.key?"rgba(24,32,28,.16)":cfg.palette[3]);circle(g.heavy.x,g.heavy.y,24,g.active==="heavy"?cfg.palette[3]:"#6b7280");circle(g.light.x,g.light.y,16,g.active==="light"?cfg.palette[2]:"#6b7280");rect(940,510,82,74,"rgba(24,32,28,.055)",cfg.palette[2]);text("Active: "+g.active+"   Key "+(g.key?"yes":"no")+"   Beam "+(g.beam?"on":"off"),430,178,18,cfg.palette[1],800);}
-function renderAdaptive(){const g=s.game;g.marks.forEach(m=>circle(m.x,m.y,12,cfg.palette[3]));g.waves.forEach(w=>circle(w.x,w.y,w.r,cfg.palette[4]));circle(g.p.x,g.p.y,16,cfg.palette[2]);text("Director level "+g.level.toFixed(1)+"  Hits "+g.hits+"  Near "+Math.round(g.near),430,92,18,cfg.palette[1],800);text("Time "+Math.ceil(g.time),430,124,18,cfg.palette[3],800);}
-function renderToy(){const g=s.game;g.rings.forEach(r=>circle(r.x,r.y,r.r,"rgba(24,32,28,.045)",cfg.palette[3]));g.particles.forEach(p=>circle(p.x,p.y,p.caught?5:8,p.caught?"rgba(24,32,28,.2)":cfg.palette[2]));circle(pointer.x,pointer.y,20,pointer.down||down("Space")?"rgba(246,200,95,.42)":"rgba(24,32,28,.085)",cfg.palette[3]);text("Time "+Math.ceil(g.time)+"  Captures "+s.score/10,430,92,18,cfg.palette[1],800);}
-function renderFestival(){const g=s.game;text("Rotate mirrors to the target labels before the clock expires.",430,112,18,cfg.palette[1],900);g.gates.forEach((gt,i)=>{circle(gt.x,gt.y,34,gt.on?cfg.palette[2]:"rgba(24,32,28,.08)",gt.on?cfg.palette[2]:"rgba(24,32,28,.28)");text("Gate "+(i+1),gt.x,gt.y+62,14,cfg.palette[1],800,"center");});ctx.strokeStyle=cfg.palette[3];ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(150,350);ctx.lineTo(1030,350);ctx.stroke();g.mirrors.forEach((m,i)=>{ctx.save();ctx.translate(m.x,m.y);ctx.rotate([0,-Math.PI/4,Math.PI,Math.PI/4][m.a]);rect(-48,-7,96,14,cfg.palette[3],"rgba(24,32,28,.28)");ctx.restore();circle(m.x,m.y,54,"rgba(255,255,255,.72)","rgba(24,32,28,.25)");text(m.label,m.x,m.y+8,24,cfg.palette[1],900,"center");text("target "+["right","up-right","down-left","down-right"][m.goal],m.x,m.y+82,14,cfg.palette[2],900,"center");});text("Clock "+Math.ceil(g.time)+"   Gates "+g.gates.filter(x=>x.on).length+"/3",430,610,18,cfg.palette[1],900);}
-function drawButton(x,y,w,h,label){rect(x,y,w,h,"rgba(255,255,255,.9)","rgba(24,32,28,.26)");text(label,x+w/2,y+Math.min(34,h/2+7),15,cfg.palette[1],850,"center");}
-function renderLog(){const x=cfg.kind==="resource"?845:820;const y=cfg.kind==="resource"?535:500;s.log.forEach((l,i)=>text(l,x,y+i*24,13,"rgba(24,32,28,.66)",700));}
-function render(){shell(); if(s.mode==="menu"){rect(410,225,570,300,"rgba(255,255,255,.82)","rgba(24,32,28,.18)");wrapText(cfg.deck,450,290,490,40,32,cfg.palette[1],900);wrapText(cfg.generic,450,390,470,25,18,"rgba(24,32,28,.68)",650);text("Press Space or click to begin",450,480,21,cfg.palette[2],900);return;} if(cfg.kind==="timing")renderTiming(); if(cfg.kind==="risk")renderRisk(); if(cfg.kind==="resource")renderResource(); if(cfg.kind==="bluff")renderBluff(); if(cfg.kind==="movement")renderMovement(); if(cfg.kind==="choice")renderChoice(); if(cfg.kind==="coop")renderCoop(); if(cfg.kind==="adaptive")renderAdaptive(); if(cfg.kind==="toy")renderToy(); if(cfg.kind==="festival")renderFestival(); renderLog(); if(s.mode==="complete"){rect(360,235,520,230,"rgba(255,255,255,.92)",cfg.palette[3]);wrapText(s.message,405,310,430,34,27,cfg.palette[1],900);text("Press R to restart",405,405,18,cfg.palette[2],900);}}
+function drawDistricts() {
+  const goal = new Set(nights[state.night]?.goal ?? []);
+  for (const d of districts) {
+    const lit = state.lit.has(d.id);
+    const helped = state.helped.has(d.id);
+    const required = goal.has(d.id);
+    const r = required ? 30 : 22;
+    circle(d.x, d.y, r + (lit ? 8 : 0), lit ? `${d.color}55` : "rgba(255,255,255,.58)", required ? d.color : COLORS.smoke, 3);
+    circle(d.x, d.y, r, helped ? d.color : "rgba(255,255,255,.9)", d.color, 3);
+    if (helped) {
+      text("ready", d.x, d.y + 5, 11, "#fff", 900, "center");
+    } else {
+      text(required ? "need" : "opt", d.x, d.y + 5, 11, d.color, 900, "center");
+    }
+    text(d.name, d.x - 48, d.y - r - 16, 12, COLORS.ink, 800);
+  }
+}
 
-function click(x,y){ if(s.mode==="menu"){initGame(); return;} if(s.mode==="complete")return; if(cfg.kind==="resource"){["forge","focus","reclaim"].forEach((b,i)=>{if(x>426+i*165&&x<562+i*165&&y>450&&y<504)convert(b);});} if(cfg.kind==="bluff"){["probe","feint","commit"].forEach((b,i)=>{if(x>420+i*155&&x<550+i*155&&y>520&&y<574)bluff(b);});} if(cfg.kind==="choice"){[0,1,2].forEach(i=>{if(x>430&&x<730&&y>330+i*75&&y<384+i*75)choose(i);});} if(cfg.kind==="festival")clickFestival(x,y); if(cfg.kind==="timing")timingAction(); if(cfg.kind==="risk")bankRisk();}
-function keyAction(e,up=false){ if(up){keys.delete(e.code); if(cfg.kind==="movement"&&e.code==="Space")releaseDash(); return;} keys.add(e.code); if(e.code==="KeyR"){initGame(); return;} if(e.code==="KeyF"){document.fullscreenElement?document.exitFullscreen?.():document.documentElement.requestFullscreen?.();} if((e.code==="Space"||e.code==="Enter")&&s.mode==="menu")initGame(); else if(e.code==="Space"&&cfg.kind==="timing"&&s.mode==="play")timingAction(); else if(e.code==="Space"&&cfg.kind==="risk"&&s.mode==="play")bankRisk(); else if(e.code==="Tab"&&cfg.kind==="coop"&&s.mode==="play"){e.preventDefault();s.game.active=s.game.active==="heavy"?"light":"heavy";}}
-window.addEventListener("keydown",(e)=>{if(!e.repeat)keyAction(e,false);});
-window.addEventListener("keyup",(e)=>keyAction(e,true));
-canvas.addEventListener("pointermove",(e)=>{const r=canvas.getBoundingClientRect();pointer.x=(e.clientX-r.left)*W/r.width;pointer.y=(e.clientY-r.top)*H/r.height;});
-canvas.addEventListener("pointerdown",(e)=>{pointer.down=true;const r=canvas.getBoundingClientRect();click((e.clientX-r.left)*W/r.width,(e.clientY-r.top)*H/r.height);});
-canvas.addEventListener("pointerup",()=>{pointer.down=false;});
-function frame(ts){const dt=Math.min(.05,(ts-last)/1000||0);last=ts;update(dt);render();requestAnimationFrame(frame);}
-window.render_game_to_text=()=>JSON.stringify({id:"GDV501-P"+cfg.n,title:cfg.title,mode:s.mode,score:Math.round(s.score),message:s.message,game:s.game,log:s.log,coordinateSystem:"1120x700 canvas, origin top-left"});
-window.advanceTime=(ms)=>{const steps=Math.max(1,Math.round(ms/16.667));for(let i=0;i<steps;i++)update(1/60);render();};
-render();requestAnimationFrame(frame);
+function drawBeams() {
+  ctx.save();
+  ctx.globalCompositeOperation = "multiply";
+  for (const b of state.beams) {
+    line(b.x1, b.y1, b.x2, b.y2, b.color, 8);
+    line(b.x1, b.y1, b.x2, b.y2, "rgba(255,255,255,.8)", 2);
+  }
+  ctx.restore();
+  circle(414, 336, 22, COLORS.gold, COLORS.ink, 3);
+  text("signal source", 378, 306, 12, COLORS.ink, 800);
+}
+
+function drawMirrors() {
+  for (let i = 0; i < state.mirrors.length; i++) {
+    const m = state.mirrors[i];
+    circle(m.x, m.y, 34, "rgba(255,255,255,.84)", COLORS.ink, 2);
+    const angle = (m.angle / 4) * TAU + Math.PI / 4;
+    line(m.x - Math.cos(angle) * 24, m.y - Math.sin(angle) * 24, m.x + Math.cos(angle) * 24, m.y + Math.sin(angle) * 24, COLORS.plum, 6);
+    text(m.label, m.x, m.y + 54, 12, COLORS.ink, 850, "center");
+    text(String(m.angle + 1), m.x, m.y + 5, 12, COLORS.plum, 900, "center");
+  }
+}
+
+function drawPlayer() {
+  const p = state.player;
+  circle(p.x, p.y, 20, "rgba(255,255,255,.85)", COLORS.ink, 2);
+  circle(p.x, p.y, p.r, COLORS.teal, COLORS.ink, 2);
+  line(p.x - 8, p.y - 16, p.x + 8, p.y - 16, COLORS.gold, 4);
+  const d = nearbyDistrict();
+  const m = nearbyMirror();
+  if (d || m >= 0) {
+    circle(p.x, p.y, 34 + Math.sin(state.time * 5) * 2, "transparent", COLORS.gold, 2);
+  }
+}
+
+function drawSparks() {
+  for (const p of state.sparks) {
+    circle(p.x, p.y, 3 + p.life * 3, p.color);
+  }
+}
+
+function drawPanel() {
+  text("GDV501-P10", 58, 64, 14, COLORS.teal, 900);
+  text("Festival Signal", 58, 104, 34, COLORS.ink, 950);
+  wrapText("A full-course capstone about loops, constraints, feedback, pacing, onboarding, and public-play readability.", 58, 138, 248, 22, 15, "rgba(31,42,36,.74)");
+
+  const night = nights[state.night] ?? nights[0];
+  text(night.title, 58, 232, 17, COLORS.plum, 900);
+  text(`Time ${Math.ceil(Math.max(0, state.time))}`, 58, 266, 22, COLORS.red, 900);
+  text(`Crowd ${Math.round(state.crowd)}%`, 176, 266, 22, COLORS.green, 900);
+
+  const required = night.goal.length;
+  const ratio = required ? state.resolve / required : 0;
+  rect(58, 288, 238, 16, "rgba(31,42,36,.12)");
+  rect(58, 288, 238 * ratio, 16, COLORS.gold);
+  text(`Districts ${state.resolve}/${required}`, 58, 330, 17, COLORS.ink, 850);
+
+  const y0 = 360;
+  for (let i = 0; i < night.goal.length; i++) {
+    const d = districts.find((x) => x.id === night.goal[i]);
+    const lit = state.lit.has(d.id);
+    const helped = state.helped.has(d.id);
+    circle(70, y0 + i * 28 - 4, 7, helped ? d.color : lit ? COLORS.gold : "rgba(31,42,36,.22)", COLORS.ink, 1);
+    text(`${d.name}: ${helped ? "ready" : lit ? "lit" : "dark"}`, 88, y0 + i * 28, 14, COLORS.ink, 760);
+  }
+
+  wrapText("Move through the grounds. Rotate mirrors. Visit lit districts to solve their public-play need.", 58, 528, 252, 22, 14, "rgba(31,42,36,.72)");
+  text("WASD/arrows move   Space interact", 58, 606, 13, COLORS.ink, 850);
+  text("M map   X reduce motion   R restart", 58, 630, 13, COLORS.ink, 850);
+}
+
+function drawOverlay() {
+  if (state.mode === "title") {
+    rounded(410, 178, 560, 344, 12, "rgba(255,255,255,.94)", COLORS.gold);
+    text("Festival Signal", 455, 246, 48, COLORS.ink, 950);
+    wrapText("Route beams across a living festival for three nights. This is the GDV501 capstone: a complete public-play game about loops, constraints, feedback, pacing, and readable goals.", 458, 292, 456, 30, 20, "rgba(31,42,36,.78)");
+    text("Press Space or click to begin", 458, 448, 20, COLORS.teal, 900);
+  }
+  if (state.mode === "complete") {
+    rounded(398, 196, 584, 300, 12, "rgba(255,255,255,.95)", COLORS.green);
+    text("Night Report", 446, 260, 42, COLORS.ink, 950);
+    wrapText(state.message, 448, 306, 470, 30, 21, "rgba(31,42,36,.8)");
+    text(state.night >= nights.length - 1 ? "Continue to finale" : "Press Space for next night", 448, 430, 19, COLORS.teal, 900);
+  }
+  if (state.mode === "ending") {
+    rounded(360, 154, 650, 390, 12, "rgba(255,255,255,.96)", COLORS.plum);
+    text("Festival Closed", 420, 226, 48, COLORS.ink, 950);
+    wrapText(state.ending, 424, 280, 510, 32, 22, "rgba(31,42,36,.82)");
+    text(`Final score ${state.score}`, 424, 410, 24, COLORS.red, 900);
+    text("Press R or Space to replay", 424, 462, 18, COLORS.teal, 900);
+  }
+}
+
+function render() {
+  drawBackground();
+  if (state.showMap) {
+    drawBeams();
+    drawDistricts();
+    drawMirrors();
+    drawPlayer();
+    drawSparks();
+  }
+  drawPanel();
+  for (let i = 0; i < state.log.length; i++) {
+    text(state.log[i], 776, 556 + i * 22, 13, "rgba(31,42,36,.72)", 720);
+  }
+  drawOverlay();
+  pointer.clicked = false;
+}
+
+function clickCanvas() {
+  if (state.mode !== "play") {
+    interact();
+    return;
+  }
+  for (let i = 0; i < state.mirrors.length; i++) {
+    const m = state.mirrors[i];
+    if (dist(pointer.x, pointer.y, m.x, m.y) < 42) {
+      rotateMirror(i);
+      return;
+    }
+  }
+}
+
+function onKey(e, up = false) {
+  if (up) {
+    keys.delete(e.code);
+    return;
+  }
+  keys.add(e.code);
+  if (e.code === "Space") interact();
+  if (e.code === "KeyR") startNight(0);
+  if (e.code === "KeyM") state.showMap = !state.showMap;
+  if (e.code === "KeyX") state.reduceMotion = !state.reduceMotion;
+  if (e.code === "KeyF") toggleFullscreen();
+}
+
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    canvas.requestFullscreen?.();
+  } else {
+    document.exitFullscreen?.();
+  }
+}
+
+canvas.addEventListener("pointermove", (e) => {
+  const r = canvas.getBoundingClientRect();
+  pointer.x = ((e.clientX - r.left) / r.width) * W;
+  pointer.y = ((e.clientY - r.top) / r.height) * H;
+});
+canvas.addEventListener("pointerdown", (e) => {
+  const r = canvas.getBoundingClientRect();
+  pointer.x = ((e.clientX - r.left) / r.width) * W;
+  pointer.y = ((e.clientY - r.top) / r.height) * H;
+  pointer.down = true;
+  pointer.clicked = true;
+  clickCanvas();
+});
+canvas.addEventListener("pointerup", () => {
+  pointer.down = false;
+});
+window.addEventListener("keydown", (e) => onKey(e));
+window.addEventListener("keyup", (e) => onKey(e, true));
+
+window.advanceTime = (ms) => {
+  const steps = Math.max(1, Math.round(ms / (1000 / 60)));
+  for (let i = 0; i < steps; i++) update(1 / 60);
+  render();
+};
+
+window.render_game_to_text = () => JSON.stringify({
+  project: "GDV501-P10",
+  title: "Festival Signal",
+  mode: state.mode,
+  night: state.night + 1,
+  time: Math.round(state.time),
+  score: state.score,
+  crowd: Math.round(state.crowd),
+  resolve: state.resolve,
+  required: nights[state.night]?.goal.length ?? 0,
+  player: { x: Math.round(state.player.x), y: Math.round(state.player.y) },
+  reduceMotion: state.reduceMotion,
+  fullscreen: Boolean(document.fullscreenElement),
+  mirrors: state.mirrors.map((m) => ({ label: m.label, angle: m.angle, x: m.x, y: m.y })),
+  lit: [...state.lit],
+  helped: [...state.helped],
+  log: state.log,
+  coordinateSystem: "1120x700 canvas, origin top-left",
+});
+
+function loop(t) {
+  const dt = Math.min(0.033, (t - last) / 1000 || 0);
+  last = t;
+  update(dt);
+  render();
+  requestAnimationFrame(loop);
+}
+
+render();
+requestAnimationFrame(loop);

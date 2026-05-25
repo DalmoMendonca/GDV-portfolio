@@ -2,18 +2,19 @@ Original prompt: Create and publish all ten GDV501 projects as professional exem
 
 ## Progress
 
-- Generated Festival Signal as part of the GDV501 First Principles Arcade.
-- Includes canvas runtime, deterministic test hooks, Vite build, README, metadata, and Netlify config.
+- Reworked Festival Signal from a small mirror puzzle into the GDV501 capstone.
+- Current version includes a title state, three-night progression, avatar movement, district interactions, mirror routing, crowd pressure, scoring, ending, deterministic test hooks, responsive canvas presentation, README, metadata, and Netlify config.
+- The visual language is light, festival-like, and distinct from the earlier dark boilerplate style.
 
 ## TODO
 
-- Build, test, publish, and update live links.
+- Continue the next milestone with GDV502-P10 capstone rework before creating additional placeholder-like projects.
 
-- Reworked visual direction and onboarding after critique: lighter bespoke palette, clearer controls, and less templated presentation.
-- Reworked signal puzzle to a legible mirror-orientation board with visible target states.
+## Validation Notes
 
-- Reworked visual direction and onboarding after critique: lighter bespoke palette, clearer controls, and less templated presentation.
-- Reworked signal puzzle to a legible mirror-orientation board with visible target states.
-
-- Reworked visual direction and onboarding after critique: lighter bespoke palette, clearer controls, and less templated presentation.
-- Reworked signal puzzle to a legible mirror-orientation board with visible target states.
+- `npm run build` passes for `projects/GDV501/P10`.
+- Official web-game Playwright client renders the production preview, captures state JSON, and reports no console errors.
+- Targeted Playwright smoke completes Night 1 through the core loop: start, rotate mirrors to the required route, walk to each lit district, interact, score, and reach the night report.
+- Production Netlify deploy succeeded for `https://gdv501-p10-festival-signal.netlify.app`.
+- Portfolio rebuild and production redeploy succeeded for `https://gdv-portfolio-dalmo.netlify.app`.
+- Browser-rendered portfolio check confirms the deployed site renders GDV501 and Festival Signal without console errors.

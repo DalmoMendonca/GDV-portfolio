@@ -138,7 +138,45 @@ function has(...codes) {
 
 function addLog(text) {
   state.log.unshift(text);
-  state.log = state.log.slice(0, 6);
+  state.log = state.log.slice(0, 4);
+}
+
+function currentNight() {
+  return nights[state.night] ?? nights[0];
+}
+
+function districtById(id) {
+  return districts.find((d) => d.id === id);
+}
+
+function isGoalDistrict(id) {
+  return currentNight().goal.includes(id);
+}
+
+function currentGoal() {
+  const id = currentNight().goal.find((goalId) => !state.helped.has(goalId));
+  return id ? districtById(id) : null;
+}
+
+function goalNames() {
+  return currentNight().goal.map((id) => districtById(id).name).join(" + ");
+}
+
+function refreshResolve() {
+  state.resolve = currentNight().goal.filter((id) => state.helped.has(id)).length;
+  return state.resolve;
+}
+
+function objectiveLine() {
+  const target = currentGoal();
+  if (!target) return "All required districts are ready. The night is clear.";
+  if (state.lit.has(target.id)) return `NEXT: walk to ${target.name} and press Space.`;
+  return `NEXT: rotate mirrors until ${target.name} glows, then visit it.`;
+}
+
+function mirrorTarget(index) {
+  const mirror = state.mirrors[index];
+  return districts[(mirror.angle + index) % districts.length];
 }
 
 function text(value, x, y, size = 16, color = COLORS.ink, weight = 750, align = "left") {
@@ -230,6 +268,7 @@ function startNight(index = 0) {
   ];
   addLog(`${night.title} begins.`);
   solveSignals();
+  state.message = objectiveLine();
 }
 
 function nextNight() {
@@ -265,12 +304,13 @@ function solveSignals() {
   for (let i = 0; i < state.mirrors.length; i++) {
     const from = points[i];
     const mirror = state.mirrors[i];
-    const target = districts[(mirror.angle + i) % districts.length];
+    const target = mirrorTarget(i);
     state.beams.push({ x1: from.x, y1: from.y, x2: mirror.x, y2: mirror.y, color: target.color, alpha: 0.35 });
     state.beams.push({ x1: mirror.x, y1: mirror.y, x2: target.x, y2: target.y, color: target.color, alpha: 0.65 });
     state.lit.add(target.id);
   }
-  state.resolve = nights[state.night].goal.filter((id) => state.lit.has(id) && state.helped.has(id)).length;
+  refreshResolve();
+  state.message = objectiveLine();
 }
 
 function nearbyDistrict() {
@@ -301,8 +341,13 @@ function interact() {
   }
   const district = nearbyDistrict();
   if (district) {
+    if (!isGoalDistrict(district.id)) {
+      const target = currentGoal();
+      addLog(target ? `${district.name} is for a later night. Focus on ${target.name}.` : `${district.name} is outside tonight's route.`);
+      return;
+    }
     if (!state.lit.has(district.id)) {
-      addLog(`${district.name} needs a routed beam first.`);
+      addLog(`Aim a mirror at ${district.name} first.`);
       state.crowd = clamp(state.crowd - 2, 0, 100);
       return;
     }
@@ -316,7 +361,8 @@ function interact() {
           state.sparks.push({ x: district.x, y: district.y, vx: (rnd(i + state.time) - 0.5) * 150, vy: (rnd(i + 40 + state.time) - 0.5) * 150, life: 0.8, color: district.color });
         }
       }
-      solveSignals();
+      refreshResolve();
+      state.message = objectiveLine();
     } else {
       addLog(`${district.name} is already ready.`);
     }
@@ -350,10 +396,10 @@ function update(dt) {
     return p.life > 0;
   });
 
-  const required = nights[state.night].goal.length;
+  const required = currentNight().goal.length;
   if (state.resolve >= required) {
     state.mode = "complete";
-    state.message = `${nights[state.night].title} cleared: ${required}/${required} districts lit and ready.`;
+    state.message = `${currentNight().title} cleared: all ${required} required districts are ready.`;
     state.score += Math.round(state.time * 4 + state.crowd * 2);
     addLog("Night clear.");
   }
@@ -392,18 +438,27 @@ function drawBackground() {
 }
 
 function drawDistricts() {
-  const goal = new Set(nights[state.night]?.goal ?? []);
+  const goal = new Set(currentNight().goal);
+  const next = currentGoal();
   for (const d of districts) {
     const lit = state.lit.has(d.id);
     const helped = state.helped.has(d.id);
     const required = goal.has(d.id);
+    const isNext = next?.id === d.id;
     const r = required ? 30 : 22;
-    circle(d.x, d.y, r + (lit ? 8 : 0), lit ? `${d.color}55` : "rgba(255,255,255,.58)", required ? d.color : COLORS.smoke, 3);
-    circle(d.x, d.y, r, helped ? d.color : "rgba(255,255,255,.9)", d.color, 3);
-    if (helped) {
+    if (isNext) {
+      circle(d.x, d.y, r + 16 + Math.sin(state.time * 5) * 2, "rgba(242,178,58,.16)", COLORS.gold, 3);
+    }
+    circle(d.x, d.y, r + (lit && required ? 8 : 0), lit && required ? `${d.color}55` : "rgba(255,255,255,.58)", required ? d.color : COLORS.smoke, 3);
+    circle(d.x, d.y, r, helped ? d.color : "rgba(255,255,255,.9)", required ? d.color : "rgba(31,42,36,.28)", 3);
+    if (helped && required) {
       text("ready", d.x, d.y + 5, 11, "#fff", 900, "center");
+    } else if (isNext && lit) {
+      text("go", d.x, d.y + 5, 12, d.color, 950, "center");
+    } else if (isNext) {
+      text("next", d.x, d.y + 5, 11, d.color, 950, "center");
     } else {
-      text(required ? "need" : "opt", d.x, d.y + 5, 11, d.color, 900, "center");
+      text(required ? "need" : "later", d.x, d.y + 5, 10, required ? d.color : "rgba(31,42,36,.42)", 900, "center");
     }
     text(d.name, d.x - 48, d.y - r - 16, 12, COLORS.ink, 800);
   }
@@ -424,11 +479,13 @@ function drawBeams() {
 function drawMirrors() {
   for (let i = 0; i < state.mirrors.length; i++) {
     const m = state.mirrors[i];
+    const target = mirrorTarget(i);
     circle(m.x, m.y, 34, "rgba(255,255,255,.84)", COLORS.ink, 2);
     const angle = (m.angle / 4) * TAU + Math.PI / 4;
     line(m.x - Math.cos(angle) * 24, m.y - Math.sin(angle) * 24, m.x + Math.cos(angle) * 24, m.y + Math.sin(angle) * 24, COLORS.plum, 6);
     text(m.label, m.x, m.y + 54, 12, COLORS.ink, 850, "center");
     text(String(m.angle + 1), m.x, m.y + 5, 12, COLORS.plum, 900, "center");
+    text(`aims at ${target.name}`, m.x, m.y + 72, 11, isGoalDistrict(target.id) ? COLORS.ink : "rgba(31,42,36,.5)", 760, "center");
   }
 }
 
@@ -453,10 +510,10 @@ function drawSparks() {
 function drawPanel() {
   text("GDV501-P10", 58, 64, 14, COLORS.teal, 900);
   text("Festival Signal", 58, 104, 34, COLORS.ink, 950);
-  wrapText("A full-course capstone about loops, constraints, feedback, pacing, onboarding, and public-play readability.", 58, 138, 248, 22, 15, "rgba(31,42,36,.74)");
+  wrapText("Win by making every listed district READY before time runs out.", 58, 138, 248, 24, 18, COLORS.ink);
 
-  const night = nights[state.night] ?? nights[0];
-  text(night.title, 58, 232, 17, COLORS.plum, 900);
+  const night = currentNight();
+  text(night.title, 58, 214, 17, COLORS.plum, 900);
   text(`Time ${Math.ceil(Math.max(0, state.time))}`, 58, 266, 22, COLORS.red, 900);
   text(`Crowd ${Math.round(state.crowd)}%`, 176, 266, 22, COLORS.green, 900);
 
@@ -464,28 +521,42 @@ function drawPanel() {
   const ratio = required ? state.resolve / required : 0;
   rect(58, 288, 238, 16, "rgba(31,42,36,.12)");
   rect(58, 288, 238 * ratio, 16, COLORS.gold);
-  text(`Districts ${state.resolve}/${required}`, 58, 330, 17, COLORS.ink, 850);
+  text(`READY ${state.resolve}/${required}`, 58, 330, 20, COLORS.ink, 950);
 
   const y0 = 360;
   for (let i = 0; i < night.goal.length; i++) {
     const d = districts.find((x) => x.id === night.goal[i]);
     const lit = state.lit.has(d.id);
     const helped = state.helped.has(d.id);
-    circle(70, y0 + i * 28 - 4, 7, helped ? d.color : lit ? COLORS.gold : "rgba(31,42,36,.22)", COLORS.ink, 1);
-    text(`${d.name}: ${helped ? "ready" : lit ? "lit" : "dark"}`, 88, y0 + i * 28, 14, COLORS.ink, 760);
+    const status = helped ? "READY" : lit ? "GO THERE" : "DARK";
+    circle(70, y0 + i * 34 - 4, 8, helped ? d.color : lit ? COLORS.gold : "rgba(31,42,36,.22)", COLORS.ink, 1);
+    text(`${i + 1}. ${d.name}`, 88, y0 + i * 34, 14, COLORS.ink, 850);
+    text(status, 224, y0 + i * 34, 12, helped ? d.color : lit ? COLORS.red : "rgba(31,42,36,.55)", 900);
   }
 
-  wrapText("Move through the grounds. Rotate mirrors. Visit lit districts to solve their public-play need.", 58, 528, 252, 22, 14, "rgba(31,42,36,.72)");
-  text("WASD/arrows move   Space interact", 58, 606, 13, COLORS.ink, 850);
-  text("M map   X reduce motion   R restart", 58, 630, 13, COLORS.ink, 850);
+  rounded(56, 474, 244, 86, 8, "rgba(242,178,58,.18)", "rgba(242,178,58,.45)");
+  text("NEXT ACTION", 74, 502, 12, COLORS.red, 950);
+  wrapText(objectiveLine(), 74, 530, 204, 20, 14, COLORS.ink);
+
+  text("Click mirrors to change beams.", 58, 594, 13, COLORS.ink, 850);
+  text("WASD/arrows move   Space use", 58, 620, 13, COLORS.ink, 850);
+  text("F fullscreen   R restart", 58, 644, 13, COLORS.ink, 850);
+}
+
+function drawObjectiveBanner() {
+  const target = currentGoal();
+  rounded(394, 64, 662, 58, 8, "rgba(255,255,255,.88)", COLORS.gold);
+  text(`WIN THIS NIGHT: make ${goalNames()} READY`, 416, 92, 16, COLORS.ink, 950);
+  text(target ? objectiveLine() : "All required districts are ready.", 416, 114, 14, target && state.lit.has(target.id) ? COLORS.red : COLORS.teal, 900);
 }
 
 function drawOverlay() {
   if (state.mode === "title") {
     rounded(410, 178, 560, 344, 12, "rgba(255,255,255,.94)", COLORS.gold);
     text("Festival Signal", 455, 246, 48, COLORS.ink, 950);
-    wrapText("Route beams across a living festival for three nights. This is the GDV501 capstone: a complete public-play game about loops, constraints, feedback, pacing, and readable goals.", 458, 292, 456, 30, 20, "rgba(31,42,36,.78)");
-    text("Press Space or click to begin", 458, 448, 20, COLORS.teal, 900);
+    wrapText("How to win: rotate mirrors until the next required district glows, walk there, press Space, and make every listed district READY before the timer reaches zero.", 458, 292, 456, 30, 20, "rgba(31,42,36,.78)");
+    text("Click mirrors. Move with WASD/arrows. Space uses.", 458, 416, 18, COLORS.ink, 900);
+    text("Press Space or click to begin", 458, 462, 20, COLORS.teal, 900);
   }
   if (state.mode === "complete") {
     rounded(398, 196, 584, 300, 12, "rgba(255,255,255,.95)", COLORS.green);
@@ -505,6 +576,7 @@ function drawOverlay() {
 function render() {
   drawBackground();
   if (state.showMap) {
+    drawObjectiveBanner();
     drawBeams();
     drawDistricts();
     drawMirrors();
@@ -512,9 +584,6 @@ function render() {
     drawSparks();
   }
   drawPanel();
-  for (let i = 0; i < state.log.length; i++) {
-    text(state.log[i], 776, 556 + i * 22, 13, "rgba(31,42,36,.72)", 720);
-  }
   drawOverlay();
   pointer.clicked = false;
 }
@@ -584,15 +653,21 @@ window.render_game_to_text = () => JSON.stringify({
   title: "Festival Signal",
   mode: state.mode,
   night: state.night + 1,
+  winCondition: `Make ${goalNames()} READY before the timer reaches zero.`,
+  nextAction: objectiveLine(),
   time: Math.round(state.time),
   score: state.score,
   crowd: Math.round(state.crowd),
   resolve: state.resolve,
-  required: nights[state.night]?.goal.length ?? 0,
+  required: currentNight().goal.length,
   player: { x: Math.round(state.player.x), y: Math.round(state.player.y) },
   reduceMotion: state.reduceMotion,
   fullscreen: Boolean(document.fullscreenElement),
-  mirrors: state.mirrors.map((m) => ({ label: m.label, angle: m.angle, x: m.x, y: m.y })),
+  mirrors: state.mirrors.map((m, i) => ({ label: m.label, angle: m.angle, aimsAt: mirrorTarget(i).name, x: m.x, y: m.y })),
+  goals: currentNight().goal.map((id) => {
+    const district = districtById(id);
+    return { name: district.name, lit: state.lit.has(id), ready: state.helped.has(id) };
+  }),
   lit: [...state.lit],
   helped: [...state.helped],
   log: state.log,

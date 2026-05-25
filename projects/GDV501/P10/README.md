@@ -12,6 +12,12 @@ Create a course-ending capstone that synthesizes loops, constraints, feedback, p
 
 Explore a three-night festival, route signal beams with rotating mirrors, visit lit districts to solve their local public-play needs, and keep the crowd delighted through escalating procession goals. The game combines movement, spatial routing, readable state, short-term risk, timed pressure, and a complete ending.
 
+The play screen must always answer three questions without outside explanation:
+
+- **How do I win?** Make every listed district READY before time runs out.
+- **What do I do next?** Follow the large NEXT ACTION panel.
+- **What do the mirrors do?** Each mirror states which district it currently aims at.
+
 ## Design Standard
 
 This project is the GDV501 capstone. It is built as a finished portfolio artifact: title, onboarding, multi-night progression, readable controls, deterministic test hooks, responsive canvas presentation, accessibility basics, and Netlify-ready deployment.
@@ -20,7 +26,7 @@ This project is the GDV501 capstone. It is built as a finished portfolio artifac
 
 - **Loops:** move, inspect, rotate, visit, solve, score, advance to the next night.
 - **Constraints:** limited time, finite mirror orientations, required districts, and a crowd score that drops after wasteful rotations.
-- **Feedback:** beam colors, district states, log messages, progress meter, particles, proximity rings, and night reports.
+- **Feedback:** beam colors, district states, mirror target labels, a permanent READY counter, next-action copy, particles, proximity rings, and night reports.
 - **Pacing:** each night expands the required route and gives the player more to manage.
 - **Public play:** goals and current state are readable from the left panel and the map, so a spectator can understand the run quickly.
 

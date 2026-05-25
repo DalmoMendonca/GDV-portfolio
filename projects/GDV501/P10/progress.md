@@ -18,3 +18,12 @@ Original prompt: Create and publish all ten GDV501 projects as professional exem
 - Production Netlify deploy succeeded for `https://gdv501-p10-festival-signal.netlify.app`.
 - Portfolio rebuild and production redeploy succeeded for `https://gdv-portfolio-dalmo.netlify.app`.
 - Browser-rendered portfolio check confirms the deployed site renders GDV501 and Festival Signal without console errors.
+
+## Readability Correction
+
+- Fixed the contradictory state where the panel could show `Districts 1/3` while required districts were labeled `ready`.
+- READY progress is now permanent for the night and counts only required districts.
+- Optional/future-night districts are labeled `later` and cannot be marked ready during the current night.
+- Added an explicit win-condition banner, next-action panel, and mirror target labels.
+- Removed the event log from the playfield to reduce clutter.
+- Rebuilt, browser-validated, live-smoked, and redeployed the corrected production build on May 25, 2026.
